@@ -1,0 +1,27 @@
+strings:
+  inputs:
+    - taboo/Resources/Localization/Localizable.strings
+  outputs:
+    - templateName: swift5
+      output: taboo/SwiftGen/Strings+Generated.swift
+      
+xcassets:
+  inputs:
+    - taboo/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: taboo/SwiftGen/XCAssets+Generated.swift
+
+colors:
+  inputs:
+    - taboo/Resources/Colors.json
+  outputs:
+    - templateName: swift5
+      output: taboo/SwiftGen/Colors+Generated.swift
+      
+fonts:
+  inputs:
+    - taboo/Resources/Fonts
+  outputs:
+    - templateName: swift5
+      output: taboo/SwiftGen/Fonts+Generated.swift

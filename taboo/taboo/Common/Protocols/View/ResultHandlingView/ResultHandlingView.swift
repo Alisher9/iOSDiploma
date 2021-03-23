@@ -10,6 +10,6 @@ import Foundation
 protocol ResultHandlingView: IndicatableView {
     func showSuccess(message: String?, completion: (() -> Void)?)
     func showNetworkError()
-    func showError(message: String, completion: (() -> Void)?)
+    func showError(message: String?, completion: (() -> Void)?)
     func hideNoNetwork()
 }

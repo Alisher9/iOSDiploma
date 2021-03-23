@@ -33,6 +33,26 @@
 		882262942608B3A5001A6EBE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262932608B3A5001A6EBE /* NetworkError.swift */; };
 		882262972608B460001A6EBE /* JSONStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262962608B460001A6EBE /* JSONStandard.swift */; };
 		8822629A2608B485001A6EBE /* WebServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262992608B485001A6EBE /* WebServiceType.swift */; };
+		882262A32608B699001A6EBE /* OnboardingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822629D2608B699001A6EBE /* OnboardingContract.swift */; };
+		882262A42608B699001A6EBE /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822629E2608B699001A6EBE /* OnboardingPresenter.swift */; };
+		882262A52608B699001A6EBE /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822629F2608B699001A6EBE /* OnboardingRouter.swift */; };
+		882262A62608B699001A6EBE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262A02608B699001A6EBE /* OnboardingViewController.swift */; };
+		882262A72608B699001A6EBE /* OnboardingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262A12608B699001A6EBE /* OnboardingComponent.swift */; };
+		882262A82608B699001A6EBE /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262A22608B699001A6EBE /* OnboardingInteractor.swift */; };
+		882262AD2608B7E0001A6EBE /* InteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262AC2608B7DF001A6EBE /* InteractorOutputProtocol.swift */; };
+		882262B82608B98E001A6EBE /* SDPageControlDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262B72608B98E001A6EBE /* SDPageControlDotView.swift */; };
+		882262BC2608B9B2001A6EBE /* SDPageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262BB2608B9B2001A6EBE /* SDPageControlView.swift */; };
+		882262C12608BC60001A6EBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262C02608BC60001A6EBE /* BaseViewController.swift */; };
+		882262C62608BCD8001A6EBE /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262C52608BCD8001A6EBE /* CustomNavigationBar.swift */; };
+		882262CB2608BD40001A6EBE /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262CA2608BD40001A6EBE /* MainButton.swift */; };
+		882262D02608BED7001A6EBE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262CF2608BED7001A6EBE /* OnboardingPageViewController.swift */; };
+		882262D42608BEED001A6EBE /* OnboardingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262D32608BEED001A6EBE /* OnboardingInfoViewController.swift */; };
+		882262D82608BF33001A6EBE /* OnboardingInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262D72608BF33001A6EBE /* OnboardingInfoModel.swift */; };
+		882262DC2608C17F001A6EBE /* SessionTrackerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262DB2608C17F001A6EBE /* SessionTrackerImpl.swift */; };
+		882262F12609B29F001A6EBE /* GenerateResources.sh in Resources */ = {isa = PBXBuildFile; fileRef = 882262F02609B29F001A6EBE /* GenerateResources.sh */; };
+		882263122609C14A001A6EBE /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8822622326086DAA001A6EBE /* SFProDisplay-Bold.ttf */; };
+		882263132609C14A001A6EBE /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8822622426086DAA001A6EBE /* SFProDisplay-Medium.ttf */; };
+		882263142609C14A001A6EBE /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8822622226086DAA001A6EBE /* SFProDisplay-Regular.ttf */; };
 		CA444AEBBC2F8675B1E28919 /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1404534D0A71BB330F67C73F /* Pods_taboo.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +92,25 @@
 		882262932608B3A5001A6EBE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		882262962608B460001A6EBE /* JSONStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStandard.swift; sourceTree = "<group>"; };
 		882262992608B485001A6EBE /* WebServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceType.swift; sourceTree = "<group>"; };
+		8822629D2608B699001A6EBE /* OnboardingContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContract.swift; sourceTree = "<group>"; };
+		8822629E2608B699001A6EBE /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		8822629F2608B699001A6EBE /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		882262A02608B699001A6EBE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		882262A12608B699001A6EBE /* OnboardingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingComponent.swift; sourceTree = "<group>"; };
+		882262A22608B699001A6EBE /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
+		882262AC2608B7DF001A6EBE /* InteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		882262B72608B98E001A6EBE /* SDPageControlDotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPageControlDotView.swift; sourceTree = "<group>"; };
+		882262BB2608B9B2001A6EBE /* SDPageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPageControlView.swift; sourceTree = "<group>"; };
+		882262BE2608BAC3001A6EBE /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
+		882262C02608BC60001A6EBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		882262C52608BCD8001A6EBE /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		882262CA2608BD40001A6EBE /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		882262CF2608BED7001A6EBE /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		882262D32608BEED001A6EBE /* OnboardingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoViewController.swift; sourceTree = "<group>"; };
+		882262D72608BF33001A6EBE /* OnboardingInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoModel.swift; sourceTree = "<group>"; };
+		882262DB2608C17F001A6EBE /* SessionTrackerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTrackerImpl.swift; sourceTree = "<group>"; };
+		882262E32609A5CE001A6EBE /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		882262F02609B29F001A6EBE /* GenerateResources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateResources.sh; sourceTree = "<group>"; };
 		A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,18 +156,21 @@
 		882261F526085F8C001A6EBE /* taboo */ = {
 			isa = PBXGroup;
 			children = (
+				882262E32609A5CE001A6EBE /* swiftgen.yml */,
 				8822620C26086869001A6EBE /* Application */,
 				8822625A2608A460001A6EBE /* Common */,
+				882262C32608BCAE001A6EBE /* CustomViews */,
 				8822620E260868FD001A6EBE /* Extensions */,
 				8822621826086AA6001A6EBE /* UIKit */,
 				8822621926086ACD001A6EBE /* Entities */,
 				8822621A26086ADD001A6EBE /* Modules */,
 				8822621B26086AF4001A6EBE /* Services */,
-				8822621C26086C6D001A6EBE /* Recources */,
+				8822621C26086C6D001A6EBE /* Resources */,
 				8822624126087249001A6EBE /* Supporting Files */,
 				882261F826085F8C001A6EBE /* SceneDelegate.swift */,
 				8822620426085F90001A6EBE /* Info.plist */,
 				88226248260876B5001A6EBE /* ViewController.swift */,
+				882263002609B9A3001A6EBE /* Generated */,
 			);
 			path = taboo;
 			sourceTree = "<group>";
@@ -161,6 +203,7 @@
 		8822621926086ACD001A6EBE /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				882262D62608BF22001A6EBE /* Onboarding */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -168,6 +211,7 @@
 		8822621A26086ADD001A6EBE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8822629C2608B680001A6EBE /* Onboarding */,
 				882262722608AA60001A6EBE /* Root */,
 			);
 			path = Modules;
@@ -183,15 +227,17 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		8822621C26086C6D001A6EBE /* Recources */ = {
+		8822621C26086C6D001A6EBE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				8822621D26086C7C001A6EBE /* Fonts */,
 				8822622526086DF7001A6EBE /* Localization */,
 				882261FF26085F8F001A6EBE /* Assets.xcassets */,
 				8822620126085F8F001A6EBE /* LaunchScreen.storyboard */,
+				882262BE2608BAC3001A6EBE /* Colors.json */,
+				882262F02609B29F001A6EBE /* GenerateResources.sh */,
 			);
-			path = Recources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8822621D26086C7C001A6EBE /* Fonts */ = {
@@ -223,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				882262562608A385001A6EBE /* SessionTracker.swift */,
+				882262DB2608C17F001A6EBE /* SessionTrackerImpl.swift */,
 			);
 			path = SessionTracker;
 			sourceTree = "<group>";
@@ -240,6 +287,7 @@
 		8822625B2608A483001A6EBE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				882262C02608BC60001A6EBE /* BaseViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -247,6 +295,7 @@
 		8822625C2608A48C001A6EBE /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				882262AB2608B7CE001A6EBE /* Interactor */,
 				882262612608A7E1001A6EBE /* View */,
 			);
 			path = Protocols;
@@ -359,6 +408,151 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		8822629C2608B680001A6EBE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				882262B02608B816001A6EBE /* Component */,
+				882262B12608B82F001A6EBE /* Contract */,
+				882262B22608B84B001A6EBE /* View */,
+				882262B32608B85E001A6EBE /* Interactor */,
+				882262B42608B872001A6EBE /* Presenter */,
+				882262B52608B884001A6EBE /* Router */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		882262AB2608B7CE001A6EBE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				882262AC2608B7DF001A6EBE /* InteractorOutputProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		882262B02608B816001A6EBE /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				882262A12608B699001A6EBE /* OnboardingComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		882262B12608B82F001A6EBE /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				8822629D2608B699001A6EBE /* OnboardingContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		882262B22608B84B001A6EBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				882262B62608B97D001A6EBE /* PageControl */,
+				882262CE2608BEBE001A6EBE /* PageViewController */,
+				882262A02608B699001A6EBE /* OnboardingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		882262B32608B85E001A6EBE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				882262A22608B699001A6EBE /* OnboardingInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		882262B42608B872001A6EBE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8822629E2608B699001A6EBE /* OnboardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		882262B52608B884001A6EBE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8822629F2608B699001A6EBE /* OnboardingRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		882262B62608B97D001A6EBE /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				882262B72608B98E001A6EBE /* SDPageControlDotView.swift */,
+				882262BB2608B9B2001A6EBE /* SDPageControlView.swift */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		882262C32608BCAE001A6EBE /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				882262C92608BD33001A6EBE /* MainButton */,
+				882262C42608BCC1001A6EBE /* NavigationBar */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		882262C42608BCC1001A6EBE /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				882262C52608BCD8001A6EBE /* CustomNavigationBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		882262C92608BD33001A6EBE /* MainButton */ = {
+			isa = PBXGroup;
+			children = (
+				882262CA2608BD40001A6EBE /* MainButton.swift */,
+			);
+			path = MainButton;
+			sourceTree = "<group>";
+		};
+		882262CE2608BEBE001A6EBE /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				882262CF2608BED7001A6EBE /* OnboardingPageViewController.swift */,
+				882262D32608BEED001A6EBE /* OnboardingInfoViewController.swift */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		882262D62608BF22001A6EBE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				882262D72608BF33001A6EBE /* OnboardingInfoModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		882262E62609A717001A6EBE /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		882263002609B9A3001A6EBE /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				882262E62609A717001A6EBE /* SwiftGen */,
+				882263022609BBA1001A6EBE /* Needle */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		882263022609BBA1001A6EBE /* Needle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Needle;
+			sourceTree = "<group>";
+		};
 		AD70364C62E8FA833D297424 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +573,8 @@
 				882261F026085F8C001A6EBE /* Frameworks */,
 				882261F126085F8C001A6EBE /* Resources */,
 				90FBEF594BE1BE2AF07AA48A /* [CP] Embed Pods Frameworks */,
+				882262DE2608C452001A6EBE /* SwiftGen */,
+				882262E12608C567001A6EBE /* Needle */,
 			);
 			buildRules = (
 			);
@@ -427,9 +623,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882263122609C14A001A6EBE /* SFProDisplay-Bold.ttf in Resources */,
+				882263132609C14A001A6EBE /* SFProDisplay-Medium.ttf in Resources */,
+				882263142609C14A001A6EBE /* SFProDisplay-Regular.ttf in Resources */,
 				8822620326085F8F001A6EBE /* LaunchScreen.storyboard in Resources */,
 				882262392608713D001A6EBE /* Localizable.strings in Resources */,
 				8822620026085F8F001A6EBE /* Assets.xcassets in Resources */,
+				882262F12609B29F001A6EBE /* GenerateResources.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +658,47 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		882262DE2608C452001A6EBE /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/taboo/Resources/Assets.xcassets",
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/taboo/SwiftGen/Assets+Generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"$SRCROOT/taboo/Resources/GenerateResources.sh\"\n";
+		};
+		882262E12608C567001A6EBE /* Needle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Needle;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+
+
+";
+		};
 		90FBEF594BE1BE2AF07AA48A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,25 +725,41 @@
 			files = (
 				882262822608AE34001A6EBE /* UserDefaultsStorage.swift in Sources */,
 				88226249260876B5001A6EBE /* ViewController.swift in Sources */,
+				882262C12608BC60001A6EBE /* BaseViewController.swift in Sources */,
+				882262BC2608B9B2001A6EBE /* SDPageControlView.swift in Sources */,
 				8822627A2608ABF3001A6EBE /* AuthenticationStore.swift in Sources */,
 				8822628E2608B18D001A6EBE /* AnyTarget.swift in Sources */,
+				882262B82608B98E001A6EBE /* SDPageControlDotView.swift in Sources */,
+				882262D42608BEED001A6EBE /* OnboardingInfoViewController.swift in Sources */,
+				882262D82608BF33001A6EBE /* OnboardingInfoModel.swift in Sources */,
+				882262A82608B699001A6EBE /* OnboardingInteractor.swift in Sources */,
 				882262642608A80B001A6EBE /* ResultHandlingView.swift in Sources */,
+				882262CB2608BD40001A6EBE /* MainButton.swift in Sources */,
 				882262752608AA79001A6EBE /* RootComponent.swift in Sources */,
 				882262912608B2E7001A6EBE /* Result.swift in Sources */,
 				882262852608AF5A001A6EBE /* KeyChainStorage.swift in Sources */,
+				882262C62608BCD8001A6EBE /* CustomNavigationBar.swift in Sources */,
 				8822629A2608B485001A6EBE /* WebServiceType.swift in Sources */,
 				8822621026086929001A6EBE /* CharacterSet+Additional.swift in Sources */,
+				882262D02608BED7001A6EBE /* OnboardingPageViewController.swift in Sources */,
+				882262DC2608C17F001A6EBE /* SessionTrackerImpl.swift in Sources */,
 				882262682608A83C001A6EBE /* IndicatableView.swift in Sources */,
 				882262132608699C001A6EBE /* StringExtension.swift in Sources */,
 				8822627F2608AD6D001A6EBE /* StorageProtocol.swift in Sources */,
 				882262702608A9A8001A6EBE /* EmptyHandlingView.swift in Sources */,
 				8822628A2608B0DD001A6EBE /* BaseProvider.swift in Sources */,
 				882262972608B460001A6EBE /* JSONStandard.swift in Sources */,
+				882262AD2608B7E0001A6EBE /* InteractorOutputProtocol.swift in Sources */,
+				882262A62608B699001A6EBE /* OnboardingViewController.swift in Sources */,
 				8822625F2608A4AF001A6EBE /* AppConstants.swift in Sources */,
+				882262A72608B699001A6EBE /* OnboardingComponent.swift in Sources */,
 				882262942608B3A5001A6EBE /* NetworkError.swift in Sources */,
 				8822621626086A1C001A6EBE /* ConvertExtensions.swift in Sources */,
 				882262572608A385001A6EBE /* SessionTracker.swift in Sources */,
+				882262A32608B699001A6EBE /* OnboardingContract.swift in Sources */,
 				882261F726085F8C001A6EBE /* AppDelegate.swift in Sources */,
+				882262A42608B699001A6EBE /* OnboardingPresenter.swift in Sources */,
+				882262A52608B699001A6EBE /* OnboardingRouter.swift in Sources */,
 				8822626C2608A8E3001A6EBE /* ResultHandlingView+UIViewController.swift in Sources */,
 				882261F926085F8C001A6EBE /* SceneDelegate.swift in Sources */,
 			);

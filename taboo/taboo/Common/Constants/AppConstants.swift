@@ -34,7 +34,7 @@ struct AppConstants {
         }
     }
     
-    struct NoificationKey {
+    struct NotificationKey {
         static let didLogOut = Notification.Name("notificationKey.didLogOut")
     }
 }

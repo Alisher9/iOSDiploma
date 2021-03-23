@@ -1,0 +1,79 @@
+/* 
+  Localizable.strings
+  taboo
+
+  Created by Alisher Sattarbek on 3/22/21.
+  
+*/
+
+"Common.Unauthorized" = "Вход не выполнен";
+"Common.Success" = "Успешно!";
+"Common.Error" = "Ошибка!";
+"Common.Failure" = "Провал!";
+"Common.Done" = "Готово";
+"Common.Continue" = "Продолжить";
+
+// Time
+"Time.At" = "в";
+"Time.JustNow" = "Только что";
+"Time.MinAgo" = "%d мин назад";
+"Time.TodayAt" = "Сегодня в %@";
+"Time.YesterdayAt" = "Вчера в %@";
+
+// Onboarding
+"Onboarding.Title1" = "Коммуникация с жителями";
+"Onboarding.Description1" = "Напиши соседу, который живет рядом";
+"Onboarding.Title2" = "Онлайн-оплата квитанций";
+"Onboarding.Description2" = "Оплатите коммунальные услуги не выходя из дома";
+"Onboarding.Title3" = "Удобный маркетплейс";
+"Onboarding.Description3" = "Все товары, все продавцы в одном месте";
+
+"Onboarding.Next" = "Далее";
+"Onboarding.Begin" = "Начать";
+
+// Login
+"Login.Enter" = "Войти";
+"Login.EnterPhoneNumber" = "Введите номер";
+"Login.EnterPassword" = "Введите пароль";
+"Login.ForgetPassword" = "Забыли пароль?";
+"Login.OrRegistration" = "Или регистрация через";
+"Login.NoAccount" = "Нету аккаунта?";
+"Login.Registration" = "Регистрация";
+"Login.WrongCredentials" = "Проверьте корректность введенных данных.";
+
+// SignUp
+"SignUp.PhoneNumber" = "Номер телефона";
+"SignUp.EnterPhoneNumber" = "Укажите телефон";
+"SignUp.Info" = "Сможете общаться со своими соседями и быстро оплачивать ком услуги";
+"SignUp.LocationScreenTitle" = "Где вы?";
+"SignUp.SelectCityInfo" = "Выберите город, чтобы найти нужный ЖК";
+"SignUp.FindCity" = "Найти город";
+"SignUp.FindComplex" = "Найти ЖК";
+"SignUp.PasswordsDoesNotMatch" = "Пароли не совпадают.";
+
+// Create Advertisement
+"CreateAdvertisement.AddAdvertisement" = "Добавьте объявление";
+"CreateAdvertisement.NewAdvertisement" = "Новое объявление";
+"CreateAdvertisement.SelectSite" = "Выберите площадку";
+"CreateAdvertisement.ResidentialFeed" = "Лента ЖК";
+"CreateAdvertisement.Marketplace" = "Маркетплейс";
+"CreateAdvertisement.Heading" = "Заголовок";
+"CreateAdvertisement.EnterHeading" = "Введите заголовок";
+"CreateAdvertisement.Description" = "Описание";
+"CreateAdvertisement.DescriptionLimit" = "Не более 900 символов";
+"CreateAdvertisement.AddPhotos" = "Добавить фотографии";
+"CreateAdvertisement.Payment" = "Оплата";
+"CreateAdvertisement.Free" = "Бесплатно";
+"CreateAdvertisement.Exchange" = "Обмен";
+"CreateAdvertisement.Price" = "Цена";
+
+// MainPage
+"MainPage.Price" = "%f тг";
+"MainPage.Free" = "Бесплатно";
+"MainPage.Comments" = "%d комментариев";
+
+// AdvertismentCard
+"AdvertismentCard.Comments" = "Комментариии";
+"AdvertismentCard.OtherAdvertisments" = "Другие объявления пользователя";
+"AdvertismentCard.Call" = "Позвонить";
+"AdvertismentCard.Message" = "Написать";

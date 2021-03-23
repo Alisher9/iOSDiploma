@@ -1,0 +1,77 @@
+/* 
+  Localizable.strings
+  taboo
+
+  Created by Alisher Sattarbek on 3/22/21.
+  
+*/
+"Common.Unauthorized" = "Unauthorized";
+"Common.Success" = "Success!";
+"Common.Error" = "Error!";
+"Common.Failure" = "Failure!";
+"Common.Done" = "Done";
+"Common.Continue" = "Continue";
+
+// Time
+"Time.At" = "at";
+"Time.JustNow" = "Just now";
+"Time.MinAgo" = "%d min ago";
+"Time.TodayAt" = "Today at %@";
+"Time.YesterdayAt" = "Yesterday at %@";
+
+// Onboarding
+"Onboarding.Title1" = "Communication with neighbors";
+"Onboarding.Description1" = "Write to a neighbor who lives nearby";
+"Onboarding.Title2" = "Online payment of receipts";
+"Onboarding.Description2" = "Pay utility bills without leaving home";
+"Onboarding.Title3" = "Convenient marketplace";
+"Onboarding.Description3" = "All products, all sellers in one place";
+
+"Onboarding.Next" = "Next";
+"Onboarding.Begin" = "Begin";
+
+// Login
+"Login.Enter" = "Login";
+"Login.EnterPhoneNumber" = "Enter phone number";
+"Login.EnterPassword" = "Enter password";
+"Login.ForgetPassword" = "Forget password?";
+"Login.OrRegistration" = "Or registration with";
+"Login.NoAccount" = "No account yet?";
+"Login.Registration" = "Registration";
+"Login.WrongCredentials" = "Wrong credentials";
+
+// SignUp
+"SignUp.PhoneNumber" = "Phone number";
+"SignUp.EnterPhoneNumber" = "Enter phone number";
+"SignUp.Info" = "You will be able to communicate with your neighbors and quickly pay for com services";
+"SignUp.LocationScreenTitle" = "Where are you?";
+"SignUp.SelectCityInfo" = "Select a city to find the desired housing complex";
+"SignUp.FindCity" = "Find city";
+"SignUp.FindComplex" = "Find housing complex";
+"SignUp.PasswordsDoesNotMatch" = "Passwords does not match.";
+
+// Create Advertisement
+"CreateAdvertisement.AddAdvertisement" = "Add an advertisement";
+"CreateAdvertisement.NewAdvertisement" = "New advertisement";
+"CreateAdvertisement.SelectSite" = "Select a site";
+"CreateAdvertisement.ResidentialFeed" = "Residential Feed";
+"CreateAdvertisement.Marketplace" = "Marketplace";
+"CreateAdvertisement.Heading" = "Heading";
+"CreateAdvertisement.EnterHeading" = "Enter heading";
+"CreateAdvertisement.Description" = "Description";
+"CreateAdvertisement.DescriptionLimit" = "No more than 900 symbols";
+"CreateAdvertisement.AddPhotos" = "Add Photos";
+"CreateAdvertisement.Payment" = "Payment";
+"CreateAdvertisement.Free" = "Free";
+"CreateAdvertisement.Exchange" = "Exchange";
+"CreateAdvertisement.Price" = "Price";
+// MainPage
+"MainPage.Price" = "%@ tg";
+"MainPage.Free" = "Free";
+"MainPage.Comments" = "%d comments";
+
+// AdvertismentCard
+"AdvertismentCard.Comments" = "Comments";
+"AdvertismentCard.OtherAdvertisments" = "Other advertismets of this user";
+"AdvertismentCard.Call" = "Call";
+"AdvertismentCard.Message" = "Message";
