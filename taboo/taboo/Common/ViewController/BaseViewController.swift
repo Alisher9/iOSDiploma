@@ -66,7 +66,7 @@ class BaseViewController: UIViewController {
     }
     
     private func configureSubviews() {
-//        self.view.addSubviews(navBar)
+        view.addSubviews(navBar)
     }
     
     private func configureConstraints() {

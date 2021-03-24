@@ -67,7 +67,7 @@ final class MainNavigationBar: UIView {
     }
     
     private func configureSubviews() {
-//        addSubviews(titleLabel, backButton)
+        addSubviews(titleLabel, backButton)
     }
     
     private func configureConstraints() {

@@ -21,12 +21,12 @@
 "Time.YesterdayAt" = "Вчера в %@";
 
 // Onboarding
-"Onboarding.Title1" = "Коммуникация с жителями";
-"Onboarding.Description1" = "Напиши соседу, который живет рядом";
-"Onboarding.Title2" = "Онлайн-оплата квитанций";
-"Onboarding.Description2" = "Оплатите коммунальные услуги не выходя из дома";
-"Onboarding.Title3" = "Удобный маркетплейс";
-"Onboarding.Description3" = "Все товары, все продавцы в одном месте";
+"Onboarding.Title1" = "Экономим время поиска";
+"Onboarding.Description1" = "Дольще ищете фильм, чем смотрите?";
+"Onboarding.Title2" = "Учитываем ваши интересы";
+"Onboarding.Description2" = "Рекомендуем фильмы ваших любимых жанров";
+"Onboarding.Title3" = "Создай свой список любимых фильмов";
+"Onboarding.Description3" = "Также обновляй и делись с близкими";
 
 "Onboarding.Next" = "Далее";
 "Onboarding.Begin" = "Начать";
@@ -36,8 +36,7 @@
 "Login.EnterPhoneNumber" = "Введите номер";
 "Login.EnterPassword" = "Введите пароль";
 "Login.ForgetPassword" = "Забыли пароль?";
-"Login.OrRegistration" = "Или регистрация через";
-"Login.NoAccount" = "Нету аккаунта?";
+"Login.NoAccount" = "Нет аккаунта?";
 "Login.Registration" = "Регистрация";
 "Login.WrongCredentials" = "Проверьте корректность введенных данных.";
 

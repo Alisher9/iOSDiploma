@@ -53,6 +53,37 @@
 		882263122609C14A001A6EBE /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8822622326086DAA001A6EBE /* SFProDisplay-Bold.ttf */; };
 		882263132609C14A001A6EBE /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8822622426086DAA001A6EBE /* SFProDisplay-Medium.ttf */; };
 		882263142609C14A001A6EBE /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8822622226086DAA001A6EBE /* SFProDisplay-Regular.ttf */; };
+		8822633B260A050F001A6EBE /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226335260A050F001A6EBE /* LoginContract.swift */; };
+		8822633C260A050F001A6EBE /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226336260A050F001A6EBE /* LoginPresenter.swift */; };
+		8822633D260A050F001A6EBE /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226337260A050F001A6EBE /* LoginRouter.swift */; };
+		8822633E260A050F001A6EBE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226338260A050F001A6EBE /* LoginViewController.swift */; };
+		8822633F260A050F001A6EBE /* LoginComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226339260A050F001A6EBE /* LoginComponent.swift */; };
+		88226340260A050F001A6EBE /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822633A260A050F001A6EBE /* LoginInteractor.swift */; };
+		8822634C260A0A0C001A6EBE /* UserTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822634B260A0A0C001A6EBE /* UserTarget.swift */; };
+		88226350260A0B47001A6EBE /* ParameterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822634F260A0B47001A6EBE /* ParameterKeys.swift */; };
+		88226354260A0C5D001A6EBE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226353260A0C5D001A6EBE /* User.swift */; };
+		88226358260B153A001A6EBE /* MainTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226357260B153A001A6EBE /* MainTextFieldStyle.swift */; };
+		8822635B260B156C001A6EBE /* MainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822635A260B156C001A6EBE /* MainTextField.swift */; };
+		8822635F260B15B1001A6EBE /* HideableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822635E260B15B1001A6EBE /* HideableTextField.swift */; };
+		8822636F260B1E8F001A6EBE /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822636E260B1E8F001A6EBE /* UIView+Identifier.swift */; };
+		88226373260B1EB1001A6EBE /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226372260B1EB1001A6EBE /* UIView+AddSubviews.swift */; };
+		88226377260B1F54001A6EBE /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226376260B1F54001A6EBE /* UITableViewExtension.swift */; };
+		8822637B260B1FE3001A6EBE /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822637A260B1FE3001A6EBE /* UIViewController+Alert.swift */; };
+		8822637F260B2006001A6EBE /* UIViewController+TopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822637E260B2006001A6EBE /* UIViewController+TopVC.swift */; };
+		88226388260B2170001A6EBE /* SignUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226382260B2170001A6EBE /* SignUpContract.swift */; };
+		88226389260B2170001A6EBE /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226383260B2170001A6EBE /* SignUpPresenter.swift */; };
+		8822638A260B2170001A6EBE /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226384260B2170001A6EBE /* SignUpRouter.swift */; };
+		8822638B260B2170001A6EBE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226385260B2170001A6EBE /* SignUpViewController.swift */; };
+		8822638C260B2170001A6EBE /* SignUpComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226386260B2170001A6EBE /* SignUpComponent.swift */; };
+		8822638D260B2170001A6EBE /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226387260B2170001A6EBE /* SignUpInteractor.swift */; };
+		88226397260B224C001A6EBE /* IndicatableView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226396260B224C001A6EBE /* IndicatableView+UIView.swift */; };
+		8822639A260B2276001A6EBE /* IndicatableView+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226399260B2276001A6EBE /* IndicatableView+UITableView.swift */; };
+		8822639D260B229C001A6EBE /* IndicatableView+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822639C260B229C001A6EBE /* IndicatableView+UIViewController.swift */; };
+		882263A0260B22B8001A6EBE /* IndicatableView+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822639F260B22B8001A6EBE /* IndicatableView+UIButton.swift */; };
+		882263A4260B22EB001A6EBE /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882263A3260B22EB001A6EBE /* ActivityView.swift */; };
+		882263A8260B231E001A6EBE /* SpinnerIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882263A7260B231E001A6EBE /* SpinnerIndicator.swift */; };
+		882263AB260B2337001A6EBE /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882263AA260B2337001A6EBE /* SpinnerView.swift */; };
+		882263AE260B234D001A6EBE /* TableViewIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */; };
 		CA444AEBBC2F8675B1E28919 /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1404534D0A71BB330F67C73F /* Pods_taboo.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +142,37 @@
 		882262DB2608C17F001A6EBE /* SessionTrackerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTrackerImpl.swift; sourceTree = "<group>"; };
 		882262E32609A5CE001A6EBE /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		882262F02609B29F001A6EBE /* GenerateResources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateResources.sh; sourceTree = "<group>"; };
+		88226335260A050F001A6EBE /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		88226336260A050F001A6EBE /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		88226337260A050F001A6EBE /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		88226338260A050F001A6EBE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		88226339260A050F001A6EBE /* LoginComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginComponent.swift; sourceTree = "<group>"; };
+		8822633A260A050F001A6EBE /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		8822634B260A0A0C001A6EBE /* UserTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTarget.swift; sourceTree = "<group>"; };
+		8822634F260A0B47001A6EBE /* ParameterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterKeys.swift; sourceTree = "<group>"; };
+		88226353260A0C5D001A6EBE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		88226357260B153A001A6EBE /* MainTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextFieldStyle.swift; sourceTree = "<group>"; };
+		8822635A260B156C001A6EBE /* MainTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextField.swift; sourceTree = "<group>"; };
+		8822635E260B15B1001A6EBE /* HideableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideableTextField.swift; sourceTree = "<group>"; };
+		8822636E260B1E8F001A6EBE /* UIView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
+		88226372260B1EB1001A6EBE /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubviews.swift"; sourceTree = "<group>"; };
+		88226376260B1F54001A6EBE /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		8822637A260B1FE3001A6EBE /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		8822637E260B2006001A6EBE /* UIViewController+TopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopVC.swift"; sourceTree = "<group>"; };
+		88226382260B2170001A6EBE /* SignUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContract.swift; sourceTree = "<group>"; };
+		88226383260B2170001A6EBE /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		88226384260B2170001A6EBE /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		88226385260B2170001A6EBE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		88226386260B2170001A6EBE /* SignUpComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComponent.swift; sourceTree = "<group>"; };
+		88226387260B2170001A6EBE /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		88226396260B224C001A6EBE /* IndicatableView+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndicatableView+UIView.swift"; sourceTree = "<group>"; };
+		88226399260B2276001A6EBE /* IndicatableView+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndicatableView+UITableView.swift"; sourceTree = "<group>"; };
+		8822639C260B229C001A6EBE /* IndicatableView+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndicatableView+UIViewController.swift"; sourceTree = "<group>"; };
+		8822639F260B22B8001A6EBE /* IndicatableView+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndicatableView+UIButton.swift"; sourceTree = "<group>"; };
+		882263A3260B22EB001A6EBE /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		882263A7260B231E001A6EBE /* SpinnerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerIndicator.swift; sourceTree = "<group>"; };
+		882263AA260B2337001A6EBE /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIndicatorView.swift; sourceTree = "<group>"; };
 		A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,7 +223,6 @@
 				8822625A2608A460001A6EBE /* Common */,
 				882262C32608BCAE001A6EBE /* CustomViews */,
 				8822620E260868FD001A6EBE /* Extensions */,
-				8822621826086AA6001A6EBE /* UIKit */,
 				8822621926086ACD001A6EBE /* Entities */,
 				8822621A26086ADD001A6EBE /* Modules */,
 				8822621B26086AF4001A6EBE /* Services */,
@@ -186,9 +247,10 @@
 		8822620E260868FD001A6EBE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8822620F26086929001A6EBE /* CharacterSet+Additional.swift */,
-				882262122608699C001A6EBE /* StringExtension.swift */,
-				8822621526086A1C001A6EBE /* ConvertExtensions.swift */,
+				88226379260B1FCD001A6EBE /* UIViewController */,
+				88226375260B1F42001A6EBE /* UITableView */,
+				8822636B260B1E69001A6EBE /* Foundation */,
+				8822621826086AA6001A6EBE /* UIKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,6 +258,7 @@
 		8822621826086AA6001A6EBE /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				8822636D260B1E7A001A6EBE /* UIView */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -203,6 +266,7 @@
 		8822621926086ACD001A6EBE /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				88226352260A0C54001A6EBE /* User */,
 				882262D62608BF22001A6EBE /* Onboarding */,
 			);
 			path = Entities;
@@ -211,8 +275,10 @@
 		8822621A26086ADD001A6EBE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8822629C2608B680001A6EBE /* Onboarding */,
 				882262722608AA60001A6EBE /* Root */,
+				8822629C2608B680001A6EBE /* Onboarding */,
+				88226334260A04F9001A6EBE /* Login */,
+				88226381260B215D001A6EBE /* SignUp */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -332,6 +398,10 @@
 			isa = PBXGroup;
 			children = (
 				882262672608A83C001A6EBE /* IndicatableView.swift */,
+				88226396260B224C001A6EBE /* IndicatableView+UIView.swift */,
+				88226399260B2276001A6EBE /* IndicatableView+UITableView.swift */,
+				8822639C260B229C001A6EBE /* IndicatableView+UIViewController.swift */,
+				8822639F260B22B8001A6EBE /* IndicatableView+UIButton.swift */,
 			);
 			path = IndicatableView;
 			sourceTree = "<group>";
@@ -369,6 +439,7 @@
 				882262932608B3A5001A6EBE /* NetworkError.swift */,
 				882262962608B460001A6EBE /* JSONStandard.swift */,
 				882262992608B485001A6EBE /* WebServiceType.swift */,
+				8822634F260A0B47001A6EBE /* ParameterKeys.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -395,6 +466,7 @@
 			isa = PBXGroup;
 			children = (
 				882262882608B0CE001A6EBE /* Common */,
+				8822634A260A09E4001A6EBE /* User */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -491,6 +563,9 @@
 		882262C32608BCAE001A6EBE /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				882263A2260B22DD001A6EBE /* ActivityView */,
+				8822635D260B15A0001A6EBE /* HideableTextField */,
+				88226356260B1528001A6EBE /* MainTextField */,
 				882262C92608BD33001A6EBE /* MainButton */,
 				882262C42608BCC1001A6EBE /* NavigationBar */,
 			);
@@ -551,6 +626,208 @@
 			children = (
 			);
 			path = Needle;
+			sourceTree = "<group>";
+		};
+		88226334260A04F9001A6EBE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				88226347260A0539001A6EBE /* Component */,
+				88226346260A0534001A6EBE /* Contract */,
+				88226345260A052F001A6EBE /* View */,
+				88226344260A0529001A6EBE /* Interactor */,
+				88226343260A0523001A6EBE /* Presenter */,
+				88226342260A051B001A6EBE /* Router */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		88226342260A051B001A6EBE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88226337260A050F001A6EBE /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88226343260A0523001A6EBE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				88226336260A050F001A6EBE /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		88226344260A0529001A6EBE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8822633A260A050F001A6EBE /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		88226345260A052F001A6EBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88226338260A050F001A6EBE /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88226346260A0534001A6EBE /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				88226335260A050F001A6EBE /* LoginContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		88226347260A0539001A6EBE /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				88226339260A050F001A6EBE /* LoginComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8822634A260A09E4001A6EBE /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8822634B260A0A0C001A6EBE /* UserTarget.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		88226352260A0C54001A6EBE /* User */ = {
+			isa = PBXGroup;
+			children = (
+				88226353260A0C5D001A6EBE /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		88226356260B1528001A6EBE /* MainTextField */ = {
+			isa = PBXGroup;
+			children = (
+				88226357260B153A001A6EBE /* MainTextFieldStyle.swift */,
+				8822635A260B156C001A6EBE /* MainTextField.swift */,
+			);
+			path = MainTextField;
+			sourceTree = "<group>";
+		};
+		8822635D260B15A0001A6EBE /* HideableTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8822635E260B15B1001A6EBE /* HideableTextField.swift */,
+			);
+			path = HideableTextField;
+			sourceTree = "<group>";
+		};
+		8822636B260B1E69001A6EBE /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				8822620F26086929001A6EBE /* CharacterSet+Additional.swift */,
+				882262122608699C001A6EBE /* StringExtension.swift */,
+				8822621526086A1C001A6EBE /* ConvertExtensions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		8822636D260B1E7A001A6EBE /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				8822636E260B1E8F001A6EBE /* UIView+Identifier.swift */,
+				88226372260B1EB1001A6EBE /* UIView+AddSubviews.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		88226375260B1F42001A6EBE /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				88226376260B1F54001A6EBE /* UITableViewExtension.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		88226379260B1FCD001A6EBE /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8822637A260B1FE3001A6EBE /* UIViewController+Alert.swift */,
+				8822637E260B2006001A6EBE /* UIViewController+TopVC.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		88226381260B215D001A6EBE /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				88226394260B2193001A6EBE /* Component */,
+				88226393260B218E001A6EBE /* Contract */,
+				88226392260B2189001A6EBE /* View */,
+				88226391260B2184001A6EBE /* Interactor */,
+				88226390260B217E001A6EBE /* Presenter */,
+				8822638F260B2179001A6EBE /* Router */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		8822638F260B2179001A6EBE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88226384260B2170001A6EBE /* SignUpRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88226390260B217E001A6EBE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				88226383260B2170001A6EBE /* SignUpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		88226391260B2184001A6EBE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				88226387260B2170001A6EBE /* SignUpInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		88226392260B2189001A6EBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88226385260B2170001A6EBE /* SignUpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88226393260B218E001A6EBE /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				88226382260B2170001A6EBE /* SignUpContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		88226394260B2193001A6EBE /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				88226386260B2170001A6EBE /* SignUpComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		882263A2260B22DD001A6EBE /* ActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				882263A3260B22EB001A6EBE /* ActivityView.swift */,
+				882263A7260B231E001A6EBE /* SpinnerIndicator.swift */,
+				882263AA260B2337001A6EBE /* SpinnerView.swift */,
+				882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */,
+			);
+			path = ActivityView;
 			sourceTree = "<group>";
 		};
 		AD70364C62E8FA833D297424 /* Frameworks */ = {
@@ -723,37 +1000,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8822633C260A050F001A6EBE /* LoginPresenter.swift in Sources */,
 				882262822608AE34001A6EBE /* UserDefaultsStorage.swift in Sources */,
 				88226249260876B5001A6EBE /* ViewController.swift in Sources */,
+				8822637F260B2006001A6EBE /* UIViewController+TopVC.swift in Sources */,
 				882262C12608BC60001A6EBE /* BaseViewController.swift in Sources */,
+				8822638A260B2170001A6EBE /* SignUpRouter.swift in Sources */,
 				882262BC2608B9B2001A6EBE /* SDPageControlView.swift in Sources */,
 				8822627A2608ABF3001A6EBE /* AuthenticationStore.swift in Sources */,
 				8822628E2608B18D001A6EBE /* AnyTarget.swift in Sources */,
+				8822638C260B2170001A6EBE /* SignUpComponent.swift in Sources */,
 				882262B82608B98E001A6EBE /* SDPageControlDotView.swift in Sources */,
+				88226340260A050F001A6EBE /* LoginInteractor.swift in Sources */,
 				882262D42608BEED001A6EBE /* OnboardingInfoViewController.swift in Sources */,
 				882262D82608BF33001A6EBE /* OnboardingInfoModel.swift in Sources */,
 				882262A82608B699001A6EBE /* OnboardingInteractor.swift in Sources */,
 				882262642608A80B001A6EBE /* ResultHandlingView.swift in Sources */,
 				882262CB2608BD40001A6EBE /* MainButton.swift in Sources */,
 				882262752608AA79001A6EBE /* RootComponent.swift in Sources */,
+				882263AE260B234D001A6EBE /* TableViewIndicatorView.swift in Sources */,
+				8822637B260B1FE3001A6EBE /* UIViewController+Alert.swift in Sources */,
 				882262912608B2E7001A6EBE /* Result.swift in Sources */,
+				8822635B260B156C001A6EBE /* MainTextField.swift in Sources */,
+				882263A8260B231E001A6EBE /* SpinnerIndicator.swift in Sources */,
+				882263A0260B22B8001A6EBE /* IndicatableView+UIButton.swift in Sources */,
 				882262852608AF5A001A6EBE /* KeyChainStorage.swift in Sources */,
 				882262C62608BCD8001A6EBE /* CustomNavigationBar.swift in Sources */,
+				882263AB260B2337001A6EBE /* SpinnerView.swift in Sources */,
 				8822629A2608B485001A6EBE /* WebServiceType.swift in Sources */,
+				8822638D260B2170001A6EBE /* SignUpInteractor.swift in Sources */,
+				8822639A260B2276001A6EBE /* IndicatableView+UITableView.swift in Sources */,
 				8822621026086929001A6EBE /* CharacterSet+Additional.swift in Sources */,
+				88226354260A0C5D001A6EBE /* User.swift in Sources */,
+				8822635F260B15B1001A6EBE /* HideableTextField.swift in Sources */,
 				882262D02608BED7001A6EBE /* OnboardingPageViewController.swift in Sources */,
 				882262DC2608C17F001A6EBE /* SessionTrackerImpl.swift in Sources */,
 				882262682608A83C001A6EBE /* IndicatableView.swift in Sources */,
 				882262132608699C001A6EBE /* StringExtension.swift in Sources */,
 				8822627F2608AD6D001A6EBE /* StorageProtocol.swift in Sources */,
 				882262702608A9A8001A6EBE /* EmptyHandlingView.swift in Sources */,
+				8822639D260B229C001A6EBE /* IndicatableView+UIViewController.swift in Sources */,
 				8822628A2608B0DD001A6EBE /* BaseProvider.swift in Sources */,
+				8822633D260A050F001A6EBE /* LoginRouter.swift in Sources */,
+				8822633F260A050F001A6EBE /* LoginComponent.swift in Sources */,
 				882262972608B460001A6EBE /* JSONStandard.swift in Sources */,
+				88226377260B1F54001A6EBE /* UITableViewExtension.swift in Sources */,
+				882263A4260B22EB001A6EBE /* ActivityView.swift in Sources */,
+				88226397260B224C001A6EBE /* IndicatableView+UIView.swift in Sources */,
+				8822636F260B1E8F001A6EBE /* UIView+Identifier.swift in Sources */,
 				882262AD2608B7E0001A6EBE /* InteractorOutputProtocol.swift in Sources */,
+				88226358260B153A001A6EBE /* MainTextFieldStyle.swift in Sources */,
 				882262A62608B699001A6EBE /* OnboardingViewController.swift in Sources */,
 				8822625F2608A4AF001A6EBE /* AppConstants.swift in Sources */,
+				8822633B260A050F001A6EBE /* LoginContract.swift in Sources */,
 				882262A72608B699001A6EBE /* OnboardingComponent.swift in Sources */,
 				882262942608B3A5001A6EBE /* NetworkError.swift in Sources */,
+				88226350260A0B47001A6EBE /* ParameterKeys.swift in Sources */,
+				8822633E260A050F001A6EBE /* LoginViewController.swift in Sources */,
 				8822621626086A1C001A6EBE /* ConvertExtensions.swift in Sources */,
 				882262572608A385001A6EBE /* SessionTracker.swift in Sources */,
 				882262A32608B699001A6EBE /* OnboardingContract.swift in Sources */,
@@ -761,7 +1064,12 @@
 				882262A42608B699001A6EBE /* OnboardingPresenter.swift in Sources */,
 				882262A52608B699001A6EBE /* OnboardingRouter.swift in Sources */,
 				8822626C2608A8E3001A6EBE /* ResultHandlingView+UIViewController.swift in Sources */,
+				8822638B260B2170001A6EBE /* SignUpViewController.swift in Sources */,
 				882261F926085F8C001A6EBE /* SceneDelegate.swift in Sources */,
+				88226388260B2170001A6EBE /* SignUpContract.swift in Sources */,
+				88226373260B1EB1001A6EBE /* UIView+AddSubviews.swift in Sources */,
+				88226389260B2170001A6EBE /* SignUpPresenter.swift in Sources */,
+				8822634C260A0A0C001A6EBE /* UserTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

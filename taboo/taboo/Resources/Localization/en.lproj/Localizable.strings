@@ -20,12 +20,12 @@
 "Time.YesterdayAt" = "Yesterday at %@";
 
 // Onboarding
-"Onboarding.Title1" = "Communication with neighbors";
-"Onboarding.Description1" = "Write to a neighbor who lives nearby";
-"Onboarding.Title2" = "Online payment of receipts";
-"Onboarding.Description2" = "Pay utility bills without leaving home";
-"Onboarding.Title3" = "Convenient marketplace";
-"Onboarding.Description3" = "All products, all sellers in one place";
+"Onboarding.Title1" = "Save search time";
+"Onboarding.Description1" = "Looking for a movie longer than watching?";
+"Onboarding.Title2" = "We take into account your interests";
+"Onboarding.Description2" = "Recommended films of your favorite genres";
+"Onboarding.Title3" = "Create your favorite movie list";
+"Onboarding.Description3" = "Also update and share with loved ones";
 
 "Onboarding.Next" = "Next";
 "Onboarding.Begin" = "Begin";
@@ -35,7 +35,6 @@
 "Login.EnterPhoneNumber" = "Enter phone number";
 "Login.EnterPassword" = "Enter password";
 "Login.ForgetPassword" = "Forget password?";
-"Login.OrRegistration" = "Or registration with";
 "Login.NoAccount" = "No account yet?";
 "Login.Registration" = "Registration";
 "Login.WrongCredentials" = "Wrong credentials";
