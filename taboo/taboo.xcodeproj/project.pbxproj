@@ -46,7 +46,6 @@
 		882262C62608BCD8001A6EBE /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262C52608BCD8001A6EBE /* CustomNavigationBar.swift */; };
 		882262CB2608BD40001A6EBE /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262CA2608BD40001A6EBE /* MainButton.swift */; };
 		882262D02608BED7001A6EBE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262CF2608BED7001A6EBE /* OnboardingPageViewController.swift */; };
-		882262D42608BEED001A6EBE /* OnboardingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262D32608BEED001A6EBE /* OnboardingInfoViewController.swift */; };
 		882262D82608BF33001A6EBE /* OnboardingInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262D72608BF33001A6EBE /* OnboardingInfoModel.swift */; };
 		882262DC2608C17F001A6EBE /* SessionTrackerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262DB2608C17F001A6EBE /* SessionTrackerImpl.swift */; };
 		882262F12609B29F001A6EBE /* GenerateResources.sh in Resources */ = {isa = PBXBuildFile; fileRef = 882262F02609B29F001A6EBE /* GenerateResources.sh */; };
@@ -60,7 +59,6 @@
 		8822633F260A050F001A6EBE /* LoginComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226339260A050F001A6EBE /* LoginComponent.swift */; };
 		88226340260A050F001A6EBE /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822633A260A050F001A6EBE /* LoginInteractor.swift */; };
 		8822634C260A0A0C001A6EBE /* UserTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822634B260A0A0C001A6EBE /* UserTarget.swift */; };
-		88226350260A0B47001A6EBE /* ParameterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822634F260A0B47001A6EBE /* ParameterKeys.swift */; };
 		88226354260A0C5D001A6EBE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226353260A0C5D001A6EBE /* User.swift */; };
 		88226358260B153A001A6EBE /* MainTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226357260B153A001A6EBE /* MainTextFieldStyle.swift */; };
 		8822635B260B156C001A6EBE /* MainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822635A260B156C001A6EBE /* MainTextField.swift */; };
@@ -84,6 +82,8 @@
 		882263A8260B231E001A6EBE /* SpinnerIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882263A7260B231E001A6EBE /* SpinnerIndicator.swift */; };
 		882263AB260B2337001A6EBE /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882263AA260B2337001A6EBE /* SpinnerView.swift */; };
 		882263AE260B234D001A6EBE /* TableViewIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */; };
+		88226431260C84A5001A6EBE /* ParameterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226430260C84A5001A6EBE /* ParameterKeys.swift */; };
+		88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */; };
 		CA444AEBBC2F8675B1E28919 /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1404534D0A71BB330F67C73F /* Pods_taboo.framework */; };
 /* End PBXBuildFile section */
 
@@ -137,7 +137,6 @@
 		882262C52608BCD8001A6EBE /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		882262CA2608BD40001A6EBE /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		882262CF2608BED7001A6EBE /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
-		882262D32608BEED001A6EBE /* OnboardingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoViewController.swift; sourceTree = "<group>"; };
 		882262D72608BF33001A6EBE /* OnboardingInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoModel.swift; sourceTree = "<group>"; };
 		882262DB2608C17F001A6EBE /* SessionTrackerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTrackerImpl.swift; sourceTree = "<group>"; };
 		882262E32609A5CE001A6EBE /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
@@ -149,7 +148,6 @@
 		88226339260A050F001A6EBE /* LoginComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginComponent.swift; sourceTree = "<group>"; };
 		8822633A260A050F001A6EBE /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		8822634B260A0A0C001A6EBE /* UserTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTarget.swift; sourceTree = "<group>"; };
-		8822634F260A0B47001A6EBE /* ParameterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterKeys.swift; sourceTree = "<group>"; };
 		88226353260A0C5D001A6EBE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		88226357260B153A001A6EBE /* MainTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextFieldStyle.swift; sourceTree = "<group>"; };
 		8822635A260B156C001A6EBE /* MainTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextField.swift; sourceTree = "<group>"; };
@@ -173,6 +171,8 @@
 		882263A7260B231E001A6EBE /* SpinnerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerIndicator.swift; sourceTree = "<group>"; };
 		882263AA260B2337001A6EBE /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIndicatorView.swift; sourceTree = "<group>"; };
+		88226430260C84A5001A6EBE /* ParameterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterKeys.swift; sourceTree = "<group>"; };
+		88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoViewController.swift; sourceTree = "<group>"; };
 		A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,7 +227,6 @@
 				8822621A26086ADD001A6EBE /* Modules */,
 				8822621B26086AF4001A6EBE /* Services */,
 				8822621C26086C6D001A6EBE /* Resources */,
-				8822624126087249001A6EBE /* Supporting Files */,
 				882261F826085F8C001A6EBE /* SceneDelegate.swift */,
 				8822620426085F90001A6EBE /* Info.plist */,
 				88226248260876B5001A6EBE /* ViewController.swift */,
@@ -322,13 +321,6 @@
 				8822623B2608713D001A6EBE /* Localizable.strings */,
 			);
 			path = Localization;
-			sourceTree = "<group>";
-		};
-		8822624126087249001A6EBE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		882262552608A36D001A6EBE /* SessionTracker */ = {
@@ -439,7 +431,7 @@
 				882262932608B3A5001A6EBE /* NetworkError.swift */,
 				882262962608B460001A6EBE /* JSONStandard.swift */,
 				882262992608B485001A6EBE /* WebServiceType.swift */,
-				8822634F260A0B47001A6EBE /* ParameterKeys.swift */,
+				88226430260C84A5001A6EBE /* ParameterKeys.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -592,7 +584,7 @@
 			isa = PBXGroup;
 			children = (
 				882262CF2608BED7001A6EBE /* OnboardingPageViewController.swift */,
-				882262D32608BEED001A6EBE /* OnboardingInfoViewController.swift */,
+				88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */,
 			);
 			path = PageViewController;
 			sourceTree = "<group>";
@@ -1011,8 +1003,8 @@
 				8822628E2608B18D001A6EBE /* AnyTarget.swift in Sources */,
 				8822638C260B2170001A6EBE /* SignUpComponent.swift in Sources */,
 				882262B82608B98E001A6EBE /* SDPageControlDotView.swift in Sources */,
+				88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */,
 				88226340260A050F001A6EBE /* LoginInteractor.swift in Sources */,
-				882262D42608BEED001A6EBE /* OnboardingInfoViewController.swift in Sources */,
 				882262D82608BF33001A6EBE /* OnboardingInfoModel.swift in Sources */,
 				882262A82608B699001A6EBE /* OnboardingInteractor.swift in Sources */,
 				882262642608A80B001A6EBE /* ResultHandlingView.swift in Sources */,
@@ -1031,6 +1023,7 @@
 				8822638D260B2170001A6EBE /* SignUpInteractor.swift in Sources */,
 				8822639A260B2276001A6EBE /* IndicatableView+UITableView.swift in Sources */,
 				8822621026086929001A6EBE /* CharacterSet+Additional.swift in Sources */,
+				88226431260C84A5001A6EBE /* ParameterKeys.swift in Sources */,
 				88226354260A0C5D001A6EBE /* User.swift in Sources */,
 				8822635F260B15B1001A6EBE /* HideableTextField.swift in Sources */,
 				882262D02608BED7001A6EBE /* OnboardingPageViewController.swift in Sources */,
@@ -1055,7 +1048,6 @@
 				8822633B260A050F001A6EBE /* LoginContract.swift in Sources */,
 				882262A72608B699001A6EBE /* OnboardingComponent.swift in Sources */,
 				882262942608B3A5001A6EBE /* NetworkError.swift in Sources */,
-				88226350260A0B47001A6EBE /* ParameterKeys.swift in Sources */,
 				8822633E260A050F001A6EBE /* LoginViewController.swift in Sources */,
 				8822621626086A1C001A6EBE /* ConvertExtensions.swift in Sources */,
 				882262572608A385001A6EBE /* SessionTracker.swift in Sources */,
