@@ -28,10 +28,10 @@ final class MainNavigationBar: UIView {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-//        label.textColor = ColorName.textBlack.color
+        label.textColor = ColorName.textBlack.color
         label.numberOfLines = 1
         label.textAlignment = .center
-//        label.font = FontFamily.SFProDisplay.bold.font(size: 20)
+        label.font = FontFamily.SFProDisplay.bold.font(size: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

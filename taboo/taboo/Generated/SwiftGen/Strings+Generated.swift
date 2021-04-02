@@ -11,18 +11,9 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
 
-  internal enum AdvertismentCard {
-    /// Call
-    internal static let call = L10n.tr("Localizable", "AdvertismentCard.Call")
-    /// Comments
-    internal static let comments = L10n.tr("Localizable", "AdvertismentCard.Comments")
-    /// Message
-    internal static let message = L10n.tr("Localizable", "AdvertismentCard.Message")
-    /// Other advertismets of this user
-    internal static let otherAdvertisments = L10n.tr("Localizable", "AdvertismentCard.OtherAdvertisments")
-  }
-
   internal enum Common {
+    /// taboo
+    internal static let app = L10n.tr("Localizable", "Common.App")
     /// Continue
     internal static let `continue` = L10n.tr("Localizable", "Common.Continue")
     /// Done
@@ -35,37 +26,6 @@ internal enum L10n {
     internal static let success = L10n.tr("Localizable", "Common.Success")
     /// Unauthorized
     internal static let unauthorized = L10n.tr("Localizable", "Common.Unauthorized")
-  }
-
-  internal enum CreateAdvertisement {
-    /// Add an advertisement
-    internal static let addAdvertisement = L10n.tr("Localizable", "CreateAdvertisement.AddAdvertisement")
-    /// Add Photos
-    internal static let addPhotos = L10n.tr("Localizable", "CreateAdvertisement.AddPhotos")
-    /// Description
-    internal static let description = L10n.tr("Localizable", "CreateAdvertisement.Description")
-    /// No more than 900 symbols
-    internal static let descriptionLimit = L10n.tr("Localizable", "CreateAdvertisement.DescriptionLimit")
-    /// Enter heading
-    internal static let enterHeading = L10n.tr("Localizable", "CreateAdvertisement.EnterHeading")
-    /// Exchange
-    internal static let exchange = L10n.tr("Localizable", "CreateAdvertisement.Exchange")
-    /// Free
-    internal static let free = L10n.tr("Localizable", "CreateAdvertisement.Free")
-    /// Heading
-    internal static let heading = L10n.tr("Localizable", "CreateAdvertisement.Heading")
-    /// Marketplace
-    internal static let marketplace = L10n.tr("Localizable", "CreateAdvertisement.Marketplace")
-    /// New advertisement
-    internal static let newAdvertisement = L10n.tr("Localizable", "CreateAdvertisement.NewAdvertisement")
-    /// Payment
-    internal static let payment = L10n.tr("Localizable", "CreateAdvertisement.Payment")
-    /// Price
-    internal static let price = L10n.tr("Localizable", "CreateAdvertisement.Price")
-    /// Residential Feed
-    internal static let residentialFeed = L10n.tr("Localizable", "CreateAdvertisement.ResidentialFeed")
-    /// Select a site
-    internal static let selectSite = L10n.tr("Localizable", "CreateAdvertisement.SelectSite")
   }
 
   internal enum Login {
@@ -83,19 +43,6 @@ internal enum L10n {
     internal static let registration = L10n.tr("Localizable", "Login.Registration")
     /// Wrong credentials
     internal static let wrongCredentials = L10n.tr("Localizable", "Login.WrongCredentials")
-  }
-
-  internal enum MainPage {
-    /// %d comments
-    internal static func comments(_ p1: Int) -> String {
-      return L10n.tr("Localizable", "MainPage.Comments", p1)
-    }
-    /// Free
-    internal static let free = L10n.tr("Localizable", "MainPage.Free")
-    /// %@ tg
-    internal static func price(_ p1: Any) -> String {
-      return L10n.tr("Localizable", "MainPage.Price", String(describing: p1))
-    }
   }
 
   internal enum Onboarding {
@@ -134,25 +81,6 @@ internal enum L10n {
     internal static let phoneNumber = L10n.tr("Localizable", "SignUp.PhoneNumber")
     /// Select a city to find the desired housing complex
     internal static let selectCityInfo = L10n.tr("Localizable", "SignUp.SelectCityInfo")
-  }
-
-  internal enum Time {
-    /// at
-    internal static let at = L10n.tr("Localizable", "Time.At")
-    /// Just now
-    internal static let justNow = L10n.tr("Localizable", "Time.JustNow")
-    /// %d min ago
-    internal static func minAgo(_ p1: Int) -> String {
-      return L10n.tr("Localizable", "Time.MinAgo", p1)
-    }
-    /// Today at %@
-    internal static func todayAt(_ p1: Any) -> String {
-      return L10n.tr("Localizable", "Time.TodayAt", String(describing: p1))
-    }
-    /// Yesterday at %@
-    internal static func yesterdayAt(_ p1: Any) -> String {
-      return L10n.tr("Localizable", "Time.YesterdayAt", String(describing: p1))
-    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

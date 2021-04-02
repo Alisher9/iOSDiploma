@@ -53,7 +53,7 @@ final class MainTextField: HideableTextField {
         delegate = self
         layer.borderWidth = 1
         layer.cornerRadius = 30
-//        layer.borderColor = ColorName.darkGray.color.cgColor
+        layer.borderColor = ColorName.darkGray.color.cgColor
         
         let paddingView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 17, height: self.frame.height))
         self.leftView = paddingView
@@ -79,7 +79,7 @@ final class MainTextField: HideableTextField {
         case .password:
             isSecureTextEntry = true
             placeholder = ""
-//            placeholder = L10n.Login.enterPassword
+            placeholder = L10n.Login.enterPassword
             textSecureIcon.isHidden = false
             keyboardType = .asciiCapable
         case .regular:

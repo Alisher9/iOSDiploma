@@ -27,14 +27,14 @@ class HideableTextField: UITextField {
                                                    y: 0.0,
                                                    width: self.frame.width,
                                                    height: 44.0))
-        let dismissButton = UIBarButtonItem(title: "L10.Common.done",
+        let dismissButton = UIBarButtonItem(title: L10n.Common.done,
                                             style: .plain,
                                             target: self,
                                             action: #selector(hideKeyboard))
         
-//        dismissButton.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: ColorName.mainPurple],
-//                                             for: .normal)
-//        dismissButton.tintColor = ColorName.mainPurple.color
+        dismissButton.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: ColorName.mainPurple],
+                                             for: .normal)
+        dismissButton.tintColor = ColorName.mainPurple.color
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
                                         target: self,
                                         action: nil)

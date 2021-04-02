@@ -21,16 +21,16 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
     
     private lazy var logoTitle: UILabel = {
        let label = UILabel()
-        label.text = "L10.Login.logoTitle"
-//        label.font = FontFamily.SFProDisplay.bold.font(size: 44)
+        label.text = L10n.Common.app
+        label.font = FontFamily.SFProDisplay.bold.font(size: 44)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private lazy var enterTitleLabel: UILabel = {
        let label = UILabel()
-//        label.text = L10n.Login.enter
-//        label.font = FontFamily.SFProDisplay.bold.font(size: 24)
+        label.text = L10n.Login.enter
+        label.font = FontFamily.SFProDisplay.bold.font(size: 24)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -49,16 +49,16 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
 
     private lazy var forgetPasswordLabel: UILabel = {
        let label = UILabel()
-//        label.text = L10n.Login.forgetPassword
-//        label.font = FontFamily.SFProDisplay.regular.font(size: 14)
-//        label.textColor = ColorName.darkGray.color
+        label.text = L10n.Login.forgetPassword
+        label.font = FontFamily.SFProDisplay.regular.font(size: 14)
+        label.textColor = ColorName.darkGray.color
         return label
     }()
     
     private lazy var loginButton: MainButton = {
         let button = MainButton()
         button.isActive = true
-//        button.setTitle(L10n.Login.enter, for: .normal)
+        button.setTitle(L10n.Login.enter, for: .normal)
         button.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -68,18 +68,17 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
     
     private lazy var noAccountLabel: UILabel = {
        let label = UILabel()
-//        label.text = L10n.Login.noAccount
-//        label.font = FontFamily.SFProDisplay.regular.font(size: 14)
-//        label.textColor = ColorName.textBlack.color
+        label.text = L10n.Login.noAccount
+        label.font = FontFamily.SFProDisplay.regular.font(size: 14)
+        label.textColor = ColorName.textBlack.color
         return label
     }()
     
     private lazy var registrationLabel: UILabel = {
        let label = UILabel()
-//        label.text = L10n.Login.registration
-//        label.font = FontFamily.SFProDisplay.regular.font(size: 14)
-//        label.textColor = ColorName.mainGreen.color
-        
+        label.text = L10n.Login.registration
+        label.font = FontFamily.SFProDisplay.regular.font(size: 14)
+        label.textColor = ColorName.mainPurple.color
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapSignUp))
         label.isUserInteractionEnabled = true
         label.addGestureRecognizer(tapGestureRecognizer)
