@@ -35,7 +35,7 @@ extension LoginInteractor: LoginUseCase {
             case .error(let error):
                 switch error {
                 case .unauthorized:
-                    self?.output?.handleError(.serverError(reason: "L10n.Login.wrongCredentials"))
+                    self?.output?.handleError(.serverError(reason: L10n.Login.wrongCredentials))
                 default:
                     self?.output?.handleError(error)
                 }

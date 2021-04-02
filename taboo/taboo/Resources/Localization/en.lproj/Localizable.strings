@@ -5,19 +5,13 @@
   Created by Alisher Sattarbek on 3/22/21.
   
 */
+"Common.App" = "taboo";
 "Common.Unauthorized" = "Unauthorized";
 "Common.Success" = "Success!";
 "Common.Error" = "Error!";
 "Common.Failure" = "Failure!";
 "Common.Done" = "Done";
 "Common.Continue" = "Continue";
-
-// Time
-"Time.At" = "at";
-"Time.JustNow" = "Just now";
-"Time.MinAgo" = "%d min ago";
-"Time.TodayAt" = "Today at %@";
-"Time.YesterdayAt" = "Yesterday at %@";
 
 // Onboarding
 "Onboarding.Title1" = "Save search time";
@@ -49,28 +43,3 @@
 "SignUp.FindComplex" = "Find housing complex";
 "SignUp.PasswordsDoesNotMatch" = "Passwords does not match.";
 
-// Create Advertisement
-"CreateAdvertisement.AddAdvertisement" = "Add an advertisement";
-"CreateAdvertisement.NewAdvertisement" = "New advertisement";
-"CreateAdvertisement.SelectSite" = "Select a site";
-"CreateAdvertisement.ResidentialFeed" = "Residential Feed";
-"CreateAdvertisement.Marketplace" = "Marketplace";
-"CreateAdvertisement.Heading" = "Heading";
-"CreateAdvertisement.EnterHeading" = "Enter heading";
-"CreateAdvertisement.Description" = "Description";
-"CreateAdvertisement.DescriptionLimit" = "No more than 900 symbols";
-"CreateAdvertisement.AddPhotos" = "Add Photos";
-"CreateAdvertisement.Payment" = "Payment";
-"CreateAdvertisement.Free" = "Free";
-"CreateAdvertisement.Exchange" = "Exchange";
-"CreateAdvertisement.Price" = "Price";
-// MainPage
-"MainPage.Price" = "%@ tg";
-"MainPage.Free" = "Free";
-"MainPage.Comments" = "%d comments";
-
-// AdvertismentCard
-"AdvertismentCard.Comments" = "Comments";
-"AdvertismentCard.OtherAdvertisments" = "Other advertismets of this user";
-"AdvertismentCard.Call" = "Call";
-"AdvertismentCard.Message" = "Message";

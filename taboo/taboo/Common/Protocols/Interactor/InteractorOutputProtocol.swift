@@ -20,7 +20,7 @@ extension InteractorOutputProtocol {
         if let error = error {
             switch error {
             case .unauthorized:
-                resultHandlingView?.showError(message: "L10n.Common.unauthorized", completion: {
+                resultHandlingView?.showError(message: L10n.Common.unauthorized, completion: {
                     let notification = Notification(name: AppConstants.NotificationKey.didLogOut,
                                                     object: nil)
                     NotificationCenter.default.post(notification)
@@ -28,7 +28,7 @@ extension InteractorOutputProtocol {
             case .serverError(let reason):
                 resultHandlingView?.showError(message: reason, completion: nil)
             case .wrongCredentials:
-                resultHandlingView?.showError(message: "L10n.Login.wrongCredentials", completion: nil)
+                resultHandlingView?.showError(message: L10n.Login.wrongCredentials, completion: nil)
             case .incorrectJSON, .networkFail, .unknownServerError:
                 resultHandlingView?.showNetworkError()
             }
