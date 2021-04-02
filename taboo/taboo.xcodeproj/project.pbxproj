@@ -84,6 +84,10 @@
 		88226431260C84A5001A6EBE /* ParameterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226430260C84A5001A6EBE /* ParameterKeys.swift */; };
 		88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */; };
 		88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */; };
+		88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */; };
+		88976D892616E9C900F6FD0F /* Colors+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D882616E9C900F6FD0F /* Colors+Generated.swift */; };
+		88976D8C2616E9D900F6FD0F /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D8B2616E9D900F6FD0F /* Fonts+Generated.swift */; };
+		88976D932616EC7B00F6FD0F /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D922616EC7B00F6FD0F /* Strings+Generated.swift */; };
 		CA444AEBBC2F8675B1E28919 /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1404534D0A71BB330F67C73F /* Pods_taboo.framework */; };
 /* End PBXBuildFile section */
 
@@ -172,6 +176,10 @@
 		88226430260C84A5001A6EBE /* ParameterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterKeys.swift; sourceTree = "<group>"; };
 		88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoViewController.swift; sourceTree = "<group>"; };
 		88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
+		88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		88976D882616E9C900F6FD0F /* Colors+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Generated.swift"; sourceTree = "<group>"; };
+		88976D8B2616E9D900F6FD0F /* Fonts+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
+		88976D922616EC7B00F6FD0F /* Strings+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -597,7 +605,7 @@
 		882263002609B9A3001A6EBE /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				88976D752616DA7000F6FD0F /* SwiftGen */,
+				88976D832616DD8C00F6FD0F /* SwiftGen */,
 				882263022609BBA1001A6EBE /* Needle */,
 			);
 			path = Generated;
@@ -813,9 +821,13 @@
 			path = ActivityView;
 			sourceTree = "<group>";
 		};
-		88976D752616DA7000F6FD0F /* SwiftGen */ = {
+		88976D832616DD8C00F6FD0F /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
+				88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */,
+				88976D882616E9C900F6FD0F /* Colors+Generated.swift */,
+				88976D8B2616E9D900F6FD0F /* Fonts+Generated.swift */,
+				88976D922616EC7B00F6FD0F /* Strings+Generated.swift */,
 			);
 			path = SwiftGen;
 			sourceTree = "<group>";
@@ -1011,6 +1023,7 @@
 				88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */,
 				882262852608AF5A001A6EBE /* KeyChainStorage.swift in Sources */,
 				882262C62608BCD8001A6EBE /* CustomNavigationBar.swift in Sources */,
+				88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */,
 				882263AB260B2337001A6EBE /* SpinnerView.swift in Sources */,
 				8822629A2608B485001A6EBE /* WebServiceType.swift in Sources */,
 				8822638D260B2170001A6EBE /* SignUpInteractor.swift in Sources */,
@@ -1033,12 +1046,14 @@
 				88226377260B1F54001A6EBE /* UITableViewExtension.swift in Sources */,
 				882263A4260B22EB001A6EBE /* ActivityView.swift in Sources */,
 				88226397260B224C001A6EBE /* IndicatableView+UIView.swift in Sources */,
+				88976D932616EC7B00F6FD0F /* Strings+Generated.swift in Sources */,
 				8822636F260B1E8F001A6EBE /* UIView+Identifier.swift in Sources */,
 				882262AD2608B7E0001A6EBE /* InteractorOutputProtocol.swift in Sources */,
 				88226358260B153A001A6EBE /* MainTextFieldStyle.swift in Sources */,
 				882262A62608B699001A6EBE /* OnboardingViewController.swift in Sources */,
 				8822625F2608A4AF001A6EBE /* AppConstants.swift in Sources */,
 				8822633B260A050F001A6EBE /* LoginContract.swift in Sources */,
+				88976D8C2616E9D900F6FD0F /* Fonts+Generated.swift in Sources */,
 				882262A72608B699001A6EBE /* OnboardingComponent.swift in Sources */,
 				882262942608B3A5001A6EBE /* NetworkError.swift in Sources */,
 				8822633E260A050F001A6EBE /* LoginViewController.swift in Sources */,
@@ -1046,6 +1061,7 @@
 				882262572608A385001A6EBE /* SessionTracker.swift in Sources */,
 				882262A32608B699001A6EBE /* OnboardingContract.swift in Sources */,
 				882261F726085F8C001A6EBE /* AppDelegate.swift in Sources */,
+				88976D892616E9C900F6FD0F /* Colors+Generated.swift in Sources */,
 				882262A42608B699001A6EBE /* OnboardingPresenter.swift in Sources */,
 				882262A52608B699001A6EBE /* OnboardingRouter.swift in Sources */,
 				8822626C2608A8E3001A6EBE /* ResultHandlingView+UIViewController.swift in Sources */,
