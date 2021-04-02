@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  taboo
+
+  Created by Alisher Sattarbek on 3/22/21.
+  
+*/
+"Common.App" = "taboo";
+"Common.Unauthorized" = "Вход не выполнен";
+"Common.Success" = "Успешно!";
+"Common.Error" = "Ошибка!";
+"Common.Failure" = "Провал!";
+"Common.Done" = "Готово";
+"Common.Continue" = "Продолжить";
+
+// Onboarding
+"Onboarding.Title1" = "Экономим время поиска";
+"Onboarding.Description1" = "Дольще ищете фильм, чем смотрите?";
+"Onboarding.Title2" = "Учитываем ваши интересы";
+"Onboarding.Description2" = "Рекомендуем фильмы ваших любимых жанров";
+"Onboarding.Title3" = "Создай свой список любимых фильмов";
+"Onboarding.Description3" = "Также обновляй и делись с близкими";
+
+"Onboarding.Next" = "Далее";
+"Onboarding.Begin" = "Начать";
+
+// Login
+"Login.Enter" = "Войти";
+"Login.EnterPhoneNumber" = "Введите номер";
+"Login.EnterPassword" = "Введите пароль";
+"Login.ForgetPassword" = "Забыли пароль?";
+"Login.NoAccount" = "Нет аккаунта?";
+"Login.Registration" = "Регистрация";
+"Login.WrongCredentials" = "Проверьте корректность введенных данных.";
+
+// SignUp
+"SignUp.PhoneNumber" = "Номер телефона";
+"SignUp.EnterPhoneNumber" = "Укажите телефон";
+"SignUp.Info" = "Сможете общаться со своими соседями и быстро оплачивать ком услуги";
+"SignUp.LocationScreenTitle" = "Где вы?";
+"SignUp.SelectCityInfo" = "Выберите город, чтобы найти нужный ЖК";
+"SignUp.FindCity" = "Найти город";
+"SignUp.FindComplex" = "Найти ЖК";
+"SignUp.PasswordsDoesNotMatch" = "Пароли не совпадают.";
+

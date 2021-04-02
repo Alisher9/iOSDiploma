@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  taboo
+
+  Created by Alisher Sattarbek on 3/22/21.
+  
+*/
+"Common.App" = "taboo";
+"Common.Unauthorized" = "Unauthorized";
+"Common.Success" = "Success!";
+"Common.Error" = "Error!";
+"Common.Failure" = "Failure!";
+"Common.Done" = "Done";
+"Common.Continue" = "Continue";
+
+// Onboarding
+"Onboarding.Title1" = "Save search time";
+"Onboarding.Description1" = "Looking for a movie longer than watching?";
+"Onboarding.Title2" = "We take into account your interests";
+"Onboarding.Description2" = "Recommended films of your favorite genres";
+"Onboarding.Title3" = "Create your favorite movie list";
+"Onboarding.Description3" = "Also update and share with loved ones";
+
+"Onboarding.Next" = "Next";
+"Onboarding.Begin" = "Begin";
+
+// Login
+"Login.Enter" = "Login";
+"Login.EnterPhoneNumber" = "Enter phone number";
+"Login.EnterPassword" = "Enter password";
+"Login.ForgetPassword" = "Forget password?";
+"Login.NoAccount" = "No account yet?";
+"Login.Registration" = "Registration";
+"Login.WrongCredentials" = "Wrong credentials";
+
+// SignUp
+"SignUp.PhoneNumber" = "Phone number";
+"SignUp.EnterPhoneNumber" = "Enter phone number";
+"SignUp.Info" = "You will be able to communicate with your neighbors and quickly pay for com services";
+"SignUp.LocationScreenTitle" = "Where are you?";
+"SignUp.SelectCityInfo" = "Select a city to find the desired housing complex";
+"SignUp.FindCity" = "Find city";
+"SignUp.FindComplex" = "Find housing complex";
+"SignUp.PasswordsDoesNotMatch" = "Passwords does not match.";
+
