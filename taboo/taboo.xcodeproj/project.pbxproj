@@ -48,7 +48,6 @@
 		882262D02608BED7001A6EBE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262CF2608BED7001A6EBE /* OnboardingPageViewController.swift */; };
 		882262D82608BF33001A6EBE /* OnboardingInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262D72608BF33001A6EBE /* OnboardingInfoModel.swift */; };
 		882262DC2608C17F001A6EBE /* SessionTrackerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882262DB2608C17F001A6EBE /* SessionTrackerImpl.swift */; };
-		882262F12609B29F001A6EBE /* GenerateResources.sh in Resources */ = {isa = PBXBuildFile; fileRef = 882262F02609B29F001A6EBE /* GenerateResources.sh */; };
 		882263122609C14A001A6EBE /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8822622326086DAA001A6EBE /* SFProDisplay-Bold.ttf */; };
 		882263132609C14A001A6EBE /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8822622426086DAA001A6EBE /* SFProDisplay-Medium.ttf */; };
 		882263142609C14A001A6EBE /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8822622226086DAA001A6EBE /* SFProDisplay-Regular.ttf */; };
@@ -84,6 +83,7 @@
 		882263AE260B234D001A6EBE /* TableViewIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */; };
 		88226431260C84A5001A6EBE /* ParameterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226430260C84A5001A6EBE /* ParameterKeys.swift */; };
 		88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */; };
+		88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */; };
 		CA444AEBBC2F8675B1E28919 /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1404534D0A71BB330F67C73F /* Pods_taboo.framework */; };
 /* End PBXBuildFile section */
 
@@ -139,8 +139,6 @@
 		882262CF2608BED7001A6EBE /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		882262D72608BF33001A6EBE /* OnboardingInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoModel.swift; sourceTree = "<group>"; };
 		882262DB2608C17F001A6EBE /* SessionTrackerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTrackerImpl.swift; sourceTree = "<group>"; };
-		882262E32609A5CE001A6EBE /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
-		882262F02609B29F001A6EBE /* GenerateResources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateResources.sh; sourceTree = "<group>"; };
 		88226335260A050F001A6EBE /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		88226336260A050F001A6EBE /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		88226337260A050F001A6EBE /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -173,6 +171,7 @@
 		882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIndicatorView.swift; sourceTree = "<group>"; };
 		88226430260C84A5001A6EBE /* ParameterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterKeys.swift; sourceTree = "<group>"; };
 		88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoViewController.swift; sourceTree = "<group>"; };
+		88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,7 +217,6 @@
 		882261F526085F8C001A6EBE /* taboo */ = {
 			isa = PBXGroup;
 			children = (
-				882262E32609A5CE001A6EBE /* swiftgen.yml */,
 				8822620C26086869001A6EBE /* Application */,
 				8822625A2608A460001A6EBE /* Common */,
 				882262C32608BCAE001A6EBE /* CustomViews */,
@@ -300,7 +298,6 @@
 				882261FF26085F8F001A6EBE /* Assets.xcassets */,
 				8822620126085F8F001A6EBE /* LaunchScreen.storyboard */,
 				882262BE2608BAC3001A6EBE /* Colors.json */,
-				882262F02609B29F001A6EBE /* GenerateResources.sh */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -597,17 +594,10 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		882262E62609A717001A6EBE /* SwiftGen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SwiftGen;
-			sourceTree = "<group>";
-		};
 		882263002609B9A3001A6EBE /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				882262E62609A717001A6EBE /* SwiftGen */,
+				88976D752616DA7000F6FD0F /* SwiftGen */,
 				882263022609BBA1001A6EBE /* Needle */,
 			);
 			path = Generated;
@@ -616,6 +606,7 @@
 		882263022609BBA1001A6EBE /* Needle */ = {
 			isa = PBXGroup;
 			children = (
+				88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */,
 			);
 			path = Needle;
 			sourceTree = "<group>";
@@ -822,6 +813,13 @@
 			path = ActivityView;
 			sourceTree = "<group>";
 		};
+		88976D752616DA7000F6FD0F /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		AD70364C62E8FA833D297424 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -898,7 +896,6 @@
 				8822620326085F8F001A6EBE /* LaunchScreen.storyboard in Resources */,
 				882262392608713D001A6EBE /* Localizable.strings in Resources */,
 				8822620026085F8F001A6EBE /* Assets.xcassets in Resources */,
-				882262F12609B29F001A6EBE /* GenerateResources.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -935,17 +932,15 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/taboo/Resources/Assets.xcassets",
 			);
 			name = SwiftGen;
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/taboo/SwiftGen/Assets+Generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"$SRCROOT/taboo/Resources/GenerateResources.sh\"\n";
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n\n";
 		};
 		882262E12608C567001A6EBE /* Needle */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -963,10 +958,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-
-
-";
+			shellScript = "export SOURCEKIT_LOGGING=0 && Needle/needle generate taboo/Generated/Needle/NeedleGenerated.swift taboo/\n\n";
 		};
 		90FBEF594BE1BE2AF07AA48A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1016,6 +1008,7 @@
 				8822635B260B156C001A6EBE /* MainTextField.swift in Sources */,
 				882263A8260B231E001A6EBE /* SpinnerIndicator.swift in Sources */,
 				882263A0260B22B8001A6EBE /* IndicatableView+UIButton.swift in Sources */,
+				88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */,
 				882262852608AF5A001A6EBE /* KeyChainStorage.swift in Sources */,
 				882262C62608BCD8001A6EBE /* CustomNavigationBar.swift in Sources */,
 				882263AB260B2337001A6EBE /* SpinnerView.swift in Sources */,
