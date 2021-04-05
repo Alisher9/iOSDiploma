@@ -17,6 +17,10 @@ final class RootComponent: BootstrapComponent {
         return OnboardingComponent(parent: self)
     }
     
+    private var loginComponent: LoginComponent {
+        return LoginComponent(parent: self)
+    }
+    
     // MARK: - Properties
     
     var webService: WebServiceType {
@@ -69,16 +73,15 @@ extension RootComponent: RootModuleBuilder {
         let isFirstLaunch = sessionTracker.isFirstLaunch
         let isLoggedIn = sessionTracker.isLoggedIn
         if isFirstLaunch {
-//            return onboardinngComponent.viewController
+            return onboardingComponent.viewController
         }
         if isLoggedIn {
             let tabBarVC = setupTabBarController()
             return tabBarVC
         } else {
-//            let navigationController = UINavigationController(rootViewController: loginComponent.viewController)
-//            navigationController.navigationBar.prefersLargeTitles = true
-//            return navigationController
-            return UIViewController()
+            let navigationController = UINavigationController(rootViewController: loginComponent.viewController)
+            navigationController.navigationBar.prefersLargeTitles = true
+            return navigationController
         }
     }
     

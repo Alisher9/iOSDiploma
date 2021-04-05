@@ -38,6 +38,10 @@ final class OnboardingViewController: BaseViewController {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
         view.image = onboardingImages.first
+        view.clipsToBounds = false
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 1
+        view.layer.shadowRadius = 10
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -60,7 +64,7 @@ final class OnboardingViewController: BaseViewController {
     private lazy var nextButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .white
-        button.layer.cornerRadius = 10
+        button.layer.cornerRadius = 25
         button.layer.borderWidth = 1.0
         button.layer.borderColor = ColorName.mainPurple.color.cgColor
         button.layer.masksToBounds = true
@@ -134,7 +138,7 @@ final class OnboardingViewController: BaseViewController {
     }
 
     private func didTapFinish() {
-        presenter?.didTapOnFinish()
+        presenter?.didTapFinish()
     }
 
     private func updatePage(pageNumber: Int) {
@@ -181,6 +185,10 @@ extension OnboardingViewController: UIPageViewControllerDelegate {
         let newPage = infoController.model?.pageNumber ?? 0
         updatePage(pageNumber: newPage)
     }
+    
+}
+
+extension OnboardingViewController: OnboardingView {
 }
 
 // MARK: - Nested types

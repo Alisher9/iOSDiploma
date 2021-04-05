@@ -32,7 +32,7 @@ extension IndicatableView where Self: UITableView {
             $0.centerX.centerY.equalToSuperview()
             $0.size.equalToSuperview()
         }
-//        activityView.transform = CGAffineTransform(translationX: 0, y: contentInset.top)
+        activityView.transform = CGAffineTransform(translationX: 0, y: contentInset.top)
     }
     
     func hideActivityIndicator() {

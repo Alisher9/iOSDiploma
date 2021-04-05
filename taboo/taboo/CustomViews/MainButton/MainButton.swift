@@ -40,7 +40,7 @@ final class MainButton: UIButton, IndicatableView {
     
     private func setupView() {
         layer.cornerRadius = 10
-//        titleLabel?.font = FontFamily.SFProDisplay.regular.font(size: 14)
+        titleLabel?.font = FontFamily.SFProDisplay.regular.font(size: 14)
     }
     
     // MARK: - Private actions
@@ -48,11 +48,11 @@ final class MainButton: UIButton, IndicatableView {
     private func setActive(_ active: Bool) {
         isEnabled = active
         if active {
-//            backgroundColor = ColorName.mainGreen.color
+            backgroundColor = ColorName.mainPurple.color
             setTitleColor(.white, for: .normal)
         } else {
-//            backgroundColor = ColorName.lightGray.color
-//            setTitleColor(ColorName.darkGray.color, for: .normal)
+            backgroundColor = ColorName.lightGray.color
+            setTitleColor(ColorName.darkGray.color, for: .normal)
         }
     }
 }

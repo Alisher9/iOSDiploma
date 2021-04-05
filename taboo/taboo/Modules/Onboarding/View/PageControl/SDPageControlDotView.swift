@@ -20,8 +20,8 @@ final class SDPageControlDotView: UIView {
     
     // MARK: - Private properties
     
-    private let activeColor = UIColor.purple
-    private let inactiveColor = UIColor.gray
+    private let activeColor = ColorName.mainPurple.color
+    private let inactiveColor = ColorName.lightGray.color
     
     private lazy var circleView: UIView = {
         let view = UIView()
