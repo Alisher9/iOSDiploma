@@ -21,4 +21,20 @@ final class SignUpInteractor {
 }
 
 extension SignUpInteractor: SignUpUseCase {
+    func createUser(user: User) {
+        let target = UserTarget.createUser(user: user)
+        webService.load(target: target) { [weak self] (result) in
+            switch result {
+            case .success:
+                self?.output?.userCreated()
+            case .error(let error):
+                switch error {
+                case .wrongCredentials:
+                    self?.output?.handleError(.serverError(reason: L10n.SignUp.passwordsDoesNotMatch))
+                default:
+                    self?.output?.handleError(error)
+                }
+            }
+        }
+    }
 }

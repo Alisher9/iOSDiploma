@@ -16,4 +16,7 @@ final class SignUpRouter {
 }
 
 extension SignUpRouter: SignUpWireframe {
+    func popToRoot() {
+        view?.navigationController?.popToRootViewController(animated: true)
+    }
 }

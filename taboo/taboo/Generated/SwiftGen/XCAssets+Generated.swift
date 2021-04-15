@@ -10,8 +10,6 @@
 #endif
 
 // Deprecated typealiases
-@available(*, deprecated, renamed: "ColorAsset.Color", message: "This typealias will be removed in SwiftGen 7.0")
-internal typealias AssetColorTypeAlias = ColorAsset.Color
 @available(*, deprecated, renamed: "ImageAsset.Image", message: "This typealias will be removed in SwiftGen 7.0")
 internal typealias AssetImageTypeAlias = ImageAsset.Image
 
@@ -21,8 +19,15 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
-  internal static let accentColor = ColorAsset(name: "AccentColor")
+  internal static let back = ImageAsset(name: "back")
+  internal static let cross = ImageAsset(name: "cross")
+  internal static let crossBlack = ImageAsset(name: "cross_black")
+  internal static let failure = ImageAsset(name: "failure")
   internal static let logo = ImageAsset(name: "logo")
+  internal static let seach = ImageAsset(name: "seach")
+  internal static let success = ImageAsset(name: "success")
+  internal static let visibilityOff = ImageAsset(name: "visibility_off")
+  internal static let visibilityOn = ImageAsset(name: "visibility_on")
   internal static let onboarding1 = ImageAsset(name: "onboarding_1")
   internal static let onboarding2 = ImageAsset(name: "onboarding_2")
   internal static let onboarding3 = ImageAsset(name: "onboarding_3")
@@ -30,42 +35,6 @@ internal enum Asset {
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
 // MARK: - Implementation Details
-
-internal final class ColorAsset {
-  internal fileprivate(set) var name: String
-
-  #if os(macOS)
-  internal typealias Color = NSColor
-  #elseif os(iOS) || os(tvOS) || os(watchOS)
-  internal typealias Color = UIColor
-  #endif
-
-  @available(iOS 11.0, tvOS 11.0, watchOS 4.0, macOS 10.13, *)
-  internal private(set) lazy var color: Color = {
-    guard let color = Color(asset: self) else {
-      fatalError("Unable to load color asset named \(name).")
-    }
-    return color
-  }()
-
-  fileprivate init(name: String) {
-    self.name = name
-  }
-}
-
-internal extension ColorAsset.Color {
-  @available(iOS 11.0, tvOS 11.0, watchOS 4.0, macOS 10.13, *)
-  convenience init?(asset: ColorAsset) {
-    let bundle = BundleToken.bundle
-    #if os(iOS) || os(tvOS)
-    self.init(named: asset.name, in: bundle, compatibleWith: nil)
-    #elseif os(macOS)
-    self.init(named: NSColor.Name(asset.name), bundle: bundle)
-    #elseif os(watchOS)
-    self.init(named: asset.name)
-    #endif
-  }
-}
 
 internal struct ImageAsset {
   internal fileprivate(set) var name: String

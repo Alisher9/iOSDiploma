@@ -34,12 +34,15 @@
 "Login.WrongCredentials" = "Проверьте корректность введенных данных.";
 
 // SignUp
+"SignUp.Registration" = "Регистрация";
 "SignUp.PhoneNumber" = "Номер телефона";
 "SignUp.EnterPhoneNumber" = "Укажите телефон";
-"SignUp.Info" = "Сможете общаться со своими соседями и быстро оплачивать ком услуги";
-"SignUp.LocationScreenTitle" = "Где вы?";
-"SignUp.SelectCityInfo" = "Выберите город, чтобы найти нужный ЖК";
-"SignUp.FindCity" = "Найти город";
-"SignUp.FindComplex" = "Найти ЖК";
 "SignUp.PasswordsDoesNotMatch" = "Пароли не совпадают.";
+"SignUp.InfoTitle" = "Введите данные для регистрации в приложении";
+"SignUp.EnterName" = "Введите ваше имя";
+"SignUp.EnterSurname" = "Введите вашу фамилию";
+"SignUp.EnterPhoneNumber" = "Введите номер телефона";
+"SignUp.EnterPassword" = "Введите пароль";
+"SignUp.EnterPasswordAgain" = "Повторите пароль";
+"SignUp.Register" = "Зарегистрироваться";
 

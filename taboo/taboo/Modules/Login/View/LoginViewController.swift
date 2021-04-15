@@ -22,6 +22,7 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
     private lazy var logoTitle: UILabel = {
        let label = UILabel()
         label.text = L10n.Common.app
+        label.textColor = ColorName.mainPurple.color
         label.font = FontFamily.SFProDisplay.bold.font(size: 44)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -51,7 +52,7 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
        let label = UILabel()
         label.text = L10n.Login.forgetPassword
         label.font = FontFamily.SFProDisplay.regular.font(size: 14)
-        label.textColor = ColorName.darkGray.color
+        label.textColor = ColorName.mainPurple.color
         return label
     }()
     
@@ -128,6 +129,7 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
         }
         
         phoneNumberTextField.snp.makeConstraints {
+            $0.top.equalTo(enterTitleLabel.snp.bottom).offset(53)
             $0.centerX.equalToSuperview()
             $0.width.equalToSuperview().multipliedBy(0.84)
             $0.height.equalTo(50)
@@ -138,12 +140,12 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
             $0.centerX.equalToSuperview()
             $0.width.equalToSuperview().multipliedBy(0.84)
             $0.height.equalTo(50)
-            $0.bottom.equalTo(forgetPasswordLabel.snp.top).offset(-20)
+            $0.bottom.equalTo(forgetPasswordLabel.snp.top).offset(-9)
         }
         
         forgetPasswordLabel.snp.makeConstraints {
             $0.centerY.equalToSuperview().inset(20)
-            $0.leading.equalTo(phoneNumberTextField.snp.leading)
+            $0.leading.equalToSuperview().offset(54)
         }
 
         loginButton.snp.makeConstraints {

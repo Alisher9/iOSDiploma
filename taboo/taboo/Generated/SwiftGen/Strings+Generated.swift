@@ -65,22 +65,26 @@ internal enum L10n {
   }
 
   internal enum SignUp {
+    /// Enter name
+    internal static let enterName = L10n.tr("Localizable", "SignUp.EnterName")
+    /// Enter password
+    internal static let enterPassword = L10n.tr("Localizable", "SignUp.EnterPassword")
+    /// Repeat password
+    internal static let enterPasswordAgain = L10n.tr("Localizable", "SignUp.EnterPasswordAgain")
     /// Enter phone number
     internal static let enterPhoneNumber = L10n.tr("Localizable", "SignUp.EnterPhoneNumber")
-    /// Find city
-    internal static let findCity = L10n.tr("Localizable", "SignUp.FindCity")
-    /// Find housing complex
-    internal static let findComplex = L10n.tr("Localizable", "SignUp.FindComplex")
-    /// You will be able to communicate with your neighbors and quickly pay for com services
-    internal static let info = L10n.tr("Localizable", "SignUp.Info")
-    /// Where are you?
-    internal static let locationScreenTitle = L10n.tr("Localizable", "SignUp.LocationScreenTitle")
+    /// Enter surname
+    internal static let enterSurname = L10n.tr("Localizable", "SignUp.EnterSurname")
+    /// Enter credentials
+    internal static let infoTitle = L10n.tr("Localizable", "SignUp.InfoTitle")
     /// Passwords does not match.
     internal static let passwordsDoesNotMatch = L10n.tr("Localizable", "SignUp.PasswordsDoesNotMatch")
     /// Phone number
     internal static let phoneNumber = L10n.tr("Localizable", "SignUp.PhoneNumber")
-    /// Select a city to find the desired housing complex
-    internal static let selectCityInfo = L10n.tr("Localizable", "SignUp.SelectCityInfo")
+    /// Register
+    internal static let register = L10n.tr("Localizable", "SignUp.Register")
+    /// Registration
+    internal static let registration = L10n.tr("Localizable", "SignUp.Registration")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

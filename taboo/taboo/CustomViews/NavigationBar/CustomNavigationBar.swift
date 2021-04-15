@@ -39,7 +39,7 @@ final class MainNavigationBar: UIView {
     private lazy var backButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .clear
-//        button.setImage(Asset.Common.back.image, for: .normal)
+        button.setImage(Asset.back.image, for: .normal)
         button.imageEdgeInsets = UIEdgeInsets(top: 18, left: 20, bottom: 18, right: 20)
         button.addTarget(self, action: #selector(didTapBack), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false

@@ -21,9 +21,9 @@ internal struct ColorName {
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#707070"></span>
   /// Alpha: 100% <br/> (0x707070ff)
   internal static let darkGray = ColorName(rgbaValue: 0x707070ff)
-  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#efefef"></span>
-  /// Alpha: 100% <br/> (0xefefefff)
-  internal static let lightGray = ColorName(rgbaValue: 0xefefefff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#817d7d"></span>
+  /// Alpha: 100% <br/> (0x817d7dff)
+  internal static let lightGray = ColorName(rgbaValue: 0x817d7dff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#6c63ff"></span>
   /// Alpha: 100% <br/> (0x6c63ffff)
   internal static let mainPurple = ColorName(rgbaValue: 0x6c63ffff)

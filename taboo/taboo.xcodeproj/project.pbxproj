@@ -93,6 +93,10 @@
 		88A0D07C2627FD6A007DFFFC /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D07B2627FD6A007DFFFC /* ResultView.swift */; };
 		88A0D07F2627FD8F007DFFFC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D07E2627FD8F007DFFFC /* ResultViewController.swift */; };
 		88A0D0832627FE55007DFFFC /* PhoneNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0822627FE55007DFFFC /* PhoneNumberInputView.swift */; };
+		88A0D0B726281A2C007DFFFC /* TableViewInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0B626281A2C007DFFFC /* TableViewInfoCell.swift */; };
+		88A0D0BB26281A5D007DFFFC /* TableViewTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0BA26281A5D007DFFFC /* TableViewTextFieldCell.swift */; };
+		88A0D0BF26281A93007DFFFC /* TableViewLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0BE26281A93007DFFFC /* TableViewLabelCell.swift */; };
+		88A0D0C526281D7E007DFFFC /* SignUpContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0C426281D7E007DFFFC /* SignUpContainer.swift */; };
 		CA444AEBBC2F8675B1E28919 /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1404534D0A71BB330F67C73F /* Pods_taboo.framework */; };
 /* End PBXBuildFile section */
 
@@ -190,6 +194,10 @@
 		88A0D07B2627FD6A007DFFFC /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		88A0D07E2627FD8F007DFFFC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		88A0D0822627FE55007DFFFC /* PhoneNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputView.swift; sourceTree = "<group>"; };
+		88A0D0B626281A2C007DFFFC /* TableViewInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewInfoCell.swift; sourceTree = "<group>"; };
+		88A0D0BA26281A5D007DFFFC /* TableViewTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTextFieldCell.swift; sourceTree = "<group>"; };
+		88A0D0BE26281A93007DFFFC /* TableViewLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewLabelCell.swift; sourceTree = "<group>"; };
+		88A0D0C426281D7E007DFFFC /* SignUpContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContainer.swift; sourceTree = "<group>"; };
 		A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +226,9 @@
 			isa = PBXGroup;
 			children = (
 				8801D3F3261DC03B00F0C670 /* TableViewCellType.swift */,
+				88A0D0B526281A15007DFFFC /* TableViewInfoCell */,
+				88A0D0B926281A43007DFFFC /* TableViewTextFieldCell */,
+				88A0D0BD26281A82007DFFFC /* TableViewLabelCell */,
 				8801D3EF261DBFEB00F0C670 /* TableViewButtonCell */,
 			);
 			path = UITableViewCells;
@@ -589,12 +600,12 @@
 			children = (
 				88A0D0812627FE44007DFFFC /* SignUp */,
 				88A0D07A2627FD58007DFFFC /* SuccessView */,
-				8801D3EE261DBFBD00F0C670 /* UITableViewCells */,
 				882263A2260B22DD001A6EBE /* ActivityView */,
 				8822635D260B15A0001A6EBE /* HideableTextField */,
 				88226356260B1528001A6EBE /* MainTextField */,
 				882262C92608BD33001A6EBE /* MainButton */,
 				882262C42608BCC1001A6EBE /* NavigationBar */,
+				8801D3EE261DBFBD00F0C670 /* UITableViewCells */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -766,6 +777,7 @@
 			isa = PBXGroup;
 			children = (
 				88226394260B2193001A6EBE /* Component */,
+				88A0D0C326281C80007DFFFC /* Container */,
 				88226393260B218E001A6EBE /* Contract */,
 				88226392260B2189001A6EBE /* View */,
 				88226391260B2184001A6EBE /* Interactor */,
@@ -893,6 +905,38 @@
 				88A0D0822627FE55007DFFFC /* PhoneNumberInputView.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		88A0D0B526281A15007DFFFC /* TableViewInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				88A0D0B626281A2C007DFFFC /* TableViewInfoCell.swift */,
+			);
+			path = TableViewInfoCell;
+			sourceTree = "<group>";
+		};
+		88A0D0B926281A43007DFFFC /* TableViewTextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				88A0D0BA26281A5D007DFFFC /* TableViewTextFieldCell.swift */,
+			);
+			path = TableViewTextFieldCell;
+			sourceTree = "<group>";
+		};
+		88A0D0BD26281A82007DFFFC /* TableViewLabelCell */ = {
+			isa = PBXGroup;
+			children = (
+				88A0D0BE26281A93007DFFFC /* TableViewLabelCell.swift */,
+			);
+			path = TableViewLabelCell;
+			sourceTree = "<group>";
+		};
+		88A0D0C326281C80007DFFFC /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				88A0D0C426281D7E007DFFFC /* SignUpContainer.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 		AD70364C62E8FA833D297424 /* Frameworks */ = {
@@ -1062,11 +1106,13 @@
 				8822633C260A050F001A6EBE /* LoginPresenter.swift in Sources */,
 				882262822608AE34001A6EBE /* UserDefaultsStorage.swift in Sources */,
 				88A0D0672627FBD5007DFFFC /* UIViewController+Alert.swift in Sources */,
+				88A0D0B726281A2C007DFFFC /* TableViewInfoCell.swift in Sources */,
 				882262C12608BC60001A6EBE /* BaseViewController.swift in Sources */,
 				8822638A260B2170001A6EBE /* SignUpRouter.swift in Sources */,
 				882262BC2608B9B2001A6EBE /* SDPageControlView.swift in Sources */,
 				8822627A2608ABF3001A6EBE /* AuthenticationStore.swift in Sources */,
 				8822628E2608B18D001A6EBE /* AnyTarget.swift in Sources */,
+				88A0D0C526281D7E007DFFFC /* SignUpContainer.swift in Sources */,
 				8822638C260B2170001A6EBE /* SignUpComponent.swift in Sources */,
 				882262B82608B98E001A6EBE /* SDPageControlDotView.swift in Sources */,
 				88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */,
@@ -1109,6 +1155,7 @@
 				8822628A2608B0DD001A6EBE /* BaseProvider.swift in Sources */,
 				8822633D260A050F001A6EBE /* LoginRouter.swift in Sources */,
 				8822633F260A050F001A6EBE /* LoginComponent.swift in Sources */,
+				88A0D0BB26281A5D007DFFFC /* TableViewTextFieldCell.swift in Sources */,
 				882262972608B460001A6EBE /* JSONStandard.swift in Sources */,
 				88A0D0702627FC4C007DFFFC /* UITableViewExtension.swift in Sources */,
 				882263A4260B22EB001A6EBE /* ActivityView.swift in Sources */,
@@ -1134,6 +1181,7 @@
 				882262A42608B699001A6EBE /* OnboardingPresenter.swift in Sources */,
 				882262A52608B699001A6EBE /* OnboardingRouter.swift in Sources */,
 				8822626C2608A8E3001A6EBE /* ResultHandlingView+UIViewController.swift in Sources */,
+				88A0D0BF26281A93007DFFFC /* TableViewLabelCell.swift in Sources */,
 				8822638B260B2170001A6EBE /* SignUpViewController.swift in Sources */,
 				88226388260B2170001A6EBE /* SignUpContract.swift in Sources */,
 				88226373260B1EB1001A6EBE /* UIView+AddSubviews.swift in Sources */,

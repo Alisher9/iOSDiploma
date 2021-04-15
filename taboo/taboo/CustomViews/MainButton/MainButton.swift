@@ -31,8 +31,8 @@ final class MainButton: UIButton, IndicatableView {
     // MARK: - Setup
     
     private func setupView() {
-        layer.cornerRadius = 10
-        titleLabel?.font = FontFamily.SFProDisplay.regular.font(size: 14)
+        layer.cornerRadius = 25
+        titleLabel?.font = FontFamily.SFProDisplay.regular.font(size: 16)
     }
     
     // MARK: - Private actions

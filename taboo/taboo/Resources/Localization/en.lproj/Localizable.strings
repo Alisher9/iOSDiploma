@@ -34,12 +34,15 @@
 "Login.WrongCredentials" = "Wrong credentials";
 
 // SignUp
+"SignUp.Registration" = "Registration";
 "SignUp.PhoneNumber" = "Phone number";
 "SignUp.EnterPhoneNumber" = "Enter phone number";
-"SignUp.Info" = "You will be able to communicate with your neighbors and quickly pay for com services";
-"SignUp.LocationScreenTitle" = "Where are you?";
-"SignUp.SelectCityInfo" = "Select a city to find the desired housing complex";
-"SignUp.FindCity" = "Find city";
-"SignUp.FindComplex" = "Find housing complex";
 "SignUp.PasswordsDoesNotMatch" = "Passwords does not match.";
+"SignUp.InfoTitle" = "Enter credentials";
+"SignUp.EnterName" = "Enter name";
+"SignUp.EnterSurname" = "Enter surname";
+"SignUp.EnterPhoneNumber" = "Enter phone number";
+"SignUp.EnterPassword" = "Enter password";
+"SignUp.EnterPasswordAgain" = "Repeat password";
+"SignUp.Register" = "Register";
 

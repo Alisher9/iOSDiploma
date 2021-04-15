@@ -20,7 +20,7 @@ final class ResultView: UIView {
     
     var isSuccess = true {
         didSet {
-//            resultImageView.image = isSuccess ? Asset.Common.success.image : Asset.Common.failure.image
+            resultImageView.image = isSuccess ? Asset.success.image : Asset.failure.image
             resultLabel.text = isSuccess ? L10n.Common.success : L10n.Common.failure
         }
     }
@@ -33,7 +33,7 @@ final class ResultView: UIView {
         let button = UIButton()
         button.imageView?.contentMode = .scaleAspectFit
         button.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-//        button.setImage(Asset.Common.cross.image, for: .normal)
+        button.setImage(Asset.cross.image, for: .normal)
         button.addTarget(self, action: #selector(didTapClose), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -42,7 +42,7 @@ final class ResultView: UIView {
     private lazy var resultImageView: UIImageView = {
         let view = UIImageView()
         view.contentMode = .scaleAspectFill
-//        view.image = Asset.Common.success.image
+        view.image = Asset.success.image
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

@@ -25,7 +25,7 @@ final class MainTextField: HideableTextField {
     
     private lazy var textSecureIcon: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: -4.0, y: 8.0, width: 22.0, height: 22.0))
-//        imageView.image = Asset.Login.visibilityOnIcon.image
+        imageView.image = Asset.visibilityOn.image
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
@@ -52,8 +52,8 @@ final class MainTextField: HideableTextField {
         
         delegate = self
         layer.borderWidth = 1
-        layer.cornerRadius = 30
-        layer.borderColor = ColorName.darkGray.color.cgColor
+        layer.cornerRadius = 25
+        layer.borderColor = ColorName.lightGray.color.cgColor
         
         let paddingView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 17, height: self.frame.height))
         self.leftView = paddingView
@@ -107,11 +107,11 @@ final class MainTextField: HideableTextField {
 
     @objc private func textSecureIconTapped() {
         self.isSecureTextEntry.toggle()
-//        if textSecureIcon.image == Asset.Login.visibilityOffIcon.image {
-//            textSecureIcon.image = Asset.Login.visibilityOnIcon.image
-//        } else {
-//            textSecureIcon.image = Asset.Login.visibilityOffIcon.image
-//        }
+        if textSecureIcon.image == Asset.visibilityOff.image {
+            textSecureIcon.image = Asset.visibilityOn.image
+        } else {
+            textSecureIcon.image = Asset.visibilityOff.image
+        }
     }
    
 }
