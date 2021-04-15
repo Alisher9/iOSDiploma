@@ -17,6 +17,10 @@ final class RootComponent: BootstrapComponent {
         return OnboardingComponent(parent: self)
     }
     
+    private var loginComponent: LoginComponent {
+        return LoginComponent(parent: self)
+    }
+    
     // MARK: - Properties
     
     var webService: WebServiceType {
@@ -39,11 +43,13 @@ final class RootComponent: BootstrapComponent {
         vc.view.backgroundColor = .blue
         vc.tabBarItem.title = "Главная"
 //        vc.tabBarItem.image = Asset.Tabbar.tabbarMessages.image
+        let vcNavVc = UINavigationController(rootViewController: vc)
         
         let vc2 = UIViewController()
         vc2.view.backgroundColor = .blue
         vc2.tabBarItem.title = "Жанры"
 //        vc2.tabBarItem.image = Asset.Tabbar.tabbarMessages.image
+        let vc2NavVc = UINavigationController(rootViewController: vc2)
         
         let vc3 = UIViewController()
         vc3.view.backgroundColor = .blue
@@ -56,7 +62,7 @@ final class RootComponent: BootstrapComponent {
 //        vc4.tabBarItem.image = Asset.Tabbar.tabbarMessages.image
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [vc, vc2, vc3, vc4]
+        tabBarController.viewControllers = [vcNavVc, vc2NavVc, vc3, vc4]
 //        tabBarController.tabBar.tintColor = ColorName.mainGreen.color
         
         return tabBarController
@@ -69,16 +75,15 @@ extension RootComponent: RootModuleBuilder {
         let isFirstLaunch = sessionTracker.isFirstLaunch
         let isLoggedIn = sessionTracker.isLoggedIn
         if isFirstLaunch {
-//            return onboardinngComponent.viewController
+            return onboardingComponent.viewController
         }
         if isLoggedIn {
             let tabBarVC = setupTabBarController()
             return tabBarVC
         } else {
-//            let navigationController = UINavigationController(rootViewController: loginComponent.viewController)
-//            navigationController.navigationBar.prefersLargeTitles = true
-//            return navigationController
-            return UIViewController()
+            let navigationController = UINavigationController(rootViewController: loginComponent.viewController)
+            navigationController.navigationBar.prefersLargeTitles = true
+            return navigationController
         }
     }
     

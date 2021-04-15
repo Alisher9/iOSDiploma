@@ -16,7 +16,7 @@ final class OnboardingPresenter {
 }
 
 extension OnboardingPresenter: OnboardingPresentation {
-    func didTapOnFinish() {
+    func didTapFinish() {
         interactor?.didFinishOnboarding()
         router?.finishOnboarding()
     }

@@ -10,7 +10,7 @@ protocol OnboardingView: ResultHandlingView {
 }
 
 protocol OnboardingPresentation: class {
-    func didTapOnFinish()
+    func didTapFinish()
 }
 
 protocol OnboardingUseCase: class {
