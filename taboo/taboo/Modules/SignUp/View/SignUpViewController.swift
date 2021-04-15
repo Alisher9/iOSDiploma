@@ -39,7 +39,7 @@ final class SignUpViewController: BaseViewController {
         .textField(style: .password,
                    placeholder: L10n.SignUp.enterPassword,
                    key: JSONRequestParameter.User.password,
-                   editable: false,
+                   editable: true,
                    fontStyle: TextFieldFontStyle.regular,
                    textColor: ColorName.darkGray.color),
         .textField(style: .password,

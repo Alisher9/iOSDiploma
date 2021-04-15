@@ -120,16 +120,15 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
         
         logoTitle.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalToSuperview().offset(154)
+            $0.bottom.equalTo(enterTitleLabel.snp.top).offset(-8)
         }
         
         enterTitleLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(logoTitle.snp.bottom).offset(8)
+            $0.bottom.equalTo(phoneNumberTextField.snp.top).offset(-53)
         }
         
         phoneNumberTextField.snp.makeConstraints {
-            $0.top.equalTo(enterTitleLabel.snp.bottom).offset(53)
             $0.centerX.equalToSuperview()
             $0.width.equalToSuperview().multipliedBy(0.84)
             $0.height.equalTo(50)
@@ -138,13 +137,13 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
         
         passwordTextField.snp.makeConstraints {
             $0.centerX.equalToSuperview()
+            $0.centerY.equalToSuperview()
             $0.width.equalToSuperview().multipliedBy(0.84)
             $0.height.equalTo(50)
-            $0.bottom.equalTo(forgetPasswordLabel.snp.top).offset(-9)
         }
         
         forgetPasswordLabel.snp.makeConstraints {
-            $0.centerY.equalToSuperview().inset(20)
+            $0.top.equalTo(passwordTextField.snp.bottom).offset(9)
             $0.leading.equalToSuperview().offset(54)
         }
 
