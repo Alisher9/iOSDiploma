@@ -43,11 +43,13 @@ final class RootComponent: BootstrapComponent {
         vc.view.backgroundColor = .blue
         vc.tabBarItem.title = "Главная"
 //        vc.tabBarItem.image = Asset.Tabbar.tabbarMessages.image
+        let vcNavVc = UINavigationController(rootViewController: vc)
         
         let vc2 = UIViewController()
         vc2.view.backgroundColor = .blue
         vc2.tabBarItem.title = "Жанры"
 //        vc2.tabBarItem.image = Asset.Tabbar.tabbarMessages.image
+        let vc2NavVc = UINavigationController(rootViewController: vc2)
         
         let vc3 = UIViewController()
         vc3.view.backgroundColor = .blue
@@ -60,7 +62,7 @@ final class RootComponent: BootstrapComponent {
 //        vc4.tabBarItem.image = Asset.Tabbar.tabbarMessages.image
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [vc, vc2, vc3, vc4]
+        tabBarController.viewControllers = [vcNavVc, vc2NavVc, vc3, vc4]
 //        tabBarController.tabBar.tintColor = ColorName.mainGreen.color
         
         return tabBarController

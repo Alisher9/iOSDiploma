@@ -2,7 +2,7 @@
 //  UITableViewExtension.swift
 //  taboo
 //
-//  Created by Alisher Sattarbek on 3/24/21.
+//  Created by Alisher Sattarbek on 4/15/21.
 //
 
 import UIKit
@@ -30,4 +30,3 @@ extension UITableView {
 }
 
 extension UITableViewCell: ReusableView {}
-

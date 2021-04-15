@@ -130,7 +130,8 @@ final class OnboardingViewController: BaseViewController {
     @objc private func didTapNext() {
         let currentPage = pageViewController.selectedPageNumber
         if currentPage == onboardingInfo.count - 1 {
-            didTapFinish()
+//            didTapFinish()
+            presenter?.didTapFinish()
         } else {
             pageViewController.selectedPageNumber = currentPage + 1
             updatePage(pageNumber: currentPage + 1)

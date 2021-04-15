@@ -19,6 +19,11 @@ struct AppConstants {
             static let loginPath = "/api/auth/login"
             static let createUser = "/api/auth/create"
         }
+        struct Image {
+            static func getImage(fileName: String) -> String {
+                return "/api/image/\(fileName)"
+            }
+        }
     }
     
     struct KeyChain {

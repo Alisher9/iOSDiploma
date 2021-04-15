@@ -8,14 +8,6 @@
 import UIKit
 
 final class MainButton: UIButton, IndicatableView {
-    func showActivityIndicator() {
-        
-    }
-    
-    func hideActivityIndicator() {
-        
-    }
-    
     
     // MARK: - Public properties
     
