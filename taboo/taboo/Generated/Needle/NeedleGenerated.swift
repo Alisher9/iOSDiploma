@@ -13,6 +13,9 @@ public func registerProviderFactories() {
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent->SignUpComponent") { component in
         return SignUpDependency472b53508e2bb1a5835aProvider(component: component)
     }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent->GenrePickerComponent") { component in
+        return GenrePickerDependency9d9dfcc60b6638486709Provider(component: component)
+    }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent") { component in
         return EmptyDependencyProvider(component: component)
     }
@@ -38,6 +41,21 @@ private class SignUpDependency472b53508e2bb1a5835aBaseProvider: SignUpDependency
 }
 /// ^->RootComponent->LoginComponent->SignUpComponent
 private class SignUpDependency472b53508e2bb1a5835aProvider: SignUpDependency472b53508e2bb1a5835aBaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent.parent as! RootComponent)
+    }
+}
+private class GenrePickerDependency9d9dfcc60b6638486709BaseProvider: GenrePickerDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->LoginComponent->GenrePickerComponent
+private class GenrePickerDependency9d9dfcc60b6638486709Provider: GenrePickerDependency9d9dfcc60b6638486709BaseProvider {
     init(component: NeedleFoundation.Scope) {
         super.init(rootComponent: component.parent.parent as! RootComponent)
     }

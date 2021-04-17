@@ -18,8 +18,9 @@ final class LoginPresenter {
 
 extension LoginPresenter: LoginPresentation {
     func didTapLogin(phoneNumber: String, password: String) {
-        view?.showActivityIndicator()
-        interactor?.login(phoneNumber: phoneNumber, password: password)
+//        view?.showActivityIndicator()
+//        interactor?.login(phoneNumber: phoneNumber, password: password)
+        router?.goToGenrePicker()
     }
     
     func didTapSignUp() {

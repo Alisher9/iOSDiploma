@@ -80,6 +80,19 @@
 		882263AE260B234D001A6EBE /* TableViewIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */; };
 		88226431260C84A5001A6EBE /* ParameterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226430260C84A5001A6EBE /* ParameterKeys.swift */; };
 		88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */; };
+		8839EC6D26299A68000710D2 /* GenrePickerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6726299A68000710D2 /* GenrePickerContract.swift */; };
+		8839EC6E26299A68000710D2 /* GenrePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6826299A68000710D2 /* GenrePickerPresenter.swift */; };
+		8839EC6F26299A68000710D2 /* GenrePickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6926299A68000710D2 /* GenrePickerRouter.swift */; };
+		8839EC7026299A68000710D2 /* GenrePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6A26299A68000710D2 /* GenrePickerViewController.swift */; };
+		8839EC7126299A68000710D2 /* GenrePickerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6B26299A68000710D2 /* GenrePickerComponent.swift */; };
+		8839EC7226299A68000710D2 /* GenrePickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6C26299A68000710D2 /* GenrePickerInteractor.swift */; };
+		8839ECC9262AA7FB000710D2 /* Magnetic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8839ECC8262AA7FB000710D2 /* Magnetic.storyboard */; };
+		8839ECD3262ADD76000710D2 /* Magnetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECCC262ADD75000710D2 /* Magnetic.swift */; };
+		8839ECD4262ADD76000710D2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECCD262ADD76000710D2 /* Node.swift */; };
+		8839ECD5262ADD76000710D2 /* SKAction+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECCE262ADD76000710D2 /* SKAction+Color.swift */; };
+		8839ECD6262ADD76000710D2 /* MagneticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECCF262ADD76000710D2 /* MagneticView.swift */; };
+		8839ECD7262ADD76000710D2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECD0262ADD76000710D2 /* Extensions.swift */; };
+		8839ECD8262ADD76000710D2 /* SKMultilineLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECD1262ADD76000710D2 /* SKMultilineLabelNode.swift */; };
 		88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */; };
 		88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */; };
 		88976D892616E9C900F6FD0F /* Colors+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D882616E9C900F6FD0F /* Colors+Generated.swift */; };
@@ -181,6 +194,20 @@
 		882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIndicatorView.swift; sourceTree = "<group>"; };
 		88226430260C84A5001A6EBE /* ParameterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterKeys.swift; sourceTree = "<group>"; };
 		88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoViewController.swift; sourceTree = "<group>"; };
+		8839EC6726299A68000710D2 /* GenrePickerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerContract.swift; sourceTree = "<group>"; };
+		8839EC6826299A68000710D2 /* GenrePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerPresenter.swift; sourceTree = "<group>"; };
+		8839EC6926299A68000710D2 /* GenrePickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerRouter.swift; sourceTree = "<group>"; };
+		8839EC6A26299A68000710D2 /* GenrePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerViewController.swift; sourceTree = "<group>"; };
+		8839EC6B26299A68000710D2 /* GenrePickerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerComponent.swift; sourceTree = "<group>"; };
+		8839EC6C26299A68000710D2 /* GenrePickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerInteractor.swift; sourceTree = "<group>"; };
+		8839ECC8262AA7FB000710D2 /* Magnetic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magnetic.storyboard; sourceTree = "<group>"; };
+		8839ECCC262ADD75000710D2 /* Magnetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magnetic.swift; sourceTree = "<group>"; };
+		8839ECCD262ADD76000710D2 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		8839ECCE262ADD76000710D2 /* SKAction+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Color.swift"; sourceTree = "<group>"; };
+		8839ECCF262ADD76000710D2 /* MagneticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagneticView.swift; sourceTree = "<group>"; };
+		8839ECD0262ADD76000710D2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8839ECD1262ADD76000710D2 /* SKMultilineLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMultilineLabelNode.swift; sourceTree = "<group>"; };
+		8839ECD2262ADD76000710D2 /* Magnetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Magnetic.h; sourceTree = "<group>"; };
 		88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		88976D882616E9C900F6FD0F /* Colors+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Generated.swift"; sourceTree = "<group>"; };
@@ -322,6 +349,7 @@
 				8822629C2608B680001A6EBE /* Onboarding */,
 				88226334260A04F9001A6EBE /* Login */,
 				88226381260B215D001A6EBE /* SignUp */,
+				8839EC6626299A4C000710D2 /* GenrePicker */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -846,6 +874,83 @@
 			path = ActivityView;
 			sourceTree = "<group>";
 		};
+		8839EC6626299A4C000710D2 /* GenrePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC7A26299AA8000710D2 /* Component */,
+				8839EC7926299A9E000710D2 /* Contract */,
+				8839EC7826299A95000710D2 /* View */,
+				8839EC7726299A8B000710D2 /* Interactor */,
+				8839EC7626299A81000710D2 /* Presenter */,
+				8839EC7526299A78000710D2 /* Router */,
+			);
+			path = GenrePicker;
+			sourceTree = "<group>";
+		};
+		8839EC7526299A78000710D2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC6926299A68000710D2 /* GenrePickerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8839EC7626299A81000710D2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC6826299A68000710D2 /* GenrePickerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8839EC7726299A8B000710D2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC6C26299A68000710D2 /* GenrePickerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8839EC7826299A95000710D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC8A2629B4BD000710D2 /* Magnetic */,
+				8839EC6A26299A68000710D2 /* GenrePickerViewController.swift */,
+				8839ECC8262AA7FB000710D2 /* Magnetic.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8839EC7926299A9E000710D2 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC6726299A68000710D2 /* GenrePickerContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		8839EC7A26299AA8000710D2 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC6B26299A68000710D2 /* GenrePickerComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8839EC8A2629B4BD000710D2 /* Magnetic */ = {
+			isa = PBXGroup;
+			children = (
+				8839ECD0262ADD76000710D2 /* Extensions.swift */,
+				8839ECD2262ADD76000710D2 /* Magnetic.h */,
+				8839ECCC262ADD75000710D2 /* Magnetic.swift */,
+				8839ECCF262ADD76000710D2 /* MagneticView.swift */,
+				8839ECCD262ADD76000710D2 /* Node.swift */,
+				8839ECCE262ADD76000710D2 /* SKAction+Color.swift */,
+				8839ECD1262ADD76000710D2 /* SKMultilineLabelNode.swift */,
+			);
+			path = Magnetic;
+			sourceTree = "<group>";
+		};
 		88976D832616DD8C00F6FD0F /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
@@ -1011,6 +1116,7 @@
 			files = (
 				882263122609C14A001A6EBE /* SFProDisplay-Bold.ttf in Resources */,
 				882263132609C14A001A6EBE /* SFProDisplay-Medium.ttf in Resources */,
+				8839ECC9262AA7FB000710D2 /* Magnetic.storyboard in Resources */,
 				882263142609C14A001A6EBE /* SFProDisplay-Regular.ttf in Resources */,
 				8822620326085F8F001A6EBE /* LaunchScreen.storyboard in Resources */,
 				882262392608713D001A6EBE /* Localizable.strings in Resources */,
@@ -1106,13 +1212,16 @@
 				8822633C260A050F001A6EBE /* LoginPresenter.swift in Sources */,
 				882262822608AE34001A6EBE /* UserDefaultsStorage.swift in Sources */,
 				88A0D0672627FBD5007DFFFC /* UIViewController+Alert.swift in Sources */,
+				8839EC6F26299A68000710D2 /* GenrePickerRouter.swift in Sources */,
 				88A0D0B726281A2C007DFFFC /* TableViewInfoCell.swift in Sources */,
 				882262C12608BC60001A6EBE /* BaseViewController.swift in Sources */,
 				8822638A260B2170001A6EBE /* SignUpRouter.swift in Sources */,
 				882262BC2608B9B2001A6EBE /* SDPageControlView.swift in Sources */,
+				8839EC7026299A68000710D2 /* GenrePickerViewController.swift in Sources */,
 				8822627A2608ABF3001A6EBE /* AuthenticationStore.swift in Sources */,
 				8822628E2608B18D001A6EBE /* AnyTarget.swift in Sources */,
 				88A0D0C526281D7E007DFFFC /* SignUpContainer.swift in Sources */,
+				8839ECD8262ADD76000710D2 /* SKMultilineLabelNode.swift in Sources */,
 				8822638C260B2170001A6EBE /* SignUpComponent.swift in Sources */,
 				882262B82608B98E001A6EBE /* SDPageControlDotView.swift in Sources */,
 				88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */,
@@ -1121,12 +1230,14 @@
 				882262A82608B699001A6EBE /* OnboardingInteractor.swift in Sources */,
 				882262642608A80B001A6EBE /* ResultHandlingView.swift in Sources */,
 				882262CB2608BD40001A6EBE /* MainButton.swift in Sources */,
+				8839ECD5262ADD76000710D2 /* SKAction+Color.swift in Sources */,
 				882262752608AA79001A6EBE /* RootComponent.swift in Sources */,
 				882263AE260B234D001A6EBE /* TableViewIndicatorView.swift in Sources */,
 				882262912608B2E7001A6EBE /* Result.swift in Sources */,
 				88A0D0752627FC80007DFFFC /* UIImageView+Kingfisher.swift in Sources */,
 				8822635B260B156C001A6EBE /* MainTextField.swift in Sources */,
 				882263A8260B231E001A6EBE /* SpinnerIndicator.swift in Sources */,
+				8839EC6D26299A68000710D2 /* GenrePickerContract.swift in Sources */,
 				882263A0260B22B8001A6EBE /* IndicatableView+UIButton.swift in Sources */,
 				88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */,
 				882262852608AF5A001A6EBE /* KeyChainStorage.swift in Sources */,
@@ -1142,22 +1253,27 @@
 				8822621026086929001A6EBE /* CharacterSet+Additional.swift in Sources */,
 				88A0D07F2627FD8F007DFFFC /* ResultViewController.swift in Sources */,
 				88226431260C84A5001A6EBE /* ParameterKeys.swift in Sources */,
+				8839EC6E26299A68000710D2 /* GenrePickerPresenter.swift in Sources */,
 				88226354260A0C5D001A6EBE /* User.swift in Sources */,
+				8839ECD7262ADD76000710D2 /* Extensions.swift in Sources */,
 				8822635F260B15B1001A6EBE /* HideableTextField.swift in Sources */,
 				882262D02608BED7001A6EBE /* OnboardingPageViewController.swift in Sources */,
 				882262DC2608C17F001A6EBE /* SessionTrackerImpl.swift in Sources */,
 				882262682608A83C001A6EBE /* IndicatableView.swift in Sources */,
 				882262132608699C001A6EBE /* StringExtension.swift in Sources */,
 				8822627F2608AD6D001A6EBE /* StorageProtocol.swift in Sources */,
+				8839ECD3262ADD76000710D2 /* Magnetic.swift in Sources */,
 				882262702608A9A8001A6EBE /* EmptyHandlingView.swift in Sources */,
 				8822639D260B229C001A6EBE /* IndicatableView+UIViewController.swift in Sources */,
 				8801D3F4261DC03B00F0C670 /* TableViewCellType.swift in Sources */,
 				8822628A2608B0DD001A6EBE /* BaseProvider.swift in Sources */,
+				8839ECD4262ADD76000710D2 /* Node.swift in Sources */,
 				8822633D260A050F001A6EBE /* LoginRouter.swift in Sources */,
 				8822633F260A050F001A6EBE /* LoginComponent.swift in Sources */,
 				88A0D0BB26281A5D007DFFFC /* TableViewTextFieldCell.swift in Sources */,
 				882262972608B460001A6EBE /* JSONStandard.swift in Sources */,
 				88A0D0702627FC4C007DFFFC /* UITableViewExtension.swift in Sources */,
+				8839EC7126299A68000710D2 /* GenrePickerComponent.swift in Sources */,
 				882263A4260B22EB001A6EBE /* ActivityView.swift in Sources */,
 				88226397260B224C001A6EBE /* IndicatableView+UIView.swift in Sources */,
 				88976D932616EC7B00F6FD0F /* Strings+Generated.swift in Sources */,
@@ -1175,6 +1291,7 @@
 				8822621626086A1C001A6EBE /* ConvertExtensions.swift in Sources */,
 				882262572608A385001A6EBE /* SessionTracker.swift in Sources */,
 				882262A32608B699001A6EBE /* OnboardingContract.swift in Sources */,
+				8839ECD6262ADD76000710D2 /* MagneticView.swift in Sources */,
 				882261F726085F8C001A6EBE /* AppDelegate.swift in Sources */,
 				88A0D06B2627FC06007DFFFC /* UICollectionViewExtension.swift in Sources */,
 				88976D892616E9C900F6FD0F /* Colors+Generated.swift in Sources */,
@@ -1182,6 +1299,7 @@
 				882262A52608B699001A6EBE /* OnboardingRouter.swift in Sources */,
 				8822626C2608A8E3001A6EBE /* ResultHandlingView+UIViewController.swift in Sources */,
 				88A0D0BF26281A93007DFFFC /* TableViewLabelCell.swift in Sources */,
+				8839EC7226299A68000710D2 /* GenrePickerInteractor.swift in Sources */,
 				8822638B260B2170001A6EBE /* SignUpViewController.swift in Sources */,
 				88226388260B2170001A6EBE /* SignUpContract.swift in Sources */,
 				88226373260B1EB1001A6EBE /* UIView+AddSubviews.swift in Sources */,

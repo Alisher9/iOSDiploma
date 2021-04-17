@@ -21,13 +21,18 @@ final class LoginComponent: Component<LoginDependency> {
     private var signUpComponent: SignUpComponent {
         return SignUpComponent(parent: self)
     }
+    
+    private var genrePickerComponent: GenrePickerComponent {
+        return GenrePickerComponent(parent: self)
+    }
 }
 
 extension LoginComponent: LoginModuleBuilder {
     var viewController: UIViewController {
         let viewController = LoginViewController()
         let presenter = LoginPresenter()
-        let router = LoginRouter(signUpModuleBuilder: signUpComponent)
+        let router = LoginRouter(signUpModuleBuilder: signUpComponent,
+                                 genrePickerModuleBuilder: genrePickerComponent)
         let interactor = LoginInteractor(webService: dependency.webService)
         
         viewController.presenter = presenter
