@@ -22,6 +22,14 @@ internal enum L10n {
     internal static let error = L10n.tr("Localizable", "Common.Error")
     /// Failure!
     internal static let failure = L10n.tr("Localizable", "Common.Failure")
+    /// Favorites
+    internal static let favorite = L10n.tr("Localizable", "Common.Favorite")
+    /// Genres
+    internal static let genre = L10n.tr("Localizable", "Common.Genre")
+    /// Home
+    internal static let home = L10n.tr("Localizable", "Common.Home")
+    /// Profile
+    internal static let profile = L10n.tr("Localizable", "Common.Profile")
     /// Success!
     internal static let success = L10n.tr("Localizable", "Common.Success")
     /// Unauthorized

@@ -12,6 +12,10 @@
 "Common.Failure" = "Провал!";
 "Common.Done" = "Готово";
 "Common.Continue" = "Продолжить";
+"Common.Home" = "Главная";
+"Common.Genre" = "Жанры";
+"Common.Favorite" = "Избранное";
+"Common.Profile" = "Аккаунт";
 
 // Onboarding
 "Onboarding.Title1" = "Экономим время поиска";

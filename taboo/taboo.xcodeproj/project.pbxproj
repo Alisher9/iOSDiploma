@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73281EA1612C5D52BAC3D36D /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F5EBB087D5EBCB122EC2F0 /* Pods_taboo.framework */; };
 		8801D3F1261DC00E00F0C670 /* TableViewButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801D3F0261DC00E00F0C670 /* TableViewButtonCell.swift */; };
 		8801D3F4261DC03B00F0C670 /* TableViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801D3F3261DC03B00F0C670 /* TableViewCellType.swift */; };
 		882261F726085F8C001A6EBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882261F626085F8C001A6EBE /* AppDelegate.swift */; };
@@ -110,12 +111,12 @@
 		88A0D0BB26281A5D007DFFFC /* TableViewTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0BA26281A5D007DFFFC /* TableViewTextFieldCell.swift */; };
 		88A0D0BF26281A93007DFFFC /* TableViewLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0BE26281A93007DFFFC /* TableViewLabelCell.swift */; };
 		88A0D0C526281D7E007DFFFC /* SignUpContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0C426281D7E007DFFFC /* SignUpContainer.swift */; };
-		CA444AEBBC2F8675B1E28919 /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1404534D0A71BB330F67C73F /* Pods_taboo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1404534D0A71BB330F67C73F /* Pods_taboo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taboo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BAEF6990670BC06C77F3601 /* Pods-taboo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.debug.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.debug.xcconfig"; sourceTree = "<group>"; };
+		0840331767E2EEC090EC76DF /* Pods-taboo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.debug.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.debug.xcconfig"; sourceTree = "<group>"; };
+		74F5EBB087D5EBCB122EC2F0 /* Pods_taboo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taboo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3B7C2499B56F0B6F282D22 /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 		8801D3F0261DC00E00F0C670 /* TableViewButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewButtonCell.swift; sourceTree = "<group>"; };
 		8801D3F3261DC03B00F0C670 /* TableViewCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellType.swift; sourceTree = "<group>"; };
 		882261F326085F8C001A6EBE /* taboo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taboo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,7 +226,6 @@
 		88A0D0BA26281A5D007DFFFC /* TableViewTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTextFieldCell.swift; sourceTree = "<group>"; };
 		88A0D0BE26281A93007DFFFC /* TableViewLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewLabelCell.swift; sourceTree = "<group>"; };
 		88A0D0C426281D7E007DFFFC /* SignUpContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContainer.swift; sourceTree = "<group>"; };
-		A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,7 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA444AEBBC2F8675B1E28919 /* Pods_taboo.framework in Frameworks */,
+				73281EA1612C5D52BAC3D36D /* Pods_taboo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +243,8 @@
 		3F85B3C820EF61873AB0214D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3BAEF6990670BC06C77F3601 /* Pods-taboo.debug.xcconfig */,
-				A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */,
+				0840331767E2EEC090EC76DF /* Pods-taboo.debug.xcconfig */,
+				7A3B7C2499B56F0B6F282D22 /* Pods-taboo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 				882261F526085F8C001A6EBE /* taboo */,
 				882261F426085F8C001A6EBE /* Products */,
 				3F85B3C820EF61873AB0214D /* Pods */,
-				AD70364C62E8FA833D297424 /* Frameworks */,
+				C1D761DACF96D3F47D5B5F7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1044,10 +1044,10 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
-		AD70364C62E8FA833D297424 /* Frameworks */ = {
+		C1D761DACF96D3F47D5B5F7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1404534D0A71BB330F67C73F /* Pods_taboo.framework */,
+				74F5EBB087D5EBCB122EC2F0 /* Pods_taboo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1059,13 +1059,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8822620726085F90001A6EBE /* Build configuration list for PBXNativeTarget "taboo" */;
 			buildPhases = (
-				1369E865E1F424687D2A78C0 /* [CP] Check Pods Manifest.lock */,
+				6CDCE3DB43A905AC7E2D7ADB /* [CP] Check Pods Manifest.lock */,
 				882261EF26085F8C001A6EBE /* Sources */,
 				882261F026085F8C001A6EBE /* Frameworks */,
 				882261F126085F8C001A6EBE /* Resources */,
-				90FBEF594BE1BE2AF07AA48A /* [CP] Embed Pods Frameworks */,
 				882262DE2608C452001A6EBE /* SwiftGen */,
 				882262E12608C567001A6EBE /* Needle */,
+				5D50A3401EEAAE391A7A2798 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1127,7 +1127,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1369E865E1F424687D2A78C0 /* [CP] Check Pods Manifest.lock */ = {
+		5D50A3401EEAAE391A7A2798 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CDCE3DB43A905AC7E2D7ADB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1184,23 +1201,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export SOURCEKIT_LOGGING=0 && Needle/needle generate taboo/Generated/Needle/NeedleGenerated.swift taboo/\n\n";
-		};
-		90FBEF594BE1BE2AF07AA48A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1452,7 +1452,7 @@
 		};
 		8822620826085F90001A6EBE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BAEF6990670BC06C77F3601 /* Pods-taboo.debug.xcconfig */;
+			baseConfigurationReference = 0840331767E2EEC090EC76DF /* Pods-taboo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1474,7 +1474,7 @@
 		};
 		8822620926085F90001A6EBE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */;
+			baseConfigurationReference = 7A3B7C2499B56F0B6F282D22 /* Pods-taboo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
