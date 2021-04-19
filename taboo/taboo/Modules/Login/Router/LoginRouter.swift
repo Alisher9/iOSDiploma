@@ -30,11 +30,10 @@ extension LoginRouter: LoginWireframe {
     }
     
     func goToGenrePicker() {
-        let genrePickerVC = genrePickerModuleBuilder.viewController
-        genrePickerVC.modalPresentationStyle = .fullScreen
-        view?.present(genrePickerVC, animated: true)
-//        view?.navigationController?.pushViewController(genrePickerVC, animated: true)
-        
+        let storyboard = UIStoryboard(name: "Magnetic", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "magnetic")
+        vc.modalPresentationStyle = .fullScreen
+        view?.present(vc, animated: true, completion: nil)
     }
     
 }

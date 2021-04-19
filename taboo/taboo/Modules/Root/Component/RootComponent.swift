@@ -46,18 +46,18 @@ final class RootComponent: BootstrapComponent {
         let vcNavVc = UINavigationController(rootViewController: vc)
         
         let vc2 = UIViewController()
-        vc2.view.backgroundColor = .blue
+        vc2.view.backgroundColor = .red
         vc2.tabBarItem.title = L10n.Common.genre
         vc2.tabBarItem.image = Asset.tabbarGenre.image
         let vc2NavVc = UINavigationController(rootViewController: vc2)
         
         let vc3 = UIViewController()
-        vc3.view.backgroundColor = .blue
+        vc3.view.backgroundColor = .yellow
         vc3.tabBarItem.title = L10n.Common.favorite
         vc3.tabBarItem.image = Asset.tabbarFavorite.image
         
         let vc4 = UIViewController()
-        vc4.view.backgroundColor = .blue
+        vc4.view.backgroundColor = .green
         vc4.tabBarItem.title = L10n.Common.profile
         vc4.tabBarItem.image = Asset.tabbarProfile.image
         

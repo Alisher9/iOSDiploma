@@ -81,14 +81,40 @@ extension UIColor {
         return UIColor(red: 255, green: 45, blue: 85)
     }
     
-    static let colors: [UIColor] = [.red, .orange, .yellow, .green, .tealBlue, .blue, .purple, .pink]
+    static let colors: [UIColor] = [.red,
+                                    .orange,
+                                    .yellow,
+                                    .green,
+                                    .tealBlue,
+                                    .blue,
+                                    .purple,
+                                    .pink
+    ]
     
 }
 
 extension UIImage {
     
-    static let names: [String] = ["argentina", "mexico"]
-    
+    static let names: [String] = [L10n.GenrePicker.melodrama,
+                                  L10n.GenrePicker.drama,
+                                  L10n.GenrePicker.fighters,
+                                  L10n.GenrePicker.family,
+                                  L10n.GenrePicker.thriller,
+                                  L10n.GenrePicker.history,
+                                  L10n.GenrePicker.comedy,
+                                  L10n.GenrePicker.western,
+                                  L10n.GenrePicker.detective,
+                                  L10n.GenrePicker.military,
+                                  L10n.GenrePicker.romantic,
+                                  L10n.GenrePicker.musical,
+                                  L10n.GenrePicker.gothic,
+                                  L10n.GenrePicker.fiction,
+                                  L10n.GenrePicker.adventure,
+                                  L10n.GenrePicker.kids,
+                                  L10n.GenrePicker.mystic,
+                                  L10n.GenrePicker.sciFi
+                                  
+    ]
 }
 
 extension Array {
