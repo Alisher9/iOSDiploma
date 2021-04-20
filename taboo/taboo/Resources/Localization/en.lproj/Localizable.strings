@@ -12,6 +12,10 @@
 "Common.Failure" = "Failure!";
 "Common.Done" = "Done";
 "Common.Continue" = "Continue";
+"Common.Home" = "Home";
+"Common.Genre" = "Genres";
+"Common.Favorite" = "Favorites";
+"Common.Profile" = "Profile";
 
 // Onboarding
 "Onboarding.Title1" = "Save search time";
@@ -45,4 +49,27 @@
 "SignUp.EnterPassword" = "Enter password";
 "SignUp.EnterPasswordAgain" = "Repeat password";
 "SignUp.Register" = "Register";
+
+// GenrePicker
+"GenrePicker.Title" = "Discover new genres";
+"GenrePicker.Description" = "Tap on genres you like. Hold to remove the genres you don't like";
+"GenrePicker.Melodrama" = "Melodrama";
+"GenrePicker.Drama" = "Drama";
+"GenrePicker.Fighters" = "Fighters";
+"GenrePicker.Family" = "Family";
+"GenrePicker.Thriller" = "Thriller";
+"GenrePicker.History" = "History";
+"GenrePicker.Comedy" = "Comedy";
+"GenrePicker.Western" = "Western";
+"GenrePicker.Detective" = "Detective";
+"GenrePicker.Military" = "Military";
+"GenrePicker.Romantic" = "Romantic";
+"GenrePicker.Musical" = "Musical";
+"GenrePicker.Gothic" = "Gothic";
+"GenrePicker.Fiction" = "Fiction";
+"GenrePicker.Adventure" = "Adventure";
+"GenrePicker.Kids" = "Kids";
+"GenrePicker.Mystic" = "Mystic";
+"GenrePicker.SciFi" = "Sci-Fi";
+"GenrePicker.Button" = "Next";
 

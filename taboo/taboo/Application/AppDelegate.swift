@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootComponent = RootComponent()
         
         // ----- To test login and onboarding
-        rootComponent.sessionTracker.isFirstLaunch = true
-        AuthenticationStore.shared.removeAccessToken()
+        rootComponent.sessionTracker.isFirstLaunch = false
+//        AuthenticationStore.shared.removeAccessToken()
         // -----
         
         rootComponent.setupRootController(animated: false)

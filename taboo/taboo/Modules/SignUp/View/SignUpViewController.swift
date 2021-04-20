@@ -30,7 +30,7 @@ final class SignUpViewController: BaseViewController {
                    editable: true,
                    fontStyle: TextFieldFontStyle.regular,
                    textColor: ColorName.darkGray.color),
-        .textField(style: .regular,
+        .textField(style: .phoneNumber,
                    placeholder: L10n.SignUp.enterPhoneNumber,
                    key: JSONRequestParameter.User.phoneNumber,
                    editable: true,

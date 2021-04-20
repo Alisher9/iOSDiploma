@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73281EA1612C5D52BAC3D36D /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F5EBB087D5EBCB122EC2F0 /* Pods_taboo.framework */; };
 		8801D3F1261DC00E00F0C670 /* TableViewButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801D3F0261DC00E00F0C670 /* TableViewButtonCell.swift */; };
 		8801D3F4261DC03B00F0C670 /* TableViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801D3F3261DC03B00F0C670 /* TableViewCellType.swift */; };
 		882261F726085F8C001A6EBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882261F626085F8C001A6EBE /* AppDelegate.swift */; };
@@ -80,6 +81,19 @@
 		882263AE260B234D001A6EBE /* TableViewIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */; };
 		88226431260C84A5001A6EBE /* ParameterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226430260C84A5001A6EBE /* ParameterKeys.swift */; };
 		88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */; };
+		8839EC6D26299A68000710D2 /* GenrePickerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6726299A68000710D2 /* GenrePickerContract.swift */; };
+		8839EC6E26299A68000710D2 /* GenrePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6826299A68000710D2 /* GenrePickerPresenter.swift */; };
+		8839EC6F26299A68000710D2 /* GenrePickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6926299A68000710D2 /* GenrePickerRouter.swift */; };
+		8839EC7026299A68000710D2 /* GenrePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6A26299A68000710D2 /* GenrePickerViewController.swift */; };
+		8839EC7126299A68000710D2 /* GenrePickerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6B26299A68000710D2 /* GenrePickerComponent.swift */; };
+		8839EC7226299A68000710D2 /* GenrePickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EC6C26299A68000710D2 /* GenrePickerInteractor.swift */; };
+		8839ECC9262AA7FB000710D2 /* Magnetic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8839ECC8262AA7FB000710D2 /* Magnetic.storyboard */; };
+		8839ECD3262ADD76000710D2 /* Magnetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECCC262ADD75000710D2 /* Magnetic.swift */; };
+		8839ECD4262ADD76000710D2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECCD262ADD76000710D2 /* Node.swift */; };
+		8839ECD5262ADD76000710D2 /* SKAction+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECCE262ADD76000710D2 /* SKAction+Color.swift */; };
+		8839ECD6262ADD76000710D2 /* MagneticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECCF262ADD76000710D2 /* MagneticView.swift */; };
+		8839ECD7262ADD76000710D2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECD0262ADD76000710D2 /* Extensions.swift */; };
+		8839ECD8262ADD76000710D2 /* SKMultilineLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839ECD1262ADD76000710D2 /* SKMultilineLabelNode.swift */; };
 		88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */; };
 		88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */; };
 		88976D892616E9C900F6FD0F /* Colors+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D882616E9C900F6FD0F /* Colors+Generated.swift */; };
@@ -97,12 +111,12 @@
 		88A0D0BB26281A5D007DFFFC /* TableViewTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0BA26281A5D007DFFFC /* TableViewTextFieldCell.swift */; };
 		88A0D0BF26281A93007DFFFC /* TableViewLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0BE26281A93007DFFFC /* TableViewLabelCell.swift */; };
 		88A0D0C526281D7E007DFFFC /* SignUpContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0C426281D7E007DFFFC /* SignUpContainer.swift */; };
-		CA444AEBBC2F8675B1E28919 /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1404534D0A71BB330F67C73F /* Pods_taboo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1404534D0A71BB330F67C73F /* Pods_taboo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taboo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BAEF6990670BC06C77F3601 /* Pods-taboo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.debug.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.debug.xcconfig"; sourceTree = "<group>"; };
+		0840331767E2EEC090EC76DF /* Pods-taboo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.debug.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.debug.xcconfig"; sourceTree = "<group>"; };
+		74F5EBB087D5EBCB122EC2F0 /* Pods_taboo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taboo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3B7C2499B56F0B6F282D22 /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 		8801D3F0261DC00E00F0C670 /* TableViewButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewButtonCell.swift; sourceTree = "<group>"; };
 		8801D3F3261DC03B00F0C670 /* TableViewCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellType.swift; sourceTree = "<group>"; };
 		882261F326085F8C001A6EBE /* taboo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taboo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +195,19 @@
 		882263AD260B234D001A6EBE /* TableViewIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIndicatorView.swift; sourceTree = "<group>"; };
 		88226430260C84A5001A6EBE /* ParameterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterKeys.swift; sourceTree = "<group>"; };
 		88226433260C84E5001A6EBE /* OnboardingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoViewController.swift; sourceTree = "<group>"; };
+		8839EC6726299A68000710D2 /* GenrePickerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerContract.swift; sourceTree = "<group>"; };
+		8839EC6826299A68000710D2 /* GenrePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerPresenter.swift; sourceTree = "<group>"; };
+		8839EC6926299A68000710D2 /* GenrePickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerRouter.swift; sourceTree = "<group>"; };
+		8839EC6A26299A68000710D2 /* GenrePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerViewController.swift; sourceTree = "<group>"; };
+		8839EC6B26299A68000710D2 /* GenrePickerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerComponent.swift; sourceTree = "<group>"; };
+		8839EC6C26299A68000710D2 /* GenrePickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerInteractor.swift; sourceTree = "<group>"; };
+		8839ECC8262AA7FB000710D2 /* Magnetic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magnetic.storyboard; sourceTree = "<group>"; };
+		8839ECCC262ADD75000710D2 /* Magnetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magnetic.swift; sourceTree = "<group>"; };
+		8839ECCD262ADD76000710D2 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		8839ECCE262ADD76000710D2 /* SKAction+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Color.swift"; sourceTree = "<group>"; };
+		8839ECCF262ADD76000710D2 /* MagneticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagneticView.swift; sourceTree = "<group>"; };
+		8839ECD0262ADD76000710D2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8839ECD1262ADD76000710D2 /* SKMultilineLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMultilineLabelNode.swift; sourceTree = "<group>"; };
 		88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		88976D882616E9C900F6FD0F /* Colors+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Generated.swift"; sourceTree = "<group>"; };
@@ -198,7 +225,6 @@
 		88A0D0BA26281A5D007DFFFC /* TableViewTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTextFieldCell.swift; sourceTree = "<group>"; };
 		88A0D0BE26281A93007DFFFC /* TableViewLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewLabelCell.swift; sourceTree = "<group>"; };
 		88A0D0C426281D7E007DFFFC /* SignUpContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContainer.swift; sourceTree = "<group>"; };
-		A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA444AEBBC2F8675B1E28919 /* Pods_taboo.framework in Frameworks */,
+				73281EA1612C5D52BAC3D36D /* Pods_taboo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +242,8 @@
 		3F85B3C820EF61873AB0214D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3BAEF6990670BC06C77F3601 /* Pods-taboo.debug.xcconfig */,
-				A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */,
+				0840331767E2EEC090EC76DF /* Pods-taboo.debug.xcconfig */,
+				7A3B7C2499B56F0B6F282D22 /* Pods-taboo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -248,7 +274,7 @@
 				882261F526085F8C001A6EBE /* taboo */,
 				882261F426085F8C001A6EBE /* Products */,
 				3F85B3C820EF61873AB0214D /* Pods */,
-				AD70364C62E8FA833D297424 /* Frameworks */,
+				C1D761DACF96D3F47D5B5F7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -322,6 +348,7 @@
 				8822629C2608B680001A6EBE /* Onboarding */,
 				88226334260A04F9001A6EBE /* Login */,
 				88226381260B215D001A6EBE /* SignUp */,
+				8839EC6626299A4C000710D2 /* GenrePicker */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -846,6 +873,82 @@
 			path = ActivityView;
 			sourceTree = "<group>";
 		};
+		8839EC6626299A4C000710D2 /* GenrePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC7A26299AA8000710D2 /* Component */,
+				8839EC7926299A9E000710D2 /* Contract */,
+				8839EC7826299A95000710D2 /* View */,
+				8839EC7726299A8B000710D2 /* Interactor */,
+				8839EC7626299A81000710D2 /* Presenter */,
+				8839EC7526299A78000710D2 /* Router */,
+			);
+			path = GenrePicker;
+			sourceTree = "<group>";
+		};
+		8839EC7526299A78000710D2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC6926299A68000710D2 /* GenrePickerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8839EC7626299A81000710D2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC6826299A68000710D2 /* GenrePickerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8839EC7726299A8B000710D2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC6C26299A68000710D2 /* GenrePickerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8839EC7826299A95000710D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC8A2629B4BD000710D2 /* Magnetic */,
+				8839EC6A26299A68000710D2 /* GenrePickerViewController.swift */,
+				8839ECC8262AA7FB000710D2 /* Magnetic.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8839EC7926299A9E000710D2 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC6726299A68000710D2 /* GenrePickerContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		8839EC7A26299AA8000710D2 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8839EC6B26299A68000710D2 /* GenrePickerComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8839EC8A2629B4BD000710D2 /* Magnetic */ = {
+			isa = PBXGroup;
+			children = (
+				8839ECD0262ADD76000710D2 /* Extensions.swift */,
+				8839ECCC262ADD75000710D2 /* Magnetic.swift */,
+				8839ECCF262ADD76000710D2 /* MagneticView.swift */,
+				8839ECCD262ADD76000710D2 /* Node.swift */,
+				8839ECCE262ADD76000710D2 /* SKAction+Color.swift */,
+				8839ECD1262ADD76000710D2 /* SKMultilineLabelNode.swift */,
+			);
+			path = Magnetic;
+			sourceTree = "<group>";
+		};
 		88976D832616DD8C00F6FD0F /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
@@ -939,10 +1042,10 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
-		AD70364C62E8FA833D297424 /* Frameworks */ = {
+		C1D761DACF96D3F47D5B5F7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1404534D0A71BB330F67C73F /* Pods_taboo.framework */,
+				74F5EBB087D5EBCB122EC2F0 /* Pods_taboo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -954,13 +1057,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8822620726085F90001A6EBE /* Build configuration list for PBXNativeTarget "taboo" */;
 			buildPhases = (
-				1369E865E1F424687D2A78C0 /* [CP] Check Pods Manifest.lock */,
+				6CDCE3DB43A905AC7E2D7ADB /* [CP] Check Pods Manifest.lock */,
 				882261EF26085F8C001A6EBE /* Sources */,
 				882261F026085F8C001A6EBE /* Frameworks */,
 				882261F126085F8C001A6EBE /* Resources */,
-				90FBEF594BE1BE2AF07AA48A /* [CP] Embed Pods Frameworks */,
 				882262DE2608C452001A6EBE /* SwiftGen */,
 				882262E12608C567001A6EBE /* Needle */,
+				5D50A3401EEAAE391A7A2798 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1011,6 +1114,7 @@
 			files = (
 				882263122609C14A001A6EBE /* SFProDisplay-Bold.ttf in Resources */,
 				882263132609C14A001A6EBE /* SFProDisplay-Medium.ttf in Resources */,
+				8839ECC9262AA7FB000710D2 /* Magnetic.storyboard in Resources */,
 				882263142609C14A001A6EBE /* SFProDisplay-Regular.ttf in Resources */,
 				8822620326085F8F001A6EBE /* LaunchScreen.storyboard in Resources */,
 				882262392608713D001A6EBE /* Localizable.strings in Resources */,
@@ -1021,7 +1125,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1369E865E1F424687D2A78C0 /* [CP] Check Pods Manifest.lock */ = {
+		5D50A3401EEAAE391A7A2798 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CDCE3DB43A905AC7E2D7ADB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1079,23 +1200,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export SOURCEKIT_LOGGING=0 && Needle/needle generate taboo/Generated/Needle/NeedleGenerated.swift taboo/\n\n";
 		};
-		90FBEF594BE1BE2AF07AA48A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taboo/Pods-taboo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1106,13 +1210,16 @@
 				8822633C260A050F001A6EBE /* LoginPresenter.swift in Sources */,
 				882262822608AE34001A6EBE /* UserDefaultsStorage.swift in Sources */,
 				88A0D0672627FBD5007DFFFC /* UIViewController+Alert.swift in Sources */,
+				8839EC6F26299A68000710D2 /* GenrePickerRouter.swift in Sources */,
 				88A0D0B726281A2C007DFFFC /* TableViewInfoCell.swift in Sources */,
 				882262C12608BC60001A6EBE /* BaseViewController.swift in Sources */,
 				8822638A260B2170001A6EBE /* SignUpRouter.swift in Sources */,
 				882262BC2608B9B2001A6EBE /* SDPageControlView.swift in Sources */,
+				8839EC7026299A68000710D2 /* GenrePickerViewController.swift in Sources */,
 				8822627A2608ABF3001A6EBE /* AuthenticationStore.swift in Sources */,
 				8822628E2608B18D001A6EBE /* AnyTarget.swift in Sources */,
 				88A0D0C526281D7E007DFFFC /* SignUpContainer.swift in Sources */,
+				8839ECD8262ADD76000710D2 /* SKMultilineLabelNode.swift in Sources */,
 				8822638C260B2170001A6EBE /* SignUpComponent.swift in Sources */,
 				882262B82608B98E001A6EBE /* SDPageControlDotView.swift in Sources */,
 				88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */,
@@ -1121,12 +1228,14 @@
 				882262A82608B699001A6EBE /* OnboardingInteractor.swift in Sources */,
 				882262642608A80B001A6EBE /* ResultHandlingView.swift in Sources */,
 				882262CB2608BD40001A6EBE /* MainButton.swift in Sources */,
+				8839ECD5262ADD76000710D2 /* SKAction+Color.swift in Sources */,
 				882262752608AA79001A6EBE /* RootComponent.swift in Sources */,
 				882263AE260B234D001A6EBE /* TableViewIndicatorView.swift in Sources */,
 				882262912608B2E7001A6EBE /* Result.swift in Sources */,
 				88A0D0752627FC80007DFFFC /* UIImageView+Kingfisher.swift in Sources */,
 				8822635B260B156C001A6EBE /* MainTextField.swift in Sources */,
 				882263A8260B231E001A6EBE /* SpinnerIndicator.swift in Sources */,
+				8839EC6D26299A68000710D2 /* GenrePickerContract.swift in Sources */,
 				882263A0260B22B8001A6EBE /* IndicatableView+UIButton.swift in Sources */,
 				88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */,
 				882262852608AF5A001A6EBE /* KeyChainStorage.swift in Sources */,
@@ -1142,22 +1251,27 @@
 				8822621026086929001A6EBE /* CharacterSet+Additional.swift in Sources */,
 				88A0D07F2627FD8F007DFFFC /* ResultViewController.swift in Sources */,
 				88226431260C84A5001A6EBE /* ParameterKeys.swift in Sources */,
+				8839EC6E26299A68000710D2 /* GenrePickerPresenter.swift in Sources */,
 				88226354260A0C5D001A6EBE /* User.swift in Sources */,
+				8839ECD7262ADD76000710D2 /* Extensions.swift in Sources */,
 				8822635F260B15B1001A6EBE /* HideableTextField.swift in Sources */,
 				882262D02608BED7001A6EBE /* OnboardingPageViewController.swift in Sources */,
 				882262DC2608C17F001A6EBE /* SessionTrackerImpl.swift in Sources */,
 				882262682608A83C001A6EBE /* IndicatableView.swift in Sources */,
 				882262132608699C001A6EBE /* StringExtension.swift in Sources */,
 				8822627F2608AD6D001A6EBE /* StorageProtocol.swift in Sources */,
+				8839ECD3262ADD76000710D2 /* Magnetic.swift in Sources */,
 				882262702608A9A8001A6EBE /* EmptyHandlingView.swift in Sources */,
 				8822639D260B229C001A6EBE /* IndicatableView+UIViewController.swift in Sources */,
 				8801D3F4261DC03B00F0C670 /* TableViewCellType.swift in Sources */,
 				8822628A2608B0DD001A6EBE /* BaseProvider.swift in Sources */,
+				8839ECD4262ADD76000710D2 /* Node.swift in Sources */,
 				8822633D260A050F001A6EBE /* LoginRouter.swift in Sources */,
 				8822633F260A050F001A6EBE /* LoginComponent.swift in Sources */,
 				88A0D0BB26281A5D007DFFFC /* TableViewTextFieldCell.swift in Sources */,
 				882262972608B460001A6EBE /* JSONStandard.swift in Sources */,
 				88A0D0702627FC4C007DFFFC /* UITableViewExtension.swift in Sources */,
+				8839EC7126299A68000710D2 /* GenrePickerComponent.swift in Sources */,
 				882263A4260B22EB001A6EBE /* ActivityView.swift in Sources */,
 				88226397260B224C001A6EBE /* IndicatableView+UIView.swift in Sources */,
 				88976D932616EC7B00F6FD0F /* Strings+Generated.swift in Sources */,
@@ -1175,6 +1289,7 @@
 				8822621626086A1C001A6EBE /* ConvertExtensions.swift in Sources */,
 				882262572608A385001A6EBE /* SessionTracker.swift in Sources */,
 				882262A32608B699001A6EBE /* OnboardingContract.swift in Sources */,
+				8839ECD6262ADD76000710D2 /* MagneticView.swift in Sources */,
 				882261F726085F8C001A6EBE /* AppDelegate.swift in Sources */,
 				88A0D06B2627FC06007DFFFC /* UICollectionViewExtension.swift in Sources */,
 				88976D892616E9C900F6FD0F /* Colors+Generated.swift in Sources */,
@@ -1182,6 +1297,7 @@
 				882262A52608B699001A6EBE /* OnboardingRouter.swift in Sources */,
 				8822626C2608A8E3001A6EBE /* ResultHandlingView+UIViewController.swift in Sources */,
 				88A0D0BF26281A93007DFFFC /* TableViewLabelCell.swift in Sources */,
+				8839EC7226299A68000710D2 /* GenrePickerInteractor.swift in Sources */,
 				8822638B260B2170001A6EBE /* SignUpViewController.swift in Sources */,
 				88226388260B2170001A6EBE /* SignUpContract.swift in Sources */,
 				88226373260B1EB1001A6EBE /* UIView+AddSubviews.swift in Sources */,
@@ -1334,7 +1450,7 @@
 		};
 		8822620826085F90001A6EBE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BAEF6990670BC06C77F3601 /* Pods-taboo.debug.xcconfig */;
+			baseConfigurationReference = 0840331767E2EEC090EC76DF /* Pods-taboo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1356,7 +1472,7 @@
 		};
 		8822620926085F90001A6EBE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0783830886EB6FA7387EE7A /* Pods-taboo.release.xcconfig */;
+			baseConfigurationReference = 7A3B7C2499B56F0B6F282D22 /* Pods-taboo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

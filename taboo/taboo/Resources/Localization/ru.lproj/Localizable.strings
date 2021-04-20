@@ -12,6 +12,10 @@
 "Common.Failure" = "Провал!";
 "Common.Done" = "Готово";
 "Common.Continue" = "Продолжить";
+"Common.Home" = "Главная";
+"Common.Genre" = "Жанры";
+"Common.Favorite" = "Избранное";
+"Common.Profile" = "Аккаунт";
 
 // Onboarding
 "Onboarding.Title1" = "Экономим время поиска";
@@ -46,3 +50,25 @@
 "SignUp.EnterPasswordAgain" = "Повторите пароль";
 "SignUp.Register" = "Зарегистрироваться";
 
+// GenrePicker
+"GenrePicker.Title" = "Выберите любимые жанры";
+"GenrePicker.Description" = "Нажмите на понравившиеся жанры. Удерживайте, чтобы удалить жанры, которые вам не нравятся";
+"GenrePicker.Melodrama" = "Мелодрама";
+"GenrePicker.Drama" = "Драма";
+"GenrePicker.Fighters" = "Боевик";
+"GenrePicker.Family" = "Семейный";
+"GenrePicker.Thriller" = "Триллер";
+"GenrePicker.History" = "История";
+"GenrePicker.Comedy" = "Комедия";
+"GenrePicker.Western" = "Вестерн";
+"GenrePicker.Detective" = "Детектив";
+"GenrePicker.Military" = "Военный";
+"GenrePicker.Romantic" = "Романтика";
+"GenrePicker.Musical" = "Мюзикл";
+"GenrePicker.Gothic" = "Готика";
+"GenrePicker.Fiction" = "Фантастика";
+"GenrePicker.Adventure" = "Приключение";
+"GenrePicker.Kids" = "Детский";
+"GenrePicker.Mystic" = "Мистика";
+"GenrePicker.SciFi" = "Научный";
+"GenrePicker.Button" = "Далее";

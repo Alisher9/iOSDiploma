@@ -10,7 +10,6 @@ import Foundation
 struct AppConstants {
     
     static let defaultPhoneNumberFormat = "+X (XXX) XXX-XX-XX"
-    static let defaultTimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
     
     struct API {
         static let appUrl = URL(string: "https://taboo20.herokuapp.com")!
