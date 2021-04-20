@@ -51,6 +51,8 @@
 "SignUp.Register" = "Зарегистрироваться";
 
 // GenrePicker
+"GenrePicker.Title" = "Выберите любимые жанры";
+"GenrePicker.Description" = "Нажмите на понравившиеся жанры. Удерживайте, чтобы удалить жанры, которые вам не нравятся";
 "GenrePicker.Melodrama" = "Мелодрама";
 "GenrePicker.Drama" = "Драма";
 "GenrePicker.Fighters" = "Боевик";
@@ -69,3 +71,4 @@
 "GenrePicker.Kids" = "Детский";
 "GenrePicker.Mystic" = "Мистика";
 "GenrePicker.SciFi" = "Научный";
+"GenrePicker.Button" = "Далее";

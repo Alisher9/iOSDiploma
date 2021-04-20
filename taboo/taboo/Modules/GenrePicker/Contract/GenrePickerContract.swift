@@ -10,6 +10,7 @@ protocol GenrePickerView: ResultHandlingView {
 }
 
 protocol GenrePickerPresentation: class {
+    func didTapOnNextButton()
 }
 
 protocol GenrePickerUseCase: class {
@@ -19,4 +20,5 @@ protocol GenrePickerInteractorOutput: InteractorOutputProtocol {
 }
 
 protocol GenrePickerWireframe: class {
+    func goToMainTabBar()
 }

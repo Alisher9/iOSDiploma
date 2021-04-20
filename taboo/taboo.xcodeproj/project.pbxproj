@@ -208,7 +208,6 @@
 		8839ECCF262ADD76000710D2 /* MagneticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagneticView.swift; sourceTree = "<group>"; };
 		8839ECD0262ADD76000710D2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8839ECD1262ADD76000710D2 /* SKMultilineLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMultilineLabelNode.swift; sourceTree = "<group>"; };
-		8839ECD2262ADD76000710D2 /* Magnetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Magnetic.h; sourceTree = "<group>"; };
 		88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		88976D882616E9C900F6FD0F /* Colors+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Generated.swift"; sourceTree = "<group>"; };
@@ -941,7 +940,6 @@
 			isa = PBXGroup;
 			children = (
 				8839ECD0262ADD76000710D2 /* Extensions.swift */,
-				8839ECD2262ADD76000710D2 /* Magnetic.h */,
 				8839ECCC262ADD75000710D2 /* Magnetic.swift */,
 				8839ECCF262ADD76000710D2 /* MagneticView.swift */,
 				8839ECCD262ADD76000710D2 /* Node.swift */,

@@ -14,83 +14,48 @@ final class GenrePickerViewController: BaseViewController {
     
     // MARK: - Public properties
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var magneticView: MagneticView! {
         didSet {
-            magnetic?.magneticDelegate = self
-            magnetic?.removeNodeOnLongPress = true
+            magnetic.magneticDelegate = self
+            magnetic.removeNodeOnLongPress = true
+            magnetic.allowsMultipleSelection = true
         }
     }
     
     var presenter: GenrePickerPresentation?
-    var rootModuleBuilder: RootModuleBuilder?
+//    var rootModuleBuilder: RootModuleBuilder?
     
-    var magnetic: Magnetic? {
-        return magneticView?.magnetic
+    var magnetic: Magnetic {
+        return magneticView.magnetic
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        for _ in 0..<18 {
-            magneticNodes()
-        }
+        magneticNodes()
+        titleLabel.text = L10n.GenrePicker.title
+        descriptionLabel.text = L10n.GenrePicker.description
     }
     @IBAction func nextTapped(_ sender: Any) {
-//        rootModuleBuilder.setupRootController(animated: true)
-    }
-    //
-//    @IBAction func add(_ sender: UIControl?) {
-//        let name = UIImage.names.randomItem()
-//        let color = UIColor.colors.randomItem()
-//        let node = Node(text: name.capitalized, image: UIImage(named: name), color: color, radius: 40)
-//        node.scaleToFitContent = true
-//        node.selectedColor = UIColor.colors.randomItem()
-//        magnetic?.addChild(node)
-//
-//         Image Node: image displayed by default
-//         let node1 = ImageNode(text: name.capitalized, image: UIImage(named: name), color: color, radius: 40)
-//        magnetic?.addChild(node1)
-//    }
-    
-    // MARK: - Private properties
-    
-    // MARK: - Lifecycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        magneticNodes()
-        setupView()
+        title = L10n.GenrePicker.button
+//        rootModuleBuilder?.setupRootController(animated: true)
+        presenter?.didTapOnNextButton()
     }
     
     private func magneticNodes() {
-        let name = UIImage.names.randomItem()
-        let color = UIColor.colors.randomItem()
-        let node = Node(text: name,
-                        image: UIImage(named: name),
-                        color: color,
-                        radius: 40)
-        node.scaleToFitContent = true
-        node.selectedColor = UIColor.colors.randomItem()
-        magnetic?.addChild(node)
+        let name = UIImage.names
+        for item in name {
+            let color = UIColor.colors.randomItem()
+            let node = Node(text: item,
+                            image: Asset.favorite.image,
+                            color: color,
+                            radius: 40)
+            node.scaleToFitContent = true
+            node.selectedColor = UIColor.colors.randomItem()
+            magnetic.addChild(node)
+        }
     }
-    
-    // MARK: - Setup
-    
-    private func setupView() {
-        configureSubviews()
-        configureConstraints()
-    }
-    
-    private func configureSubviews() {
-    }
-    
-    private func configureConstraints() {
-    }
-    
-    // MARK: - Public actions
-    
-    // MARK: - Private actions
-    
 }
 
 // MARK: - Extensions

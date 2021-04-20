@@ -26,21 +26,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover new genres" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJC-f1-xeX">
-                                <rect key="frame" x="20" y="40" width="335" height="33"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Ultralight" family="SF UI Display" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите любимые жанры" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJC-f1-xeX">
+                                <rect key="frame" x="20" y="40" width="335" height="30.5"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Ultralight" family="SF UI Display" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the genres you like. Choose your favorites" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-hm-810">
-                                <rect key="frame" x="20" y="83" width="335" height="15.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажмите на понравившиеся жанры. Удерживайте, чтобы удалить жанры, которые вам не нравятся" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-hm-810">
+                                <rect key="frame" x="20" y="80.5" width="335" height="30.5"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ban-xb-aQB" customClass="MagneticView" customModule="Magnetic">
-                                <rect key="frame" x="0.0" y="98.5" width="375" height="484.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ban-xb-aQB" customClass="MagneticView" customModule="taboo">
+                                <rect key="frame" x="0.0" y="111" width="375" height="472"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ban-xb-aQB" secondAttribute="trailing" id="TCp-pO-WTN"/>
+                                    <constraint firstAttribute="leading" secondItem="ban-xb-aQB" secondAttribute="leading" id="Z3i-cz-cbf"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pD5-DR-9o8">
                                 <rect key="frame" x="46" y="601" width="283" height="50"/>
@@ -80,7 +84,9 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="descriptionLabel" destination="iCO-hm-810" id="Kv6-N7-wMo"/>
                         <outlet property="magneticView" destination="ban-xb-aQB" id="JBx-rk-s1y"/>
+                        <outlet property="titleLabel" destination="pJC-f1-xeX" id="JvY-NP-5qK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

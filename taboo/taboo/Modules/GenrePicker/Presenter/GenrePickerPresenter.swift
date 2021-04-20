@@ -16,6 +16,10 @@ final class GenrePickerPresenter {
 }
 
 extension GenrePickerPresenter: GenrePickerPresentation {
+    func didTapOnNextButton() {
+        router?.goToMainTabBar()
+    }
+    
 }
 
 extension GenrePickerPresenter: GenrePickerInteractorOutput {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MainTextField: HideableTextField {
+final class MainTextField: UITextField {
     
     var style: MainTextFieldStyle {
         didSet {

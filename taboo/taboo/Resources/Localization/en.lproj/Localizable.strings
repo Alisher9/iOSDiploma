@@ -51,6 +51,8 @@
 "SignUp.Register" = "Register";
 
 // GenrePicker
+"GenrePicker.Title" = "Discover new genres";
+"GenrePicker.Description" = "Tap on genres you like. Hold to remove the genres you don't like";
 "GenrePicker.Melodrama" = "Melodrama";
 "GenrePicker.Drama" = "Drama";
 "GenrePicker.Fighters" = "Fighters";
@@ -69,4 +71,5 @@
 "GenrePicker.Kids" = "Kids";
 "GenrePicker.Mystic" = "Mystic";
 "GenrePicker.SciFi" = "Sci-Fi";
+"GenrePicker.Button" = "Next";
 
