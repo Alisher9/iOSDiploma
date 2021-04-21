@@ -12,6 +12,9 @@ final class SessionTrackerImpl {
     private let storage: StorageProtocol
     private let rootModuleBuilder: RootModuleBuilder
     
+    static var aa = 0
+    let const = !(AuthenticationStore.shared.getAccessToken() == nil)
+    
     init(storage: StorageProtocol, rootModuleBuilder: RootModuleBuilder) {
         self.storage = storage
         self.rootModuleBuilder = rootModuleBuilder
@@ -34,7 +37,7 @@ final class SessionTrackerImpl {
 extension SessionTrackerImpl: SessionTracker {
     
     var isLoggedIn: Bool {
-        return !(AuthenticationStore.shared.getAccessToken() == nil)
+        return (SessionTrackerImpl.aa == 1) ? true : const
     }
     
     var isFirstLaunch: Bool {

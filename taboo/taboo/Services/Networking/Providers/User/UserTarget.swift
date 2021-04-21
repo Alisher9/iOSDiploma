@@ -10,6 +10,7 @@ import Moya
 enum UserTarget {
     case login(phoneNumber: String, password: String)
     case createUser(user: User)
+    case genrePicker(genres: [String])
 }
 
 extension UserTarget: BaseProviderType, AnyTargetConvertible {
@@ -20,12 +21,14 @@ extension UserTarget: BaseProviderType, AnyTargetConvertible {
             return AppConstants.API.User.loginPath
         case .createUser:
             return AppConstants.API.User.createUser
+        case .genrePicker:
+            return AppConstants.API.User.genrePicker
         }
     }
     
     var method: Method {
         switch self {
-        case .login, .createUser:
+        case .login, .createUser, .genrePicker:
             return .post
         }
     }
@@ -45,6 +48,11 @@ extension UserTarget: BaseProviderType, AnyTargetConvertible {
                 JSONRequestParameter.User.passwordConfirmation: user.passwordConfirmation ?? "",
                 JSONRequestParameter.User.name: user.name ?? "",
                 JSONRequestParameter.User.surname: user.surname ?? ""
+            ]
+            return .requestParameters(parameters: jsonParameters, encoding: URLEncoding.queryString)
+        case .genrePicker(let genres):
+            let jsonParameters: [String: Any] = [
+                JSONRequestParameter.Genres.genres: genres
             ]
             return .requestParameters(parameters: jsonParameters, encoding: URLEncoding.queryString)
         }

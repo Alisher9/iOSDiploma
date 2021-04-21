@@ -40,7 +40,7 @@ final class RootComponent: BootstrapComponent {
     
     private func setupTabBarController() -> UIViewController {
         let vc = UIViewController()
-        vc.view.backgroundColor = .blue
+        vc.view.backgroundColor = .white
         vc.tabBarItem.title = L10n.Common.home
         vc.tabBarItem.image = Asset.tabbarHome.image
         let vcNavVc = UINavigationController(rootViewController: vc)

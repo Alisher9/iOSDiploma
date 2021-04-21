@@ -12,13 +12,31 @@ final class GenrePickerInteractor {
     
     weak var output: GenrePickerInteractorOutput?
     
-    private var webService: WebServiceType
+//    private var webService: WebServiceType
     
-    init(webService: WebServiceType) {
-        self.webService = webService
+    init() {
+//        self.webService = webService
     }
     
 }
 
 extension GenrePickerInteractor: GenrePickerUseCase {
+    func genrePicker(genres: [String]) {
+//        let target = UserTarget.genrePicker(genres: genres)
+//        webService.load(target: target) { [weak self] (result) in
+//            switch result {
+//            case .success(let json):
+//                guard let success = json["success"] as? JSONStandard,
+//                let token = success["token"] as? String else {
+//                    self?.output?.handleError(.incorrectJSON)
+//                    return
+//                }
+                self.output?.pickedGenres(token: "token")
+//            case .error(let error):
+//                self?.output?.handleError(error)
+//            }
+//        }
+    }
+    
+
 }

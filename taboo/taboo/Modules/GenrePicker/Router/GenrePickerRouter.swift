@@ -18,7 +18,9 @@ final class GenrePickerRouter {
 
 extension GenrePickerRouter: GenrePickerWireframe {
     func goToMainTabBar() {
+        SessionTrackerImpl.aa = 1
         rootModuleBuilder?.setupRootController(animated: true)
+//        print("oops")
     }
     
 }
