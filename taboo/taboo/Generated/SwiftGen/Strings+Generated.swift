@@ -14,10 +14,16 @@ internal enum L10n {
   internal enum Common {
     /// taboo
     internal static let app = L10n.tr("Localizable", "Common.App")
+    /// Cancel
+    internal static let cancel = L10n.tr("Localizable", "Common.Cancel")
     /// Continue
     internal static let `continue` = L10n.tr("Localizable", "Common.Continue")
+    /// Delete
+    internal static let delete = L10n.tr("Localizable", "Common.Delete")
     /// Done
     internal static let done = L10n.tr("Localizable", "Common.Done")
+    /// Edit
+    internal static let edit = L10n.tr("Localizable", "Common.Edit")
     /// Error!
     internal static let error = L10n.tr("Localizable", "Common.Error")
     /// Failure!
@@ -115,6 +121,25 @@ internal enum L10n {
     internal static let title2 = L10n.tr("Localizable", "Onboarding.Title2")
     /// Create your favorite movie list
     internal static let title3 = L10n.tr("Localizable", "Onboarding.Title3")
+  }
+
+  internal enum Profile {
+    /// Change password
+    internal static let changePassword = L10n.tr("Localizable", "Profile.ChangePassword")
+    /// Confirm password
+    internal static let confirmPassword = L10n.tr("Localizable", "Profile.ConfirmPassword")
+    /// Current password
+    internal static let currentPassword = L10n.tr("Localizable", "Profile.CurrentPassword")
+    /// Logout
+    internal static let logout = L10n.tr("Localizable", "Profile.Logout")
+    /// New password
+    internal static let newPassword = L10n.tr("Localizable", "Profile.NewPassword")
+    /// Password
+    internal static let password = L10n.tr("Localizable", "Profile.Password")
+    /// Reset password
+    internal static let resetPassword = L10n.tr("Localizable", "Profile.ResetPassword")
+    /// Settings
+    internal static let settings = L10n.tr("Localizable", "Profile.Settings")
   }
 
   internal enum SignUp {

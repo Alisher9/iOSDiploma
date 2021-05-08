@@ -16,6 +16,9 @@
 "Common.Genre" = "Жанры";
 "Common.Favorite" = "Избранное";
 "Common.Profile" = "Аккаунт";
+"Common.Edit" = "Редактировать";
+"Common.Delete" = "Удалить";
+"Common.Cancel" = "Отмена";
 
 // Onboarding
 "Onboarding.Title1" = "Экономим время поиска";
@@ -72,3 +75,13 @@
 "GenrePicker.Mystic" = "Мистика";
 "GenrePicker.SciFi" = "Научный";
 "GenrePicker.Button" = "Далее";
+
+// Profile
+"Profile.Settings" = "Настройки";
+"Profile.ChangePassword" = "Сменить пароль";
+"Profile.Logout" = "Выйти из аккаунта";
+"Profile.Password" = "Пароль";
+"Profile.CurrentPassword" = "Текущий пароль";
+"Profile.NewPassword" = "Новый пароль";
+"Profile.ConfirmPassword" = "Подтвердите пароль";
+"Profile.ResetPassword" = "Обновить пароль";

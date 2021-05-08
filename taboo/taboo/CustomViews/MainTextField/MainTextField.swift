@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MainTextField: UITextField {
+final class MainTextField: HideableTextField {
     
     var style: MainTextFieldStyle {
         didSet {
@@ -70,11 +70,13 @@ final class MainTextField: UITextField {
             isSecureTextEntry = false
             placeholder = "+7 ()"
             textSecureIcon.isHidden = true
+            textSecureIcon.isUserInteractionEnabled = false
             keyboardType = .asciiCapableNumberPad
         case .number:
             isSecureTextEntry = false
             placeholder = ""
             textSecureIcon.isHidden = true
+            textSecureIcon.isUserInteractionEnabled = false
             keyboardType = .numberPad
         case .password:
             isSecureTextEntry = true
@@ -85,6 +87,7 @@ final class MainTextField: UITextField {
         case .regular:
             isSecureTextEntry = false
             textSecureIcon.isHidden = true
+            textSecureIcon.isUserInteractionEnabled = false
             keyboardType = .asciiCapable
         }
     }
@@ -135,7 +138,7 @@ extension MainTextField: UITextFieldDelegate {
         case .regular:
             return true
         case .password:
-            maxLength = 50
+            maxLength = 20
             let currentString: NSString = textFieldText as NSString
             let newString: NSString =  currentString.replacingCharacters(in: range, with: string) as NSString
             return newString.length <= maxLength

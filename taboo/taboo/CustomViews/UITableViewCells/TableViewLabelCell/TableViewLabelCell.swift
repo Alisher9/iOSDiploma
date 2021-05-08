@@ -29,6 +29,19 @@ final class TableViewLabelCell: UITableViewCell {
         return label
     }()
     
+    private lazy var arrowIcon: UIImageView = {
+       let image = UIImageView()
+        image.image = Asset.arrowRightIcon.image
+        image.contentMode = .scaleAspectFill
+        return image
+    }()
+    
+    private lazy var separatorLine: UIView = {
+        let view = UIView()
+        view.backgroundColor = ColorName.lightGray.color
+        return view
+    }()
+    
     // MARK: - Lifecycle
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -48,7 +61,9 @@ final class TableViewLabelCell: UITableViewCell {
     }
     
     private func configureSubviews() {
-        addSubview(titleLabel)
+        addSubviews(titleLabel,
+                    arrowIcon,
+                    separatorLine)
     }
     
     private func configureConstraints() {
@@ -56,9 +71,30 @@ final class TableViewLabelCell: UITableViewCell {
             $0.top.bottom.equalToSuperview()
             $0.leading.equalToSuperview().inset(30)
         }
+        
+        arrowIcon.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.trailing.equalToSuperview().inset(30)
+            $0.width.equalTo(10)
+            $0.height.equalTo(18)
+        }
+        
+        separatorLine.snp.makeConstraints {
+            $0.bottom.leading.trailing.equalToSuperview()
+            $0.height.equalTo(1)
+        }
     }
     
     // MARK: - Public actions
+    
+    func configure(_ style: TableViewLabelCellStyle) {
+        switch style {
+        case .regular:
+            arrowIcon.isHidden = true
+        case .hasDetails:
+            arrowIcon.isHidden = false
+        }
+    }
     
     // MARK: - Private actions
     

@@ -21,6 +21,14 @@ final class RootComponent: BootstrapComponent {
         return LoginComponent(parent: self)
     }
     
+    private var mainPageComponent: HomeComponent {
+        return HomeComponent(parent: self)
+    }
+    
+    private var profileComponent: ProfileComponent {
+        return ProfileComponent(parent: self)
+    }
+    
     // MARK: - Properties
     
     var webService: WebServiceType {
@@ -39,11 +47,10 @@ final class RootComponent: BootstrapComponent {
     // MARK: - Private actions
     
     private func setupTabBarController() -> UIViewController {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .white
+        let vc = mainPageComponent.viewController
         vc.tabBarItem.title = L10n.Common.home
         vc.tabBarItem.image = Asset.tabbarHome.image
-        let vcNavVc = UINavigationController(rootViewController: vc)
+//        let vcNavVc = UINavigationController(rootViewController: vc)
         
         let vc2 = UIViewController()
         vc2.view.backgroundColor = .red
@@ -56,13 +63,14 @@ final class RootComponent: BootstrapComponent {
         vc3.tabBarItem.title = L10n.Common.favorite
         vc3.tabBarItem.image = Asset.tabbarFavorite.image
         
-        let vc4 = UIViewController()
-        vc4.view.backgroundColor = .green
+        let vc4 = profileComponent.viewController
+//        vc4.view.backgroundColor = .green
         vc4.tabBarItem.title = L10n.Common.profile
         vc4.tabBarItem.image = Asset.tabbarProfile.image
+        let profileNavVC = UINavigationController(rootViewController: vc4)
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [vcNavVc, vc2NavVc, vc3, vc4]
+        tabBarController.viewControllers = [vc, vc2NavVc, vc3, profileNavVC]
         tabBarController.tabBar.tintColor = ColorName.mainPurple.color
         
         return tabBarController
