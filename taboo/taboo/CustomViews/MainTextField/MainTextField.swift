@@ -80,8 +80,6 @@ final class MainTextField: HideableTextField {
             keyboardType = .numberPad
         case .password:
             isSecureTextEntry = true
-            placeholder = ""
-            placeholder = L10n.Login.enterPassword
             textSecureIcon.isHidden = false
             keyboardType = .asciiCapable
         case .regular:

@@ -54,6 +54,10 @@ extension SessionTrackerImpl: SessionTracker {
         rootModuleBuilder.setupRootController(animated: true)
     }
     
+    func didLogWithGenres() {
+        rootModuleBuilder.setupRootController(animated: true)
+    }
+    
     @objc func logOut() {
         AuthenticationStore.shared.removeAccessToken()
         rootModuleBuilder.setupRootController(animated: true)

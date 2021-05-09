@@ -44,6 +44,7 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
     
     private lazy var passwordTextField: MainTextField = {
         let textField = MainTextField(style: .password)
+        textField.placeholder = L10n.Login.enterPassword
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()

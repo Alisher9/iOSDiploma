@@ -17,7 +17,7 @@ final class GenrePickerPresenter {
 }
 
 extension GenrePickerPresenter: GenrePickerPresentation {
-    func didTapOnNextButton(genres: [String]) {
+    func didTapGenres(genres: [String]) {
         view?.showActivityIndicator()
         interactor?.genrePicker(genres: genres)
     }
@@ -25,10 +25,10 @@ extension GenrePickerPresenter: GenrePickerPresentation {
 }
 
 extension GenrePickerPresenter: GenrePickerInteractorOutput {
-    func pickedGenres(token: String) {
+    func pickedGenres() {
         view?.hideActivityIndicator()
-//        self.sessionTracker?.didLogIn(token: token)
-        router?.goToMainTabBar()
+        SessionTrackerImpl.aa = 1
+        self.sessionTracker?.didLogWithGenres()
     }
     
     var resultHandlingView: ResultHandlingView? {

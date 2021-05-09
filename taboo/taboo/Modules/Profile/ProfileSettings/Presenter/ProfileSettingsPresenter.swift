@@ -21,8 +21,8 @@ extension ProfileSettingsPresenter: ProfileSettingsPresentation {
         router?.showResetPasswordPage()
     }
     func didSelectLogOut() {
-//        sessionTracker?.logOut()
-        router?.showLoginPage()
+        SessionTrackerImpl.aa = 0
+        sessionTracker?.logOut()
     }
 }
 

@@ -23,7 +23,7 @@ extension GenrePickerComponent: GenrePickerModuleBuilder {
         let router = GenrePickerRouter()
         let interactor = GenrePickerInteractor()
         
-        viewController.presenter = presenter
+        viewController.interactor = interactor
         
         presenter.view = viewController
         presenter.router = router

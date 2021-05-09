@@ -15,11 +15,14 @@ final class LoginRouter {
     weak var view: UIViewController?
     private let signUpModuleBuilder: SignUpModuleBuilder
     private let genrePickerModuleBuilder: GenrePickerModuleBuilder
+    private let sessionTracker: SessionTracker
     
-    
-    init(signUpModuleBuilder: SignUpModuleBuilder, genrePickerModuleBuilder: GenrePickerModuleBuilder) {
+    init(signUpModuleBuilder: SignUpModuleBuilder,
+         genrePickerModuleBuilder: GenrePickerModuleBuilder,
+         sessionTracker: SessionTracker) {
         self.signUpModuleBuilder = signUpModuleBuilder
         self.genrePickerModuleBuilder = genrePickerModuleBuilder
+        self.sessionTracker = sessionTracker
     }
 }
 
@@ -38,15 +41,17 @@ extension LoginRouter: LoginWireframe {
         let interactor = GenrePickerInteractor()
         
         vc?.presenter = presenter
-        presenter.view = vc
-        presenter.interactor = interactor
-        presenter.router = router
-        
-        router.view = vc
-        router.rootModuleBuilder = RootComponent()
-        
         interactor.output = presenter
         
+        presenter.view = vc
+        presenter.router = router
+        presenter.interactor = interactor
+        presenter.sessionTracker = sessionTracker
+        
+        router.view = vc
+        
+        router.rootModuleBuilder = RootComponent()
+        
         view?.present(vc ?? UIViewController(), animated: true, completion: nil)
-    }
+    } 
 }

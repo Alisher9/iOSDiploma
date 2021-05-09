@@ -51,7 +51,7 @@ final class ProfileMainViewController: BaseViewController {
     // MARK: - Setup
     
     private func setupView() {
-        view.backgroundColor = ColorName.lightGray.color
+//        view.backgroundColor = ColorName.lightGray.color
         configureSubviews()
         configureConstraints()
     }

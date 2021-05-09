@@ -6,16 +6,44 @@
 //  
 //
 
+import UIKit
+import Moya
+
 final class GenrePickerInteractor {
     
     // MARK: Properties
     
     weak var output: GenrePickerInteractorOutput?
-    
-//    private var webService: WebServiceType
+    static var provider: MoyaProvider<AnyTarget>?
     
     init() {
-//        self.webService = webService
+    }
+    
+    func load(target: AnyTargetConvertible, completion: @escaping (Result<JSONStandard>) -> Void) {
+        GenrePickerInteractor.provider?.request(target.any,
+                                                callbackQueue: DispatchQueue.main,
+                                                progress: nil) { result in
+            switch result {
+            case .success(let response):
+                if let jsonObject = try? JSONSerialization.jsonObject(with: response.data, options: []),
+                    let json = jsonObject as? JSONStandard {
+                    
+                    if response.statusCode == 401 {
+                        completion(.error(.unauthorized))
+                        return
+                    }
+                    if response.statusCode == 422 {
+                        completion(.error(.wrongCredentials))
+                        return
+                    }
+                    completion(.success(json))
+                } else {
+                    completion(.error(.incorrectJSON))
+                }
+            case .failure:
+                completion(.error(.networkFail))
+            }
+        }
     }
     
 }
@@ -23,7 +51,7 @@ final class GenrePickerInteractor {
 extension GenrePickerInteractor: GenrePickerUseCase {
     func genrePicker(genres: [String]) {
 //        let target = UserTarget.genrePicker(genres: genres)
-//        webService.load(target: target) { [weak self] (result) in
+//        load(target: target) { [weak self] (result) in
 //            switch result {
 //            case .success(let json):
 //                guard let success = json["success"] as? JSONStandard,
@@ -31,7 +59,7 @@ extension GenrePickerInteractor: GenrePickerUseCase {
 //                    self?.output?.handleError(.incorrectJSON)
 //                    return
 //                }
-                self.output?.pickedGenres(token: "token")
+                self.output?.pickedGenres()
 //            case .error(let error):
 //                self?.output?.handleError(error)
 //            }

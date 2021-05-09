@@ -27,6 +27,7 @@ final class GenrePickerViewController: BaseViewController {
     var genresList = [String]()
     
     var presenter: GenrePickerPresentation?
+    var interactor: GenrePickerInteractor?
 //    var rootModuleBuilder: RootModuleBuilder?
     
     var magnetic: Magnetic {
@@ -41,8 +42,7 @@ final class GenrePickerViewController: BaseViewController {
     }
     @IBAction func nextTapped(_ sender: Any) {
         title = L10n.GenrePicker.button
-//        rootModuleBuilder?.setupRootController(animated: true)
-        presenter?.didTapOnNextButton(genres: genresList)
+        presenter?.didTapGenres(genres: genresList)
     }
     
     private func magneticNodes() {
