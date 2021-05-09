@@ -10,5 +10,6 @@ protocol SessionTracker: class {
     var isFirstLaunch: Bool { get set }
     
     func didLogIn(token: String)
+    func didLogWithGenres()
     func logOut()
 }

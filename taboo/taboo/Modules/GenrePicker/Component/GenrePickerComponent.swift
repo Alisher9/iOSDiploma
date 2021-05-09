@@ -21,9 +21,9 @@ extension GenrePickerComponent: GenrePickerModuleBuilder {
         let viewController = GenrePickerViewController()
         let presenter = GenrePickerPresenter()
         let router = GenrePickerRouter()
-        let interactor = GenrePickerInteractor(webService: dependency.webService)
+        let interactor = GenrePickerInteractor()
         
-        viewController.presenter = presenter
+        viewController.interactor = interactor
         
         presenter.view = viewController
         presenter.router = router

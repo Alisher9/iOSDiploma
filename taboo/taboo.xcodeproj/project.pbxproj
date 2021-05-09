@@ -111,6 +111,42 @@
 		88A0D0BB26281A5D007DFFFC /* TableViewTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0BA26281A5D007DFFFC /* TableViewTextFieldCell.swift */; };
 		88A0D0BF26281A93007DFFFC /* TableViewLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0BE26281A93007DFFFC /* TableViewLabelCell.swift */; };
 		88A0D0C526281D7E007DFFFC /* SignUpContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D0C426281D7E007DFFFC /* SignUpContainer.swift */; };
+		88BFE01C26467E55005134D1 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE01626467E55005134D1 /* HomeContract.swift */; };
+		88BFE01D26467E55005134D1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE01726467E55005134D1 /* HomePresenter.swift */; };
+		88BFE01E26467E55005134D1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE01826467E55005134D1 /* HomeRouter.swift */; };
+		88BFE01F26467E55005134D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE01926467E55005134D1 /* HomeViewController.swift */; };
+		88BFE02026467E55005134D1 /* HomeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE01A26467E55005134D1 /* HomeComponent.swift */; };
+		88BFE02126467E55005134D1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE01B26467E55005134D1 /* HomeInteractor.swift */; };
+		88BFE042264687E6005134D1 /* ProfileComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE03C264687E6005134D1 /* ProfileComponent.swift */; };
+		88BFE04E264688E7005134D1 /* ProfileMainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE048264688E7005134D1 /* ProfileMainContract.swift */; };
+		88BFE04F264688E7005134D1 /* ProfileMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE049264688E7005134D1 /* ProfileMainPresenter.swift */; };
+		88BFE050264688E7005134D1 /* ProfileMainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE04A264688E7005134D1 /* ProfileMainRouter.swift */; };
+		88BFE051264688E7005134D1 /* ProfileMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE04B264688E7005134D1 /* ProfileMainViewController.swift */; };
+		88BFE052264688E7005134D1 /* ProfileMainComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE04C264688E7005134D1 /* ProfileMainComponent.swift */; };
+		88BFE053264688E7005134D1 /* ProfileMainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE04D264688E7005134D1 /* ProfileMainInteractor.swift */; };
+		88BFE06426468957005134D1 /* ProfileSettingsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE05E26468957005134D1 /* ProfileSettingsContract.swift */; };
+		88BFE06526468957005134D1 /* ProfileSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE05F26468957005134D1 /* ProfileSettingsPresenter.swift */; };
+		88BFE06626468957005134D1 /* ProfileSettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE06026468957005134D1 /* ProfileSettingsRouter.swift */; };
+		88BFE06726468957005134D1 /* ProfileSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE06126468957005134D1 /* ProfileSettingsViewController.swift */; };
+		88BFE06826468957005134D1 /* ProfileSettingsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE06226468957005134D1 /* ProfileSettingsComponent.swift */; };
+		88BFE06926468957005134D1 /* ProfileSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE06326468957005134D1 /* ProfileSettingsInteractor.swift */; };
+		88BFE078264689BC005134D1 /* ProfileResetPasswordContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE072264689BC005134D1 /* ProfileResetPasswordContract.swift */; };
+		88BFE079264689BC005134D1 /* ProfileResetPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE073264689BC005134D1 /* ProfileResetPasswordPresenter.swift */; };
+		88BFE07A264689BC005134D1 /* ProfileResetPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE074264689BC005134D1 /* ProfileResetPasswordRouter.swift */; };
+		88BFE07B264689BC005134D1 /* ProfileResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE075264689BC005134D1 /* ProfileResetPasswordViewController.swift */; };
+		88BFE07C264689BC005134D1 /* ProfileResetPasswordComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE076264689BC005134D1 /* ProfileResetPasswordComponent.swift */; };
+		88BFE07D264689BC005134D1 /* ProfileResetPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE077264689BC005134D1 /* ProfileResetPasswordInteractor.swift */; };
+		88BFE08926468CB7005134D1 /* TableViewLabelCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE08826468CB7005134D1 /* TableViewLabelCellStyle.swift */; };
+		88BFE08D264692F5005134D1 /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE08C264692F5005134D1 /* AvatarImageView.swift */; };
+		88BFE09026469324005134D1 /* AvatarImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE08F26469324005134D1 /* AvatarImageViewModel.swift */; };
+		88BFE0942646934C005134D1 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0932646934C005134D1 /* ProfileHeaderView.swift */; };
+		88BFE09826469371005134D1 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE09726469371005134D1 /* ProfileHeaderViewModel.swift */; };
+		88BFE0B72647ED26005134D1 /* GenresContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B12647ED26005134D1 /* GenresContract.swift */; };
+		88BFE0B82647ED27005134D1 /* GenresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B22647ED26005134D1 /* GenresPresenter.swift */; };
+		88BFE0B92647ED27005134D1 /* GenresRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B32647ED26005134D1 /* GenresRouter.swift */; };
+		88BFE0BA2647ED27005134D1 /* GenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B42647ED26005134D1 /* GenresViewController.swift */; };
+		88BFE0BB2647ED27005134D1 /* GenresComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B52647ED26005134D1 /* GenresComponent.swift */; };
+		88BFE0BC2647ED27005134D1 /* GenresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B62647ED26005134D1 /* GenresInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -225,6 +261,42 @@
 		88A0D0BA26281A5D007DFFFC /* TableViewTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTextFieldCell.swift; sourceTree = "<group>"; };
 		88A0D0BE26281A93007DFFFC /* TableViewLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewLabelCell.swift; sourceTree = "<group>"; };
 		88A0D0C426281D7E007DFFFC /* SignUpContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContainer.swift; sourceTree = "<group>"; };
+		88BFE01626467E55005134D1 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		88BFE01726467E55005134D1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		88BFE01826467E55005134D1 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		88BFE01926467E55005134D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		88BFE01A26467E55005134D1 /* HomeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeComponent.swift; sourceTree = "<group>"; };
+		88BFE01B26467E55005134D1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		88BFE03C264687E6005134D1 /* ProfileComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileComponent.swift; sourceTree = "<group>"; };
+		88BFE048264688E7005134D1 /* ProfileMainContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainContract.swift; sourceTree = "<group>"; };
+		88BFE049264688E7005134D1 /* ProfileMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainPresenter.swift; sourceTree = "<group>"; };
+		88BFE04A264688E7005134D1 /* ProfileMainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainRouter.swift; sourceTree = "<group>"; };
+		88BFE04B264688E7005134D1 /* ProfileMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainViewController.swift; sourceTree = "<group>"; };
+		88BFE04C264688E7005134D1 /* ProfileMainComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainComponent.swift; sourceTree = "<group>"; };
+		88BFE04D264688E7005134D1 /* ProfileMainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainInteractor.swift; sourceTree = "<group>"; };
+		88BFE05E26468957005134D1 /* ProfileSettingsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsContract.swift; sourceTree = "<group>"; };
+		88BFE05F26468957005134D1 /* ProfileSettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsPresenter.swift; sourceTree = "<group>"; };
+		88BFE06026468957005134D1 /* ProfileSettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsRouter.swift; sourceTree = "<group>"; };
+		88BFE06126468957005134D1 /* ProfileSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsViewController.swift; sourceTree = "<group>"; };
+		88BFE06226468957005134D1 /* ProfileSettingsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsComponent.swift; sourceTree = "<group>"; };
+		88BFE06326468957005134D1 /* ProfileSettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsInteractor.swift; sourceTree = "<group>"; };
+		88BFE072264689BC005134D1 /* ProfileResetPasswordContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResetPasswordContract.swift; sourceTree = "<group>"; };
+		88BFE073264689BC005134D1 /* ProfileResetPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResetPasswordPresenter.swift; sourceTree = "<group>"; };
+		88BFE074264689BC005134D1 /* ProfileResetPasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResetPasswordRouter.swift; sourceTree = "<group>"; };
+		88BFE075264689BC005134D1 /* ProfileResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResetPasswordViewController.swift; sourceTree = "<group>"; };
+		88BFE076264689BC005134D1 /* ProfileResetPasswordComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResetPasswordComponent.swift; sourceTree = "<group>"; };
+		88BFE077264689BC005134D1 /* ProfileResetPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResetPasswordInteractor.swift; sourceTree = "<group>"; };
+		88BFE08826468CB7005134D1 /* TableViewLabelCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewLabelCellStyle.swift; sourceTree = "<group>"; };
+		88BFE08C264692F5005134D1 /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
+		88BFE08F26469324005134D1 /* AvatarImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageViewModel.swift; sourceTree = "<group>"; };
+		88BFE0932646934C005134D1 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		88BFE09726469371005134D1 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		88BFE0B12647ED26005134D1 /* GenresContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresContract.swift; sourceTree = "<group>"; };
+		88BFE0B22647ED26005134D1 /* GenresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresenter.swift; sourceTree = "<group>"; };
+		88BFE0B32647ED26005134D1 /* GenresRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresRouter.swift; sourceTree = "<group>"; };
+		88BFE0B42647ED26005134D1 /* GenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
+		88BFE0B52647ED26005134D1 /* GenresComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresComponent.swift; sourceTree = "<group>"; };
+		88BFE0B62647ED26005134D1 /* GenresInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,6 +421,9 @@
 				88226334260A04F9001A6EBE /* Login */,
 				88226381260B215D001A6EBE /* SignUp */,
 				8839EC6626299A4C000710D2 /* GenrePicker */,
+				88BFE01526467E28005134D1 /* Home */,
+				88BFE0B02647ED14005134D1 /* Genres */,
+				88BFE037264687D0005134D1 /* Profile */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -625,6 +700,8 @@
 		882262C32608BCAE001A6EBE /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				88BFE09226469335005134D1 /* ProfileHeaderView */,
+				88BFE08B264692E0005134D1 /* AvatarImageView */,
 				88A0D0812627FE44007DFFFC /* SignUp */,
 				88A0D07A2627FD58007DFFFC /* SuccessView */,
 				882263A2260B22DD001A6EBE /* ActivityView */,
@@ -1030,6 +1107,7 @@
 			isa = PBXGroup;
 			children = (
 				88A0D0BE26281A93007DFFFC /* TableViewLabelCell.swift */,
+				88BFE08826468CB7005134D1 /* TableViewLabelCellStyle.swift */,
 			);
 			path = TableViewLabelCell;
 			sourceTree = "<group>";
@@ -1040,6 +1118,348 @@
 				88A0D0C426281D7E007DFFFC /* SignUpContainer.swift */,
 			);
 			path = Container;
+			sourceTree = "<group>";
+		};
+		88BFE01526467E28005134D1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE02826467F39005134D1 /* Component */,
+				88BFE02726467F33005134D1 /* Contract */,
+				88BFE02626467F2F005134D1 /* View */,
+				88BFE02526467F28005134D1 /* Interactor */,
+				88BFE02426467F02005134D1 /* Presenter */,
+				88BFE02326467E5E005134D1 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		88BFE02326467E5E005134D1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE01826467E55005134D1 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88BFE02426467F02005134D1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE01726467E55005134D1 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		88BFE02526467F28005134D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE01B26467E55005134D1 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		88BFE02626467F2F005134D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE01926467E55005134D1 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88BFE02726467F33005134D1 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE01626467E55005134D1 /* HomeContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		88BFE02826467F39005134D1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE01A26467E55005134D1 /* HomeComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		88BFE037264687D0005134D1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE04626468842005134D1 /* Component */,
+				88BFE047264688CC005134D1 /* ProfileMain */,
+				88BFE05D26468941005134D1 /* ProfileSettings */,
+				88BFE0712646899F005134D1 /* ProfileResetPassword */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		88BFE04626468842005134D1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE03C264687E6005134D1 /* ProfileComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		88BFE047264688CC005134D1 /* ProfileMain */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE05C26468921005134D1 /* Component */,
+				88BFE05B26468918005134D1 /* Contract */,
+				88BFE05A2646890E005134D1 /* View */,
+				88BFE05926468903005134D1 /* Interactor */,
+				88BFE058264688F8005134D1 /* Presenter */,
+				88BFE056264688ED005134D1 /* Router */,
+			);
+			path = ProfileMain;
+			sourceTree = "<group>";
+		};
+		88BFE056264688ED005134D1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE04A264688E7005134D1 /* ProfileMainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88BFE058264688F8005134D1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE049264688E7005134D1 /* ProfileMainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		88BFE05926468903005134D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE04D264688E7005134D1 /* ProfileMainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		88BFE05A2646890E005134D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE04B264688E7005134D1 /* ProfileMainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88BFE05B26468918005134D1 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE048264688E7005134D1 /* ProfileMainContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		88BFE05C26468921005134D1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE04C264688E7005134D1 /* ProfileMainComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		88BFE05D26468941005134D1 /* ProfileSettings */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0702646898C005134D1 /* Component */,
+				88BFE06F26468985005134D1 /* Contract */,
+				88BFE06E26468975005134D1 /* View */,
+				88BFE06D2646896B005134D1 /* Interactor */,
+				88BFE06C26468964005134D1 /* Presenter */,
+				88BFE06B2646895C005134D1 /* Router */,
+			);
+			path = ProfileSettings;
+			sourceTree = "<group>";
+		};
+		88BFE06B2646895C005134D1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE06026468957005134D1 /* ProfileSettingsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88BFE06C26468964005134D1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE05F26468957005134D1 /* ProfileSettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		88BFE06D2646896B005134D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE06326468957005134D1 /* ProfileSettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		88BFE06E26468975005134D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE06126468957005134D1 /* ProfileSettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88BFE06F26468985005134D1 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE05E26468957005134D1 /* ProfileSettingsContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		88BFE0702646898C005134D1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE06226468957005134D1 /* ProfileSettingsComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		88BFE0712646899F005134D1 /* ProfileResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE086264689ED005134D1 /* Component */,
+				88BFE085264689E5005134D1 /* Contract */,
+				88BFE084264689DD005134D1 /* View */,
+				88BFE083264689D5005134D1 /* Interactor */,
+				88BFE082264689CB005134D1 /* Presenter */,
+				88BFE080264689C1005134D1 /* Router */,
+			);
+			path = ProfileResetPassword;
+			sourceTree = "<group>";
+		};
+		88BFE080264689C1005134D1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE074264689BC005134D1 /* ProfileResetPasswordRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88BFE082264689CB005134D1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE073264689BC005134D1 /* ProfileResetPasswordPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		88BFE083264689D5005134D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE077264689BC005134D1 /* ProfileResetPasswordInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		88BFE084264689DD005134D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE075264689BC005134D1 /* ProfileResetPasswordViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88BFE085264689E5005134D1 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE072264689BC005134D1 /* ProfileResetPasswordContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		88BFE086264689ED005134D1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE076264689BC005134D1 /* ProfileResetPasswordComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		88BFE08B264692E0005134D1 /* AvatarImageView */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE08C264692F5005134D1 /* AvatarImageView.swift */,
+				88BFE08F26469324005134D1 /* AvatarImageViewModel.swift */,
+			);
+			path = AvatarImageView;
+			sourceTree = "<group>";
+		};
+		88BFE09226469335005134D1 /* ProfileHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0932646934C005134D1 /* ProfileHeaderView.swift */,
+				88BFE09726469371005134D1 /* ProfileHeaderViewModel.swift */,
+			);
+			path = ProfileHeaderView;
+			sourceTree = "<group>";
+		};
+		88BFE0B02647ED14005134D1 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0C72647ED71005134D1 /* Component */,
+				88BFE0C62647ED68005134D1 /* Contract */,
+				88BFE0C52647ED61005134D1 /* View */,
+				88BFE0C42647ED57005134D1 /* Interactor */,
+				88BFE0C32647ED4B005134D1 /* Presenter */,
+				88BFE0BF2647ED2B005134D1 /* Router */,
+			);
+			path = Genres;
+			sourceTree = "<group>";
+		};
+		88BFE0BF2647ED2B005134D1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B32647ED26005134D1 /* GenresRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88BFE0C32647ED4B005134D1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B22647ED26005134D1 /* GenresPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		88BFE0C42647ED57005134D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B62647ED26005134D1 /* GenresInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		88BFE0C52647ED61005134D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B42647ED26005134D1 /* GenresViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88BFE0C62647ED68005134D1 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B12647ED26005134D1 /* GenresContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		88BFE0C72647ED71005134D1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B52647ED26005134D1 /* GenresComponent.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		C1D761DACF96D3F47D5B5F7A /* Frameworks */ = {
@@ -1207,23 +1627,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BFE08D264692F5005134D1 /* AvatarImageView.swift in Sources */,
 				8822633C260A050F001A6EBE /* LoginPresenter.swift in Sources */,
+				88BFE050264688E7005134D1 /* ProfileMainRouter.swift in Sources */,
 				882262822608AE34001A6EBE /* UserDefaultsStorage.swift in Sources */,
 				88A0D0672627FBD5007DFFFC /* UIViewController+Alert.swift in Sources */,
 				8839EC6F26299A68000710D2 /* GenrePickerRouter.swift in Sources */,
 				88A0D0B726281A2C007DFFFC /* TableViewInfoCell.swift in Sources */,
+				88BFE09026469324005134D1 /* AvatarImageViewModel.swift in Sources */,
+				88BFE078264689BC005134D1 /* ProfileResetPasswordContract.swift in Sources */,
 				882262C12608BC60001A6EBE /* BaseViewController.swift in Sources */,
+				88BFE07C264689BC005134D1 /* ProfileResetPasswordComponent.swift in Sources */,
 				8822638A260B2170001A6EBE /* SignUpRouter.swift in Sources */,
+				88BFE0B82647ED27005134D1 /* GenresPresenter.swift in Sources */,
+				88BFE06926468957005134D1 /* ProfileSettingsInteractor.swift in Sources */,
+				88BFE06826468957005134D1 /* ProfileSettingsComponent.swift in Sources */,
 				882262BC2608B9B2001A6EBE /* SDPageControlView.swift in Sources */,
+				88BFE07B264689BC005134D1 /* ProfileResetPasswordViewController.swift in Sources */,
 				8839EC7026299A68000710D2 /* GenrePickerViewController.swift in Sources */,
 				8822627A2608ABF3001A6EBE /* AuthenticationStore.swift in Sources */,
+				88BFE04F264688E7005134D1 /* ProfileMainPresenter.swift in Sources */,
+				88BFE079264689BC005134D1 /* ProfileResetPasswordPresenter.swift in Sources */,
 				8822628E2608B18D001A6EBE /* AnyTarget.swift in Sources */,
 				88A0D0C526281D7E007DFFFC /* SignUpContainer.swift in Sources */,
+				88BFE02026467E55005134D1 /* HomeComponent.swift in Sources */,
 				8839ECD8262ADD76000710D2 /* SKMultilineLabelNode.swift in Sources */,
 				8822638C260B2170001A6EBE /* SignUpComponent.swift in Sources */,
 				882262B82608B98E001A6EBE /* SDPageControlDotView.swift in Sources */,
+				88BFE052264688E7005134D1 /* ProfileMainComponent.swift in Sources */,
+				88BFE0BB2647ED27005134D1 /* GenresComponent.swift in Sources */,
 				88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */,
 				88226340260A050F001A6EBE /* LoginInteractor.swift in Sources */,
+				88BFE09826469371005134D1 /* ProfileHeaderViewModel.swift in Sources */,
 				882262D82608BF33001A6EBE /* OnboardingInfoModel.swift in Sources */,
 				882262A82608B699001A6EBE /* OnboardingInteractor.swift in Sources */,
 				882262642608A80B001A6EBE /* ResultHandlingView.swift in Sources */,
@@ -1234,27 +1669,34 @@
 				882262912608B2E7001A6EBE /* Result.swift in Sources */,
 				88A0D0752627FC80007DFFFC /* UIImageView+Kingfisher.swift in Sources */,
 				8822635B260B156C001A6EBE /* MainTextField.swift in Sources */,
+				88BFE0B72647ED26005134D1 /* GenresContract.swift in Sources */,
 				882263A8260B231E001A6EBE /* SpinnerIndicator.swift in Sources */,
 				8839EC6D26299A68000710D2 /* GenrePickerContract.swift in Sources */,
 				882263A0260B22B8001A6EBE /* IndicatableView+UIButton.swift in Sources */,
 				88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */,
 				882262852608AF5A001A6EBE /* KeyChainStorage.swift in Sources */,
+				88BFE02126467E55005134D1 /* HomeInteractor.swift in Sources */,
+				88BFE01C26467E55005134D1 /* HomeContract.swift in Sources */,
 				8801D3F1261DC00E00F0C670 /* TableViewButtonCell.swift in Sources */,
 				882262C62608BCD8001A6EBE /* CustomNavigationBar.swift in Sources */,
+				88BFE07D264689BC005134D1 /* ProfileResetPasswordInteractor.swift in Sources */,
 				88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */,
 				88A0D07C2627FD6A007DFFFC /* ResultView.swift in Sources */,
 				882263AB260B2337001A6EBE /* SpinnerView.swift in Sources */,
+				88BFE0BC2647ED27005134D1 /* GenresInteractor.swift in Sources */,
 				8822629A2608B485001A6EBE /* WebServiceType.swift in Sources */,
 				8822638D260B2170001A6EBE /* SignUpInteractor.swift in Sources */,
 				88A0D05C2627FB9B007DFFFC /* UIViewController+TopVC.swift in Sources */,
 				8822639A260B2276001A6EBE /* IndicatableView+UITableView.swift in Sources */,
 				8822621026086929001A6EBE /* CharacterSet+Additional.swift in Sources */,
+				88BFE01E26467E55005134D1 /* HomeRouter.swift in Sources */,
 				88A0D07F2627FD8F007DFFFC /* ResultViewController.swift in Sources */,
 				88226431260C84A5001A6EBE /* ParameterKeys.swift in Sources */,
 				8839EC6E26299A68000710D2 /* GenrePickerPresenter.swift in Sources */,
 				88226354260A0C5D001A6EBE /* User.swift in Sources */,
 				8839ECD7262ADD76000710D2 /* Extensions.swift in Sources */,
 				8822635F260B15B1001A6EBE /* HideableTextField.swift in Sources */,
+				88BFE051264688E7005134D1 /* ProfileMainViewController.swift in Sources */,
 				882262D02608BED7001A6EBE /* OnboardingPageViewController.swift in Sources */,
 				882262DC2608C17F001A6EBE /* SessionTrackerImpl.swift in Sources */,
 				882262682608A83C001A6EBE /* IndicatableView.swift in Sources */,
@@ -1265,44 +1707,58 @@
 				8822639D260B229C001A6EBE /* IndicatableView+UIViewController.swift in Sources */,
 				8801D3F4261DC03B00F0C670 /* TableViewCellType.swift in Sources */,
 				8822628A2608B0DD001A6EBE /* BaseProvider.swift in Sources */,
+				88BFE06426468957005134D1 /* ProfileSettingsContract.swift in Sources */,
 				8839ECD4262ADD76000710D2 /* Node.swift in Sources */,
 				8822633D260A050F001A6EBE /* LoginRouter.swift in Sources */,
 				8822633F260A050F001A6EBE /* LoginComponent.swift in Sources */,
 				88A0D0BB26281A5D007DFFFC /* TableViewTextFieldCell.swift in Sources */,
 				882262972608B460001A6EBE /* JSONStandard.swift in Sources */,
 				88A0D0702627FC4C007DFFFC /* UITableViewExtension.swift in Sources */,
+				88BFE06626468957005134D1 /* ProfileSettingsRouter.swift in Sources */,
+				88BFE06726468957005134D1 /* ProfileSettingsViewController.swift in Sources */,
 				8839EC7126299A68000710D2 /* GenrePickerComponent.swift in Sources */,
 				882263A4260B22EB001A6EBE /* ActivityView.swift in Sources */,
 				88226397260B224C001A6EBE /* IndicatableView+UIView.swift in Sources */,
+				88BFE0942646934C005134D1 /* ProfileHeaderView.swift in Sources */,
+				88BFE042264687E6005134D1 /* ProfileComponent.swift in Sources */,
 				88976D932616EC7B00F6FD0F /* Strings+Generated.swift in Sources */,
 				8822636F260B1E8F001A6EBE /* UIView+Identifier.swift in Sources */,
 				882262AD2608B7E0001A6EBE /* InteractorOutputProtocol.swift in Sources */,
 				88226358260B153A001A6EBE /* MainTextFieldStyle.swift in Sources */,
 				882262A62608B699001A6EBE /* OnboardingViewController.swift in Sources */,
 				88A0D0832627FE55007DFFFC /* PhoneNumberInputView.swift in Sources */,
+				88BFE01F26467E55005134D1 /* HomeViewController.swift in Sources */,
 				8822625F2608A4AF001A6EBE /* AppConstants.swift in Sources */,
+				88BFE0BA2647ED27005134D1 /* GenresViewController.swift in Sources */,
 				8822633B260A050F001A6EBE /* LoginContract.swift in Sources */,
 				88976D8C2616E9D900F6FD0F /* Fonts+Generated.swift in Sources */,
 				882262A72608B699001A6EBE /* OnboardingComponent.swift in Sources */,
+				88BFE07A264689BC005134D1 /* ProfileResetPasswordRouter.swift in Sources */,
 				882262942608B3A5001A6EBE /* NetworkError.swift in Sources */,
+				88BFE0B92647ED27005134D1 /* GenresRouter.swift in Sources */,
 				8822633E260A050F001A6EBE /* LoginViewController.swift in Sources */,
 				8822621626086A1C001A6EBE /* ConvertExtensions.swift in Sources */,
 				882262572608A385001A6EBE /* SessionTracker.swift in Sources */,
 				882262A32608B699001A6EBE /* OnboardingContract.swift in Sources */,
+				88BFE06526468957005134D1 /* ProfileSettingsPresenter.swift in Sources */,
+				88BFE04E264688E7005134D1 /* ProfileMainContract.swift in Sources */,
 				8839ECD6262ADD76000710D2 /* MagneticView.swift in Sources */,
 				882261F726085F8C001A6EBE /* AppDelegate.swift in Sources */,
 				88A0D06B2627FC06007DFFFC /* UICollectionViewExtension.swift in Sources */,
+				88BFE08926468CB7005134D1 /* TableViewLabelCellStyle.swift in Sources */,
 				88976D892616E9C900F6FD0F /* Colors+Generated.swift in Sources */,
 				882262A42608B699001A6EBE /* OnboardingPresenter.swift in Sources */,
 				882262A52608B699001A6EBE /* OnboardingRouter.swift in Sources */,
 				8822626C2608A8E3001A6EBE /* ResultHandlingView+UIViewController.swift in Sources */,
 				88A0D0BF26281A93007DFFFC /* TableViewLabelCell.swift in Sources */,
+				88BFE01D26467E55005134D1 /* HomePresenter.swift in Sources */,
 				8839EC7226299A68000710D2 /* GenrePickerInteractor.swift in Sources */,
 				8822638B260B2170001A6EBE /* SignUpViewController.swift in Sources */,
 				88226388260B2170001A6EBE /* SignUpContract.swift in Sources */,
 				88226373260B1EB1001A6EBE /* UIView+AddSubviews.swift in Sources */,
 				88226389260B2170001A6EBE /* SignUpPresenter.swift in Sources */,
 				8822634C260A0A0C001A6EBE /* UserTarget.swift in Sources */,
+				88BFE053264688E7005134D1 /* ProfileMainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

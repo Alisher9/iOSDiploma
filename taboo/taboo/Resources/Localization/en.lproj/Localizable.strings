@@ -16,6 +16,9 @@
 "Common.Genre" = "Genres";
 "Common.Favorite" = "Favorites";
 "Common.Profile" = "Profile";
+"Common.Edit" = "Edit";
+"Common.Delete" = "Delete";
+"Common.Cancel" = "Cancel";
 
 // Onboarding
 "Onboarding.Title1" = "Save search time";
@@ -73,3 +76,12 @@
 "GenrePicker.SciFi" = "Sci-Fi";
 "GenrePicker.Button" = "Next";
 
+// Profile
+"Profile.Settings" = "Settings";
+"Profile.ChangePassword" = "Change password";
+"Profile.Logout" = "Logout";
+"Profile.Password" = "Password";
+"Profile.CurrentPassword" = "Current password";
+"Profile.NewPassword" = "New password";
+"Profile.ConfirmPassword" = "Confirm password";
+"Profile.ResetPassword" = "Reset password";

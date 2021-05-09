@@ -17,8 +17,4 @@ final class GenrePickerRouter {
 }
 
 extension GenrePickerRouter: GenrePickerWireframe {
-    func goToMainTabBar() {
-        rootModuleBuilder?.setupRootController(animated: true)
-    }
-    
 }

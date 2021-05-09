@@ -10,7 +10,7 @@ import UIKit
 enum TableViewCellType {
     case button(title: String)
     case info(title: String)
-    case label(title: String)
+    case label(title: String, style: TableViewLabelCellStyle)
     case textField(style: MainTextFieldStyle,
                    placeholder: String,
                    key: String,
@@ -28,9 +28,10 @@ enum TableViewCellType {
             let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as TableViewInfoCell
             cell.title = title
             return cell
-        case .label(title: let title):
+        case .label(let title, let style):
             let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as TableViewLabelCell
             cell.title = title
+            cell.configure(style)
             return cell
         case .textField(let style,
                         let placeholder,

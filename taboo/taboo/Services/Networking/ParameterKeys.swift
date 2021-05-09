@@ -16,4 +16,8 @@ struct JSONRequestParameter {
         static let name = "name"
         static let surname = "surname"
     }
+    
+    struct Genres {
+        static let genres = "genres"
+    }
 }

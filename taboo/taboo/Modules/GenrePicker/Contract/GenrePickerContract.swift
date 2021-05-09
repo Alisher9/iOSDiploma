@@ -10,15 +10,16 @@ protocol GenrePickerView: ResultHandlingView {
 }
 
 protocol GenrePickerPresentation: class {
-    func didTapOnNextButton()
+    func didTapGenres(genres: [String])
 }
 
 protocol GenrePickerUseCase: class {
+    func genrePicker(genres: [String])
 }
 
 protocol GenrePickerInteractorOutput: InteractorOutputProtocol {
+    func pickedGenres()
 }
 
 protocol GenrePickerWireframe: class {
-    func goToMainTabBar()
 }

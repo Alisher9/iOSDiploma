@@ -32,7 +32,8 @@ extension LoginComponent: LoginModuleBuilder {
         let viewController = LoginViewController()
         let presenter = LoginPresenter()
         let router = LoginRouter(signUpModuleBuilder: signUpComponent,
-                                 genrePickerModuleBuilder: genrePickerComponent)
+                                 genrePickerModuleBuilder: genrePickerComponent,
+                                 sessionTracker: dependency.sessionTracker)
         let interactor = LoginInteractor(webService: dependency.webService)
         
         viewController.presenter = presenter
