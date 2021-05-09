@@ -25,6 +25,10 @@ final class RootComponent: BootstrapComponent {
         return HomeComponent(parent: self)
     }
     
+    private var genresComponent: GenresComponent {
+        return GenresComponent(parent: self)
+    }
+    
     private var profileComponent: ProfileComponent {
         return ProfileComponent(parent: self)
     }
@@ -52,8 +56,7 @@ final class RootComponent: BootstrapComponent {
         vc.tabBarItem.image = Asset.tabbarHome.image
 //        let vcNavVc = UINavigationController(rootViewController: vc)
         
-        let vc2 = UIViewController()
-        vc2.view.backgroundColor = .red
+        let vc2 = genresComponent.viewController
         vc2.tabBarItem.title = L10n.Common.genre
         vc2.tabBarItem.image = Asset.tabbarGenre.image
         let vc2NavVc = UINavigationController(rootViewController: vc2)

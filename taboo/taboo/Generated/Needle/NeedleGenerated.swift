@@ -13,6 +13,9 @@ public func registerProviderFactories() {
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->HomeComponent") { component in
         return HomeDependencycad225e9266b3c9a56ddProvider(component: component)
     }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->GenresComponent") { component in
+        return GenresDependency4e91ec0bf45d43f94ad8Provider(component: component)
+    }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent->SignUpComponent") { component in
         return SignUpDependency472b53508e2bb1a5835aProvider(component: component)
     }
@@ -56,6 +59,21 @@ private class HomeDependencycad225e9266b3c9a56ddBaseProvider: HomeDependency {
 }
 /// ^->RootComponent->HomeComponent
 private class HomeDependencycad225e9266b3c9a56ddProvider: HomeDependencycad225e9266b3c9a56ddBaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent as! RootComponent)
+    }
+}
+private class GenresDependency4e91ec0bf45d43f94ad8BaseProvider: GenresDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->GenresComponent
+private class GenresDependency4e91ec0bf45d43f94ad8Provider: GenresDependency4e91ec0bf45d43f94ad8BaseProvider {
     init(component: NeedleFoundation.Scope) {
         super.init(rootComponent: component.parent as! RootComponent)
     }

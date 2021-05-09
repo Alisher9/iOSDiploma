@@ -141,6 +141,12 @@
 		88BFE09026469324005134D1 /* AvatarImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE08F26469324005134D1 /* AvatarImageViewModel.swift */; };
 		88BFE0942646934C005134D1 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0932646934C005134D1 /* ProfileHeaderView.swift */; };
 		88BFE09826469371005134D1 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE09726469371005134D1 /* ProfileHeaderViewModel.swift */; };
+		88BFE0B72647ED26005134D1 /* GenresContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B12647ED26005134D1 /* GenresContract.swift */; };
+		88BFE0B82647ED27005134D1 /* GenresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B22647ED26005134D1 /* GenresPresenter.swift */; };
+		88BFE0B92647ED27005134D1 /* GenresRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B32647ED26005134D1 /* GenresRouter.swift */; };
+		88BFE0BA2647ED27005134D1 /* GenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B42647ED26005134D1 /* GenresViewController.swift */; };
+		88BFE0BB2647ED27005134D1 /* GenresComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B52647ED26005134D1 /* GenresComponent.swift */; };
+		88BFE0BC2647ED27005134D1 /* GenresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BFE0B62647ED26005134D1 /* GenresInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -285,6 +291,12 @@
 		88BFE08F26469324005134D1 /* AvatarImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageViewModel.swift; sourceTree = "<group>"; };
 		88BFE0932646934C005134D1 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		88BFE09726469371005134D1 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		88BFE0B12647ED26005134D1 /* GenresContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresContract.swift; sourceTree = "<group>"; };
+		88BFE0B22647ED26005134D1 /* GenresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresenter.swift; sourceTree = "<group>"; };
+		88BFE0B32647ED26005134D1 /* GenresRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresRouter.swift; sourceTree = "<group>"; };
+		88BFE0B42647ED26005134D1 /* GenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
+		88BFE0B52647ED26005134D1 /* GenresComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresComponent.swift; sourceTree = "<group>"; };
+		88BFE0B62647ED26005134D1 /* GenresInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +422,7 @@
 				88226381260B215D001A6EBE /* SignUp */,
 				8839EC6626299A4C000710D2 /* GenrePicker */,
 				88BFE01526467E28005134D1 /* Home */,
+				88BFE0B02647ED14005134D1 /* Genres */,
 				88BFE037264687D0005134D1 /* Profile */,
 			);
 			path = Modules;
@@ -1388,6 +1401,67 @@
 			path = ProfileHeaderView;
 			sourceTree = "<group>";
 		};
+		88BFE0B02647ED14005134D1 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0C72647ED71005134D1 /* Component */,
+				88BFE0C62647ED68005134D1 /* Contract */,
+				88BFE0C52647ED61005134D1 /* View */,
+				88BFE0C42647ED57005134D1 /* Interactor */,
+				88BFE0C32647ED4B005134D1 /* Presenter */,
+				88BFE0BF2647ED2B005134D1 /* Router */,
+			);
+			path = Genres;
+			sourceTree = "<group>";
+		};
+		88BFE0BF2647ED2B005134D1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B32647ED26005134D1 /* GenresRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88BFE0C32647ED4B005134D1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B22647ED26005134D1 /* GenresPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		88BFE0C42647ED57005134D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B62647ED26005134D1 /* GenresInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		88BFE0C52647ED61005134D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B42647ED26005134D1 /* GenresViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88BFE0C62647ED68005134D1 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B12647ED26005134D1 /* GenresContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		88BFE0C72647ED71005134D1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				88BFE0B52647ED26005134D1 /* GenresComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		C1D761DACF96D3F47D5B5F7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1565,6 +1639,7 @@
 				882262C12608BC60001A6EBE /* BaseViewController.swift in Sources */,
 				88BFE07C264689BC005134D1 /* ProfileResetPasswordComponent.swift in Sources */,
 				8822638A260B2170001A6EBE /* SignUpRouter.swift in Sources */,
+				88BFE0B82647ED27005134D1 /* GenresPresenter.swift in Sources */,
 				88BFE06926468957005134D1 /* ProfileSettingsInteractor.swift in Sources */,
 				88BFE06826468957005134D1 /* ProfileSettingsComponent.swift in Sources */,
 				882262BC2608B9B2001A6EBE /* SDPageControlView.swift in Sources */,
@@ -1580,6 +1655,7 @@
 				8822638C260B2170001A6EBE /* SignUpComponent.swift in Sources */,
 				882262B82608B98E001A6EBE /* SDPageControlDotView.swift in Sources */,
 				88BFE052264688E7005134D1 /* ProfileMainComponent.swift in Sources */,
+				88BFE0BB2647ED27005134D1 /* GenresComponent.swift in Sources */,
 				88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */,
 				88226340260A050F001A6EBE /* LoginInteractor.swift in Sources */,
 				88BFE09826469371005134D1 /* ProfileHeaderViewModel.swift in Sources */,
@@ -1593,6 +1669,7 @@
 				882262912608B2E7001A6EBE /* Result.swift in Sources */,
 				88A0D0752627FC80007DFFFC /* UIImageView+Kingfisher.swift in Sources */,
 				8822635B260B156C001A6EBE /* MainTextField.swift in Sources */,
+				88BFE0B72647ED26005134D1 /* GenresContract.swift in Sources */,
 				882263A8260B231E001A6EBE /* SpinnerIndicator.swift in Sources */,
 				8839EC6D26299A68000710D2 /* GenrePickerContract.swift in Sources */,
 				882263A0260B22B8001A6EBE /* IndicatableView+UIButton.swift in Sources */,
@@ -1606,6 +1683,7 @@
 				88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */,
 				88A0D07C2627FD6A007DFFFC /* ResultView.swift in Sources */,
 				882263AB260B2337001A6EBE /* SpinnerView.swift in Sources */,
+				88BFE0BC2647ED27005134D1 /* GenresInteractor.swift in Sources */,
 				8822629A2608B485001A6EBE /* WebServiceType.swift in Sources */,
 				8822638D260B2170001A6EBE /* SignUpInteractor.swift in Sources */,
 				88A0D05C2627FB9B007DFFFC /* UIViewController+TopVC.swift in Sources */,
@@ -1651,11 +1729,13 @@
 				88A0D0832627FE55007DFFFC /* PhoneNumberInputView.swift in Sources */,
 				88BFE01F26467E55005134D1 /* HomeViewController.swift in Sources */,
 				8822625F2608A4AF001A6EBE /* AppConstants.swift in Sources */,
+				88BFE0BA2647ED27005134D1 /* GenresViewController.swift in Sources */,
 				8822633B260A050F001A6EBE /* LoginContract.swift in Sources */,
 				88976D8C2616E9D900F6FD0F /* Fonts+Generated.swift in Sources */,
 				882262A72608B699001A6EBE /* OnboardingComponent.swift in Sources */,
 				88BFE07A264689BC005134D1 /* ProfileResetPasswordRouter.swift in Sources */,
 				882262942608B3A5001A6EBE /* NetworkError.swift in Sources */,
+				88BFE0B92647ED27005134D1 /* GenresRouter.swift in Sources */,
 				8822633E260A050F001A6EBE /* LoginViewController.swift in Sources */,
 				8822621626086A1C001A6EBE /* ConvertExtensions.swift in Sources */,
 				882262572608A385001A6EBE /* SessionTracker.swift in Sources */,
