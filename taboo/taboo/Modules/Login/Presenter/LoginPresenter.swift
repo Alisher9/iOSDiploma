@@ -32,6 +32,8 @@ extension LoginPresenter: LoginPresentation {
 extension LoginPresenter: LoginInteractorOutput {
     func didLogin(token: String) {
         view?.hideActivityIndicator()
+        print("oops")
+        router?.goToGenrePicker()
         self.sessionTracker?.didLogIn(token: token)
     }
     

@@ -10,7 +10,7 @@ import Foundation
 struct JSONRequestParameter {
     
     struct User {
-        static let phoneNumber = "phone_number"
+        static let phoneNumber = "phone"
         static let password = "password"
         static let passwordConfirmation = "password_confirmation"
         static let name = "name"

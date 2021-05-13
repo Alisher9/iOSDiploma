@@ -40,7 +40,7 @@ extension UserTarget: BaseProviderType, AnyTargetConvertible {
                 JSONRequestParameter.User.phoneNumber: phoneNumber,
                 JSONRequestParameter.User.password: password
             ]
-            return .requestParameters(parameters: jsonParameters, encoding: URLEncoding.queryString)
+            return .requestParameters(parameters: jsonParameters, encoding: JSONEncoding.default)
         case .createUser(let user):
             let jsonParameters: [String: Any] = [
                 JSONRequestParameter.User.phoneNumber: user.phoneNumber ?? "",

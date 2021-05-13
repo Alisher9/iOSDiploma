@@ -52,9 +52,11 @@ final class RootComponent: BootstrapComponent {
     
     private func setupTabBarController() -> UIViewController {
         let vc = mainPageComponent.viewController
+//        let layout = UICollectionViewFlowLayout()
+//        let vc1 = HomeViewController(collectionViewLayout: layout)
         vc.tabBarItem.title = L10n.Common.home
         vc.tabBarItem.image = Asset.tabbarHome.image
-//        let vcNavVc = UINavigationController(rootViewController: vc)
+        let vcNavVc = UINavigationController(rootViewController: vc)
         
         let vc2 = genresComponent.viewController
         vc2.tabBarItem.title = L10n.Common.genre
@@ -73,7 +75,7 @@ final class RootComponent: BootstrapComponent {
         let profileNavVC = UINavigationController(rootViewController: vc4)
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [vc, vc2NavVc, vc3, profileNavVC]
+        tabBarController.viewControllers = [vcNavVc, vc2NavVc, vc3, profileNavVC]
         tabBarController.tabBar.tintColor = ColorName.mainPurple.color
         
         return tabBarController

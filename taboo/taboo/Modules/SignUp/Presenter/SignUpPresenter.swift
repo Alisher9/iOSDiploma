@@ -23,9 +23,11 @@ extension SignUpPresenter: SignUpPresentation {
         userContainer?.user.phoneNumber = data[JSONRequestParameter.User.phoneNumber]
         userContainer?.user.password = data[JSONRequestParameter.User.password]
         userContainer?.user.passwordConfirmation = data[JSONRequestParameter.User.passwordConfirmation]
+        print("/// container", userContainer)
     }
     
     func didTapContinue() {
+        print("/// container 2", userContainer)
         guard let user = userContainer?.user else {
             return
         }
@@ -33,15 +35,15 @@ extension SignUpPresenter: SignUpPresentation {
         interactor?.createUser(user: user)
     }
     
-//    func viewDidLoad() {
-//        var data: [String: String] = [:]
-//        data[JSONRequestParameter.User.name] = userContainer?.user.name
-//        data[JSONRequestParameter.User.surname] = userContainer?.user.surname
-//        data[JSONRequestParameter.User.phoneNumber] = userContainer?.user.phoneNumber
-//        data[JSONRequestParameter.User.password] = userContainer?.user.password
-//        data[JSONRequestParameter.User.passwordConfirmation] = userContainer?.user.passwordConfirmation
-//        view?.update(with: data)
-//    }
+    func viewDidLoad() {
+        var data: [String: String] = [:]
+        data[JSONRequestParameter.User.name] = userContainer?.user.name
+        data[JSONRequestParameter.User.surname] = userContainer?.user.surname
+        data[JSONRequestParameter.User.phoneNumber] = userContainer?.user.phoneNumber
+        data[JSONRequestParameter.User.password] = userContainer?.user.password
+        data[JSONRequestParameter.User.passwordConfirmation] = userContainer?.user.passwordConfirmation
+        view?.update(with: data)
+    }
 }
 
 extension SignUpPresenter: SignUpInteractorOutput {

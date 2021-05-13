@@ -78,15 +78,16 @@ extension GenrePickerViewController: MagneticDelegate {
     
     func magnetic(_ magnetic: Magnetic,
                   didSelect node: Node) {
-        print("didSelect -> \(node)")
-        genresList.append(node.description)
+        print("didSelect -> \(node.text)")
+        genresList.append(node.label.text ?? "")
         print("/// list", genresList)
         
     }
     
     func magnetic(_ magnetic: Magnetic,
                   didDeselect node: Node) {
-        print("didDeselect -> \(node)")
+        print("didDeselect -> \(node.label.text ?? "")")
+        print("/// after deleting", genresList)
     }
     
     func magnetic(_ magnetic: Magnetic,

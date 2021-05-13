@@ -15,7 +15,7 @@ struct AppConstants {
         static let appUrl = URL(string: "https://taboo20.herokuapp.com")!
         
         struct User {
-            static let loginPath = "/api/login"
+            static let loginPath = "/api/login/"
             static let createUser = "/api/register"
             static let genrePicker = "/api/genre"
         }

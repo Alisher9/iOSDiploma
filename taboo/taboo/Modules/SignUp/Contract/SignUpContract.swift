@@ -12,6 +12,7 @@ protocol SignUpView: ResultHandlingView {
 
 protocol SignUpPresentation: class {
     func didTapContinue()
+    func viewDidLoad()
     func updateUser(with data: [String: String])
 }
 
