@@ -16,8 +16,8 @@ struct AppConstants {
         
         struct User {
             static let loginPath = "/api/login/"
-            static let createUser = "/api/register"
-            static let genrePicker = "/api/genre"
+            static let createUser = "/api/register/"
+            static let genrePicker = "/api/genre/"
         }
         struct Image {
             static func getImage(fileName: String) -> String {

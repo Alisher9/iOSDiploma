@@ -1,22 +1,23 @@
 //
-//  SignUpRouter.swift
+//  SignUpDetailRouter.swift
 //  taboo
 //
-//  Created by Alisher Sattarbek on 3/24/21.
+//  Created by Alisher Sattarbek on 5/15/21.
 //  
 //
 
 import UIKit
 
-final class SignUpRouter {
+final class SignUpDetailRouter {
     
     // MARK: Properties
     
     weak var view: UIViewController?
 }
 
-extension SignUpRouter: SignUpWireframe {
+extension SignUpDetailRouter: SignUpDetailWireframe {
     func popToRoot() {
         view?.navigationController?.popToRootViewController(animated: true)
     }
 }
+

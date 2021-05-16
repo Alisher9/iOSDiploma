@@ -28,6 +28,7 @@ internal enum Asset {
   internal static let logo = ImageAsset(name: "logo")
   internal static let seach = ImageAsset(name: "seach")
   internal static let settingsIcon = ImageAsset(name: "settings_icon")
+  internal static let sherlock = ImageAsset(name: "sherlock")
   internal static let success = ImageAsset(name: "success")
   internal static let tabbarFavorite = ImageAsset(name: "tabbarFavorite")
   internal static let tabbarGenre = ImageAsset(name: "tabbarGenre")

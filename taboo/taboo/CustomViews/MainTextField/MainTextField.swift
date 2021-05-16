@@ -71,19 +71,23 @@ final class MainTextField: HideableTextField {
             placeholder = "+7 ()"
             textSecureIcon.isHidden = true
             textSecureIcon.isUserInteractionEnabled = false
+            containerViewForIcon.isUserInteractionEnabled = false
             keyboardType = .asciiCapableNumberPad
         case .number:
             isSecureTextEntry = false
             placeholder = ""
+            containerViewForIcon.isUserInteractionEnabled = false
             textSecureIcon.isHidden = true
             textSecureIcon.isUserInteractionEnabled = false
             keyboardType = .numberPad
         case .password:
             isSecureTextEntry = true
             textSecureIcon.isHidden = false
+            containerViewForIcon.isUserInteractionEnabled = true
             keyboardType = .asciiCapable
         case .regular:
             isSecureTextEntry = false
+            containerViewForIcon.isUserInteractionEnabled = false
             textSecureIcon.isHidden = true
             textSecureIcon.isUserInteractionEnabled = false
             keyboardType = .asciiCapable
@@ -103,6 +107,7 @@ final class MainTextField: HideableTextField {
                 result.append(ch)
             }
         }
+        print("/// res", result)
         return result
     }
 

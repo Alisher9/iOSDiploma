@@ -1,16 +1,16 @@
 //
-//  SignUpInteractor.swift
+//  SignUpDetailInteractor.swift
 //  taboo
 //
-//  Created by Alisher Sattarbek on 3/24/21.
+//  Created by Alisher Sattarbek on 5/15/21.
 //  
 //
 
-final class SignUpInteractor {
+final class SignUpDetailInteractor {
     
     // MARK: Properties
     
-    weak var output: SignUpInteractorOutput?
+    weak var output: SignUpDetailInteractorOutput?
     
     private var webService: WebServiceType
     
@@ -20,9 +20,9 @@ final class SignUpInteractor {
     
 }
 
-extension SignUpInteractor: SignUpUseCase {
-    func createUser(user: User) {
-        let target = UserTarget.createUser(user: user)
+extension SignUpDetailInteractor: SignUpDetailUseCase {
+    func createUser(name: String, surname: String, phone: String, password: String, passwordConfirm: String) {
+        let target = UserTarget.createUser(name: name, surname: surname, phone: phone, password: password, passwordConfirm: passwordConfirm)
         webService.load(target: target) { [weak self] (result) in
             switch result {
             case .success:

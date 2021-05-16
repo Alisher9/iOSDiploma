@@ -39,7 +39,6 @@ final class PhoneNumberInputView: UIView {
         view.textColor = ColorName.textBlack.color
         view.placeholder = L10n.SignUp.phoneNumber
         view.font = FontFamily.SFProDisplay.medium.font(size: 20)
-        view.keyboardType = .numberPad
         view.delegate = self
         view.translatesAutoresizingMaskIntoConstraints = false
         return view

@@ -9,7 +9,7 @@ import Moya
 
 enum UserTarget {
     case login(phoneNumber: String, password: String)
-    case createUser(user: User)
+    case createUser(name: String, surname: String, phone: String, password: String, passwordConfirm: String)
     case genrePicker(genres: [String])
 }
 
@@ -41,15 +41,15 @@ extension UserTarget: BaseProviderType, AnyTargetConvertible {
                 JSONRequestParameter.User.password: password
             ]
             return .requestParameters(parameters: jsonParameters, encoding: JSONEncoding.default)
-        case .createUser(let user):
+        case .createUser(let name, let surname, let phoneNumber, let password, let confirmPassword):
             let jsonParameters: [String: Any] = [
-                JSONRequestParameter.User.phoneNumber: user.phoneNumber ?? "",
-                JSONRequestParameter.User.password: user.password ?? "",
-                JSONRequestParameter.User.passwordConfirmation: user.passwordConfirmation ?? "",
-                JSONRequestParameter.User.name: user.name ?? "",
-                JSONRequestParameter.User.surname: user.surname ?? ""
+                JSONRequestParameter.User.phoneNumber: phoneNumber,
+                JSONRequestParameter.User.password: password,
+                JSONRequestParameter.User.passwordConfirmation: confirmPassword,
+                JSONRequestParameter.User.name: name,
+                JSONRequestParameter.User.surname: surname
             ]
-            return .requestParameters(parameters: jsonParameters, encoding: URLEncoding.queryString)
+            return .requestParameters(parameters: jsonParameters, encoding: JSONEncoding.default)
         case .genrePicker(let genres):
             let jsonParameters: [String: Any] = [
                 JSONRequestParameter.Genres.genres: genres

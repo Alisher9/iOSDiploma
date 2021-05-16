@@ -16,6 +16,9 @@ public func registerProviderFactories() {
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->GenresComponent") { component in
         return GenresDependency4e91ec0bf45d43f94ad8Provider(component: component)
     }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent->SignUpComponent->SignUpDetailComponent") { component in
+        return SignUpDetailDependency219701779fe548da484cProvider(component: component)
+    }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent->SignUpComponent") { component in
         return SignUpDependency472b53508e2bb1a5835aProvider(component: component)
     }
@@ -76,6 +79,26 @@ private class GenresDependency4e91ec0bf45d43f94ad8BaseProvider: GenresDependency
 private class GenresDependency4e91ec0bf45d43f94ad8Provider: GenresDependency4e91ec0bf45d43f94ad8BaseProvider {
     init(component: NeedleFoundation.Scope) {
         super.init(rootComponent: component.parent as! RootComponent)
+    }
+}
+private class SignUpDetailDependency219701779fe548da484cBaseProvider: SignUpDetailDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    var userContainer: UserContainer {
+        return signUpComponent.userContainer
+    }
+    private let rootComponent: RootComponent
+    private let signUpComponent: SignUpComponent
+    init(rootComponent: RootComponent, signUpComponent: SignUpComponent) {
+        self.rootComponent = rootComponent
+        self.signUpComponent = signUpComponent
+    }
+}
+/// ^->RootComponent->LoginComponent->SignUpComponent->SignUpDetailComponent
+private class SignUpDetailDependency219701779fe548da484cProvider: SignUpDetailDependency219701779fe548da484cBaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent.parent.parent as! RootComponent, signUpComponent: component.parent as! SignUpComponent)
     }
 }
 private class SignUpDependency472b53508e2bb1a5835aBaseProvider: SignUpDependency {

@@ -52,11 +52,11 @@ final class RootComponent: BootstrapComponent {
     
     private func setupTabBarController() -> UIViewController {
         let vc = mainPageComponent.viewController
-//        let layout = UICollectionViewFlowLayout()
-//        let vc1 = HomeViewController(collectionViewLayout: layout)
-        vc.tabBarItem.title = L10n.Common.home
-        vc.tabBarItem.image = Asset.tabbarHome.image
-        let vcNavVc = UINavigationController(rootViewController: vc)
+        let layout = UICollectionViewFlowLayout()
+        let vc1 = HomeViewController(collectionViewLayout: layout)
+        vc1.tabBarItem.title = L10n.Common.home
+        vc1.tabBarItem.image = Asset.tabbarHome.image
+        let vcNavVc = UINavigationController(rootViewController: vc1)
         
         let vc2 = genresComponent.viewController
         vc2.tabBarItem.title = L10n.Common.genre
