@@ -95,17 +95,17 @@ extension HomeMovieCollectionViewCell: UICollectionViewDataSource,
                                        UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        if let count = movieCategory?.movies?.count {
-             return count
-        }
-        return 0
+//        if let count = movieCategory?.movies?.count {
+//             return count
+//        }
+        return 5
     }
 
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieInnerCell",
                                                        for: indexPath) as! MovieInnerCollectionViewCell
-        cell.movie = movieCategory?.movies?[indexPath.item]
+//        cell.movie = movieCategory?.movies?[indexPath.item]
         return cell
     }
 

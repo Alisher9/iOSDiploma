@@ -33,6 +33,10 @@ final class RootComponent: BootstrapComponent {
         return ProfileComponent(parent: self)
     }
     
+    private var moviesComponent: MoviesComponent {
+        return MoviesComponent(parent: self)
+    }
+    
     // MARK: - Properties
     
     var webService: WebServiceType {
@@ -46,6 +50,10 @@ final class RootComponent: BootstrapComponent {
     
     var rootModuleBuilder: RootModuleBuilder {
         return self
+    }
+    
+    var moviesModuleBuilder: MoviesModuleBuilder {
+        return moviesComponent
     }
     
     // MARK: - Private actions

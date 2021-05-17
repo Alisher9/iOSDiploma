@@ -32,7 +32,7 @@ final class MovieInnerCollectionViewCell: UICollectionViewCell {
     
     let image: UIImageView = {
        let image = UIImageView()
-//        image.image = Asset.failure.image
+        image.image = Asset.failure.image
         image.contentMode = .scaleAspectFill
         image.layer.cornerRadius = 10
         image.layer.masksToBounds = true

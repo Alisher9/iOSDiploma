@@ -7,10 +7,12 @@
 //
 
 protocol ProfileMainView: ResultHandlingView {
+    func update(with user: User)
 }
 
 protocol ProfileMainPresentation: class {
     func didTapSettings()
+    func viewDidLoad()
 }
 
 protocol ProfileMainUseCase: class {

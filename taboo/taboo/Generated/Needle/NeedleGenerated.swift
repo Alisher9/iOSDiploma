@@ -22,6 +22,9 @@ public func registerProviderFactories() {
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent->SignUpComponent") { component in
         return SignUpDependency472b53508e2bb1a5835aProvider(component: component)
     }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->MoviesComponent->MovieCardComponent") { component in
+        return MovieCardDependency0fb95835ad1df208bce5Provider(component: component)
+    }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent->GenrePickerComponent") { component in
         return GenrePickerDependency9d9dfcc60b6638486709Provider(component: component)
     }
@@ -36,6 +39,9 @@ public func registerProviderFactories() {
     }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->ProfileComponent->ProfileSettingsComponent") { component in
         return ProfileSettingsDependencybdd38f4a81e26bd2a4c0Provider(component: component)
+    }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->MoviesComponent") { component in
+        return MoviesDependency4b24739a13b3ceeb0a92Provider(component: component)
     }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent") { component in
         return EmptyDependencyProvider(component: component)
@@ -116,6 +122,29 @@ private class SignUpDependency472b53508e2bb1a5835aProvider: SignUpDependency472b
         super.init(rootComponent: component.parent.parent as! RootComponent)
     }
 }
+private class MovieCardDependency0fb95835ad1df208bce5BaseProvider: MovieCardDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    var movieContainer: MovieContainer {
+        return moviesComponent.movieContainer
+    }
+    var sessionTracker: SessionTracker {
+        return rootComponent.sessionTracker
+    }
+    private let moviesComponent: MoviesComponent
+    private let rootComponent: RootComponent
+    init(moviesComponent: MoviesComponent, rootComponent: RootComponent) {
+        self.moviesComponent = moviesComponent
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->MoviesComponent->MovieCardComponent
+private class MovieCardDependency0fb95835ad1df208bce5Provider: MovieCardDependency0fb95835ad1df208bce5BaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(moviesComponent: component.parent as! MoviesComponent, rootComponent: component.parent.parent as! RootComponent)
+    }
+}
 private class GenrePickerDependency9d9dfcc60b6638486709BaseProvider: GenrePickerDependency {
     var webService: WebServiceType {
         return rootComponent.webService
@@ -155,6 +184,9 @@ private class ProfileMainDependency662ca9c7119e8e0d3443BaseProvider: ProfileMain
     }
     var sessionTracker: SessionTracker {
         return rootComponent.sessionTracker
+    }
+    var moviesModuleBuilder: MoviesModuleBuilder {
+        return rootComponent.moviesModuleBuilder
     }
     private let profileComponent: ProfileComponent
     private let rootComponent: RootComponent
@@ -205,6 +237,21 @@ private class ProfileSettingsDependencybdd38f4a81e26bd2a4c0BaseProvider: Profile
 private class ProfileSettingsDependencybdd38f4a81e26bd2a4c0Provider: ProfileSettingsDependencybdd38f4a81e26bd2a4c0BaseProvider {
     init(component: NeedleFoundation.Scope) {
         super.init(profileComponent: component.parent as! ProfileComponent, rootComponent: component.parent.parent as! RootComponent)
+    }
+}
+private class MoviesDependency4b24739a13b3ceeb0a92BaseProvider: MoviesDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->MoviesComponent
+private class MoviesDependency4b24739a13b3ceeb0a92Provider: MoviesDependency4b24739a13b3ceeb0a92BaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent as! RootComponent)
     }
 }
 private class LoginDependency006c7d880fec28863ecaBaseProvider: LoginDependency {

@@ -24,11 +24,11 @@ final class HomeViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MovieCategory.featuredMovies { (appCategories) -> () in
-            
-            self.movieCategories = appCategories
-            self.collectionView?.reloadData()
-        }
+//        MovieCategory.featuredMovies { (appCategories) -> () in
+//
+//            self.movieCategories = appCategories
+//            self.collectionView?.reloadData()
+//        }
         
         collectionView.backgroundColor = .white
         collectionView.register(HomeMovieCollectionViewCell.self,
@@ -64,10 +64,10 @@ extension HomeViewController: HomeView {
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        if let count = movieCategories?.count {
-            return count
-        }
-        return 0
+//        if let count = movieCategories?.count {
+//            return count
+//        }
+        return 5
     }
 
     override func collectionView(_ collectionView: UICollectionView,

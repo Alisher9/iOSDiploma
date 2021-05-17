@@ -23,6 +23,19 @@ final class ProfileMainPresenter {
 }
 
 extension ProfileMainPresenter: ProfileMainPresentation {
+    func viewDidLoad() {
+//        view?.showActivityIndicator()
+//        if let user = sessionTracker?.currentUser {
+//            view?.hideActivityIndicator()
+//            view?.update(with: user)
+//        }
+        
+//        NotificationCenter.default.addObserver(self,
+//                                               selector: #selector(updateUser(_:)),
+//                                               name: AppConstants.NotificationKey.userUpdated,
+//                                               object: nil)
+    }
+    
     func didTapSettings() {
         router?.showProfileSettings()
     }

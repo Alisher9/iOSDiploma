@@ -13,6 +13,7 @@ protocol ProfileMainDependency: Dependency {
     var webService: WebServiceType { get }
     var profileSettingsModuleBuilder: ProfileSettingsModuleBuilder { get }
     var sessionTracker: SessionTracker { get }
+    var moviesModuleBuilder: MoviesModuleBuilder { get }
 }
 
 final class ProfileMainComponent: Component<ProfileMainDependency> {
@@ -26,6 +27,7 @@ extension ProfileMainComponent: ProfileMainModuleBuilder {
         let interactor = ProfileMainInteractor(webService: dependency.webService)
         
         viewController.presenter = presenter
+        viewController.moviesModuleBuilder = dependency.moviesModuleBuilder
         
         presenter.view = viewController
         presenter.router = router

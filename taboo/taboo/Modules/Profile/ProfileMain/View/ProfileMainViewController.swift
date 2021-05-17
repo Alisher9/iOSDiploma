@@ -22,6 +22,8 @@ final class ProfileMainViewController: BaseViewController {
         }
     }
     
+    var moviesModuleBuilder: MoviesModuleBuilder?
+    
     // MARK: - Private properties
     
     private lazy var profileHeaderView: ProfileHeaderView = {
@@ -39,6 +41,19 @@ final class ProfileMainViewController: BaseViewController {
                                                 phone: "87084910634")
         return view
     }()
+    
+    private lazy var moviesViewController: MoviesViewController = {
+        guard let vc = moviesModuleBuilder?.viewController as? MoviesViewController else {
+            assertionFailure("Can't get MoviesViewController")
+            return MoviesViewController()
+        }
+        vc.delegate = self
+        vc.tableViewContentInset = UIEdgeInsets(top: 255, left: 0, bottom: 0, right: 0)
+        vc.movieType = .user
+        vc.view.translatesAutoresizingMaskIntoConstraints = false
+        addChild(vc)
+        return vc
+    }()
 
     // MARK: - Lifecycle
     
@@ -46,21 +61,27 @@ final class ProfileMainViewController: BaseViewController {
         super.viewDidLoad()
         
         setupView()
+        presenter?.viewDidLoad()
     }
     
     // MARK: - Setup
     
     private func setupView() {
-//        view.backgroundColor = ColorName.lightGray.color
+        view.backgroundColor = ColorName.lightGray.color
         configureSubviews()
         configureConstraints()
     }
     
     private func configureSubviews() {
-        view.addSubview(profileHeaderView)
+        view.addSubviews(moviesViewController.view, profileHeaderView)
     }
     
     private func configureConstraints() {
+        
+        moviesViewController.view.snp.makeConstraints {
+            $0.leading.top.bottom.equalToSuperview()
+            $0.width.equalTo(view.safeAreaLayoutGuide)
+        }
 
         profileHeaderView.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview()
@@ -103,6 +124,9 @@ final class ProfileMainViewController: BaseViewController {
     // MARK: - Extensions
 
 extension ProfileMainViewController: ProfileMainView {
+    func update(with user: User) {
+        self.user = user
+    }
 }
 
 extension ProfileMainViewController: ProfileHeaderViewDelegate {
@@ -138,6 +162,13 @@ extension ProfileMainViewController: UIImagePickerControllerDelegate, UINavigati
             profileHeaderView.viewModel?.profileImage = image
             picker.dismiss(animated: true)
         }
+    }
+}
+
+extension ProfileMainViewController: MovieViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offset = scrollView.contentInset.top + scrollView.contentOffset.y
+        profileHeaderView.offset = max(0, offset)
     }
 }
     // MARK: - Nested types
