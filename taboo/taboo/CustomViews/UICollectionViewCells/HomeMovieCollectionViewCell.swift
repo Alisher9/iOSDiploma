@@ -11,6 +11,8 @@ final class HomeMovieCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "movieCell"
     
+    var viewController: HomeViewController?
+    
     var movieCategory: MovieCategory? {
         didSet {
             if let name = movieCategory?.name {
@@ -118,6 +120,13 @@ extension HomeMovieCollectionViewCell: UICollectionViewDataSource,
                             left: 14,
                             bottom: 0,
                             right: 14)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        if let movie = movieCategory?.movies?[indexPath.item] {
+        viewController?.showMovieDetail(movie: movieCategory?.movies?.first ?? Movie())
+//        }
     }
 
 }

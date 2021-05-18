@@ -17,6 +17,14 @@ final class ProfileSettingsPresenter {
 }
 
 extension ProfileSettingsPresenter: ProfileSettingsPresentation {
+    func didSelectGenerateQR() {
+        router?.showGenerateQR()
+    }
+    
+    func didSelectScanQR() {
+        router?.showScanQR()
+    }
+    
     func didSelectResetPassword() {
         router?.showResetPasswordPage()
     }

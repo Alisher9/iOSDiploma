@@ -98,6 +98,18 @@
 		887743A4264FF926005946B1 /* SignUpDetailComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877439E264FF926005946B1 /* SignUpDetailComponent.swift */; };
 		887743A5264FF926005946B1 /* SignUpDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877439F264FF926005946B1 /* SignUpDetailInteractor.swift */; };
 		887743C826517558005946B1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887743C726517557005946B1 /* Movie.swift */; };
+		8885F724265419E800125CC3 /* GenerateQRContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F71E265419E800125CC3 /* GenerateQRContract.swift */; };
+		8885F725265419E800125CC3 /* GenerateQRPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F71F265419E800125CC3 /* GenerateQRPresenter.swift */; };
+		8885F726265419E800125CC3 /* GenerateQRRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F720265419E800125CC3 /* GenerateQRRouter.swift */; };
+		8885F727265419E800125CC3 /* GenerateQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F721265419E800125CC3 /* GenerateQRViewController.swift */; };
+		8885F728265419E900125CC3 /* GenerateQRComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F722265419E800125CC3 /* GenerateQRComponent.swift */; };
+		8885F729265419E900125CC3 /* GenerateQRInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F723265419E800125CC3 /* GenerateQRInteractor.swift */; };
+		8885F73326541B1E00125CC3 /* ScanQRContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F72D26541B1E00125CC3 /* ScanQRContract.swift */; };
+		8885F73426541B1E00125CC3 /* ScanQRPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F72E26541B1E00125CC3 /* ScanQRPresenter.swift */; };
+		8885F73526541B1E00125CC3 /* ScanQRRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F72F26541B1E00125CC3 /* ScanQRRouter.swift */; };
+		8885F73626541B1E00125CC3 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F73026541B1E00125CC3 /* ScanQRViewController.swift */; };
+		8885F73726541B1E00125CC3 /* ScanQRComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F73126541B1E00125CC3 /* ScanQRComponent.swift */; };
+		8885F73826541B1E00125CC3 /* ScanQRInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F73226541B1E00125CC3 /* ScanQRInteractor.swift */; };
 		88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */; };
 		88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */; };
 		88976D892616E9C900F6FD0F /* Colors+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D882616E9C900F6FD0F /* Colors+Generated.swift */; };
@@ -272,6 +284,18 @@
 		8877439E264FF926005946B1 /* SignUpDetailComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDetailComponent.swift; sourceTree = "<group>"; };
 		8877439F264FF926005946B1 /* SignUpDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDetailInteractor.swift; sourceTree = "<group>"; };
 		887743C726517557005946B1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8885F71E265419E800125CC3 /* GenerateQRContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQRContract.swift; sourceTree = "<group>"; };
+		8885F71F265419E800125CC3 /* GenerateQRPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQRPresenter.swift; sourceTree = "<group>"; };
+		8885F720265419E800125CC3 /* GenerateQRRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQRRouter.swift; sourceTree = "<group>"; };
+		8885F721265419E800125CC3 /* GenerateQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQRViewController.swift; sourceTree = "<group>"; };
+		8885F722265419E800125CC3 /* GenerateQRComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQRComponent.swift; sourceTree = "<group>"; };
+		8885F723265419E800125CC3 /* GenerateQRInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQRInteractor.swift; sourceTree = "<group>"; };
+		8885F72D26541B1E00125CC3 /* ScanQRContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRContract.swift; sourceTree = "<group>"; };
+		8885F72E26541B1E00125CC3 /* ScanQRPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRPresenter.swift; sourceTree = "<group>"; };
+		8885F72F26541B1E00125CC3 /* ScanQRRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRRouter.swift; sourceTree = "<group>"; };
+		8885F73026541B1E00125CC3 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		8885F73126541B1E00125CC3 /* ScanQRComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRComponent.swift; sourceTree = "<group>"; };
+		8885F73226541B1E00125CC3 /* ScanQRInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRInteractor.swift; sourceTree = "<group>"; };
 		88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		88976D882616E9C900F6FD0F /* Colors+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Generated.swift"; sourceTree = "<group>"; };
@@ -1105,6 +1129,32 @@
 			path = Movie;
 			sourceTree = "<group>";
 		};
+		8885F71D265419CB00125CC3 /* GenerateQR */ = {
+			isa = PBXGroup;
+			children = (
+				8885F71E265419E800125CC3 /* GenerateQRContract.swift */,
+				8885F71F265419E800125CC3 /* GenerateQRPresenter.swift */,
+				8885F720265419E800125CC3 /* GenerateQRRouter.swift */,
+				8885F721265419E800125CC3 /* GenerateQRViewController.swift */,
+				8885F722265419E800125CC3 /* GenerateQRComponent.swift */,
+				8885F723265419E800125CC3 /* GenerateQRInteractor.swift */,
+			);
+			path = GenerateQR;
+			sourceTree = "<group>";
+		};
+		8885F72C26541B0B00125CC3 /* ScanQR */ = {
+			isa = PBXGroup;
+			children = (
+				8885F72D26541B1E00125CC3 /* ScanQRContract.swift */,
+				8885F72E26541B1E00125CC3 /* ScanQRPresenter.swift */,
+				8885F72F26541B1E00125CC3 /* ScanQRRouter.swift */,
+				8885F73026541B1E00125CC3 /* ScanQRViewController.swift */,
+				8885F73126541B1E00125CC3 /* ScanQRComponent.swift */,
+				8885F73226541B1E00125CC3 /* ScanQRInteractor.swift */,
+			);
+			path = ScanQR;
+			sourceTree = "<group>";
+		};
 		88976D832616DD8C00F6FD0F /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
@@ -1263,6 +1313,8 @@
 		88BFE037264687D0005134D1 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				8885F72C26541B0B00125CC3 /* ScanQR */,
+				8885F71D265419CB00125CC3 /* GenerateQR */,
 				88BFE04626468842005134D1 /* Component */,
 				88BFE047264688CC005134D1 /* ProfileMain */,
 				88BFE05D26468941005134D1 /* ProfileSettings */,
@@ -1914,6 +1966,7 @@
 				88BFE09826469371005134D1 /* ProfileHeaderViewModel.swift in Sources */,
 				88D78FDD2652E0480050A504 /* MovieCardPresenter.swift in Sources */,
 				882262D82608BF33001A6EBE /* OnboardingInfoModel.swift in Sources */,
+				8885F73526541B1E00125CC3 /* ScanQRRouter.swift in Sources */,
 				882262A82608B699001A6EBE /* OnboardingInteractor.swift in Sources */,
 				882262642608A80B001A6EBE /* ResultHandlingView.swift in Sources */,
 				882262CB2608BD40001A6EBE /* MainButton.swift in Sources */,
@@ -1939,11 +1992,13 @@
 				88BFE07D264689BC005134D1 /* ProfileResetPasswordInteractor.swift in Sources */,
 				88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */,
 				88A0D07C2627FD6A007DFFFC /* ResultView.swift in Sources */,
+				8885F73426541B1E00125CC3 /* ScanQRPresenter.swift in Sources */,
 				882263AB260B2337001A6EBE /* SpinnerView.swift in Sources */,
 				88BFE0BC2647ED27005134D1 /* GenresInteractor.swift in Sources */,
 				8822629A2608B485001A6EBE /* WebServiceType.swift in Sources */,
 				88A0D05C2627FB9B007DFFFC /* UIViewController+TopVC.swift in Sources */,
 				8822639A260B2276001A6EBE /* IndicatableView+UITableView.swift in Sources */,
+				8885F73326541B1E00125CC3 /* ScanQRContract.swift in Sources */,
 				8822621026086929001A6EBE /* CharacterSet+Additional.swift in Sources */,
 				88D78FDF2652E0480050A504 /* MovieCardViewController.swift in Sources */,
 				8877432A264C162F005946B1 /* HomeMovieCollectionViewCell.swift in Sources */,
@@ -1962,11 +2017,13 @@
 				882262DC2608C17F001A6EBE /* SessionTrackerImpl.swift in Sources */,
 				882262682608A83C001A6EBE /* IndicatableView.swift in Sources */,
 				88D78FB22652CD680050A504 /* MoviesContract.swift in Sources */,
+				8885F73626541B1E00125CC3 /* ScanQRViewController.swift in Sources */,
 				882262132608699C001A6EBE /* StringExtension.swift in Sources */,
 				88D78FE12652E0480050A504 /* MovieCardInteractor.swift in Sources */,
 				8822627F2608AD6D001A6EBE /* StorageProtocol.swift in Sources */,
 				8839ECD3262ADD76000710D2 /* Magnetic.swift in Sources */,
 				882262702608A9A8001A6EBE /* EmptyHandlingView.swift in Sources */,
+				8885F728265419E900125CC3 /* GenerateQRComponent.swift in Sources */,
 				8822639D260B229C001A6EBE /* IndicatableView+UIViewController.swift in Sources */,
 				8801D3F4261DC03B00F0C670 /* TableViewCellType.swift in Sources */,
 				88D78FC82652CDDF0050A504 /* MovieCellViewModel.swift in Sources */,
@@ -1976,6 +2033,7 @@
 				88D78FB52652CD680050A504 /* MoviesViewController.swift in Sources */,
 				8822633D260A050F001A6EBE /* LoginRouter.swift in Sources */,
 				8822633F260A050F001A6EBE /* LoginComponent.swift in Sources */,
+				8885F726265419E800125CC3 /* GenerateQRRouter.swift in Sources */,
 				88A0D0BB26281A5D007DFFFC /* TableViewTextFieldCell.swift in Sources */,
 				882262972608B460001A6EBE /* JSONStandard.swift in Sources */,
 				88A0D0702627FC4C007DFFFC /* UITableViewExtension.swift in Sources */,
@@ -1985,6 +2043,7 @@
 				8839EC7126299A68000710D2 /* GenrePickerComponent.swift in Sources */,
 				88D78FB32652CD680050A504 /* MoviesPresenter.swift in Sources */,
 				882263A4260B22EB001A6EBE /* ActivityView.swift in Sources */,
+				8885F725265419E800125CC3 /* GenerateQRPresenter.swift in Sources */,
 				88226397260B224C001A6EBE /* IndicatableView+UIView.swift in Sources */,
 				88BFE0942646934C005134D1 /* ProfileHeaderView.swift in Sources */,
 				88BFE042264687E6005134D1 /* ProfileComponent.swift in Sources */,
@@ -2006,7 +2065,9 @@
 				88BFE07A264689BC005134D1 /* ProfileResetPasswordRouter.swift in Sources */,
 				882262942608B3A5001A6EBE /* NetworkError.swift in Sources */,
 				88D78FDC2652E0480050A504 /* MovieCardContract.swift in Sources */,
+				8885F73726541B1E00125CC3 /* ScanQRComponent.swift in Sources */,
 				88BFE0B92647ED27005134D1 /* GenresRouter.swift in Sources */,
+				8885F727265419E800125CC3 /* GenerateQRViewController.swift in Sources */,
 				8822633E260A050F001A6EBE /* LoginViewController.swift in Sources */,
 				8822621626086A1C001A6EBE /* ConvertExtensions.swift in Sources */,
 				882262572608A385001A6EBE /* SessionTracker.swift in Sources */,
@@ -2023,14 +2084,17 @@
 				882262A52608B699001A6EBE /* OnboardingRouter.swift in Sources */,
 				8822626C2608A8E3001A6EBE /* ResultHandlingView+UIViewController.swift in Sources */,
 				88A0D0BF26281A93007DFFFC /* TableViewLabelCell.swift in Sources */,
+				8885F729265419E900125CC3 /* GenerateQRInteractor.swift in Sources */,
 				88BFE01D26467E55005134D1 /* HomePresenter.swift in Sources */,
 				8839EC7226299A68000710D2 /* GenrePickerInteractor.swift in Sources */,
 				88BFE0D72648F037005134D1 /* GenreCollectionViewCell.swift in Sources */,
 				88226373260B1EB1001A6EBE /* UIView+AddSubviews.swift in Sources */,
 				88D78FB72652CD680050A504 /* MoviesInteractor.swift in Sources */,
 				8822634C260A0A0C001A6EBE /* UserTarget.swift in Sources */,
+				8885F73826541B1E00125CC3 /* ScanQRInteractor.swift in Sources */,
 				88BFE053264688E7005134D1 /* ProfileMainInteractor.swift in Sources */,
 				88D78FCF2652DB4F0050A504 /* MovieContainer.swift in Sources */,
+				8885F724265419E800125CC3 /* GenerateQRContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

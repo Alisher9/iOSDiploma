@@ -12,6 +12,8 @@ import UIKit
 protocol ProfileSettingsDependency: Dependency {
     var webService: WebServiceType { get }
     var profileResetPasswordModuleBuilder: ProfileResetPasswordModuleBuilder { get }
+    var generateQRModuleBuilder: GenerateQRModuleBuilder { get }
+    var scanQRModuleBuilder: ScanQRModuleBuilder { get }
     var sessionTracker: SessionTracker { get }
 }
 
@@ -23,7 +25,9 @@ extension ProfileSettingsComponent: ProfileSettingsModuleBuilder {
         let viewController = ProfileSettingsViewController()
         let presenter = ProfileSettingsPresenter()
         let router = ProfileSettingsRouter(profileResetPasswordModuleBuilder:
-                                            dependency.profileResetPasswordModuleBuilder)
+                                            dependency.profileResetPasswordModuleBuilder,
+                                           generateQRModuleBuilder: dependency.generateQRModuleBuilder,
+                                           scanQRModuleBuilder: dependency.scanQRModuleBuilder)
         let interactor = ProfileSettingsInteractor(webService: dependency.webService)
         
         viewController.presenter = presenter

@@ -65,6 +65,7 @@ final class MovieCardViewController: BaseViewController {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = ColorName.mainPurple.color
+        label.text = "Sherlock Holmes"
         label.numberOfLines = 3
         label.font = FontFamily.SFProDisplay.bold.font(size: 34)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -76,6 +77,9 @@ final class MovieCardViewController: BaseViewController {
         label.textColor = ColorName.textBlack.color
         label.numberOfLines = 0
         label.text = """
+        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
         Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
         Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
         Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet

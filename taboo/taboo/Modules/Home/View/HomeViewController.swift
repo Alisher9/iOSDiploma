@@ -73,6 +73,8 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeMovieCollectionViewCell.identifier, for: indexPath) as! HomeMovieCollectionViewCell
+        cell.movieCategory = movieCategories?[indexPath.item]
+        cell.viewController = self
         return cell
     }
 
@@ -82,6 +84,10 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: view.frame.width, height: 200)
     }
     
+    func showMovieDetail(movie: Movie) {
+        let vc = MovieCardViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
 
