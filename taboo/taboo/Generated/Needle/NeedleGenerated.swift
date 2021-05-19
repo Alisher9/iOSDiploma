@@ -52,6 +52,9 @@ public func registerProviderFactories() {
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent") { component in
         return EmptyDependencyProvider(component: component)
     }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->WeatherComponent") { component in
+        return WeatherDependencycb93fc78d7cc2ccc8ba5Provider(component: component)
+    }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent") { component in
         return LoginDependency006c7d880fec28863ecaProvider(component: component)
     }
@@ -292,6 +295,21 @@ private class MoviesDependency4b24739a13b3ceeb0a92BaseProvider: MoviesDependency
 }
 /// ^->RootComponent->MoviesComponent
 private class MoviesDependency4b24739a13b3ceeb0a92Provider: MoviesDependency4b24739a13b3ceeb0a92BaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent as! RootComponent)
+    }
+}
+private class WeatherDependencycb93fc78d7cc2ccc8ba5BaseProvider: WeatherDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->WeatherComponent
+private class WeatherDependencycb93fc78d7cc2ccc8ba5Provider: WeatherDependencycb93fc78d7cc2ccc8ba5BaseProvider {
     init(component: NeedleFoundation.Scope) {
         super.init(rootComponent: component.parent as! RootComponent)
     }

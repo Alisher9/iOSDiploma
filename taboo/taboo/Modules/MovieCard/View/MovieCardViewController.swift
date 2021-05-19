@@ -57,6 +57,7 @@ final class MovieCardViewController: BaseViewController {
                                          bottom: 0,
                                          right: 0)
         view.showsVerticalScrollIndicator = false
+        view.contentSize = self.contentView.bounds.size
         view.delegate = self
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -113,6 +114,12 @@ final class MovieCardViewController: BaseViewController {
         return view
     }()
     
+    private lazy var movieTicketView: MovieTicketView = {
+       let view = MovieTicketView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -131,7 +138,7 @@ final class MovieCardViewController: BaseViewController {
     private func configureSubviews() {
         scrollView.addSubview(contentView)
         
-        contentView.addSubviews(titleLabel, descriptionLabel)
+        contentView.addSubviews(titleLabel, movieTicketView)
         
         view.addSubviews(scrollView, movieHeaderView, navBar, backButton)
         
@@ -164,9 +171,14 @@ final class MovieCardViewController: BaseViewController {
             $0.leading.trailing.equalToSuperview().inset(30)
             $0.top.equalToSuperview().offset(22)
         }
-        descriptionLabel.snp.makeConstraints {
-            $0.leading.trailing.equalToSuperview().inset(30)
-            $0.top.equalTo(titleLabel.snp.bottom).offset(14)
+//        descriptionLabel.snp.makeConstraints {
+//            $0.leading.trailing.equalToSuperview().inset(30)
+//            $0.top.equalTo(titleLabel.snp.bottom).offset(14)
+//        }
+        
+        movieTicketView.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview()
+            $0.top.equalTo(titleLabel.snp.bottom)
         }
         
         navBar.snp.makeConstraints {
@@ -212,7 +224,7 @@ extension MovieCardViewController: UIScrollViewDelegate {
             let translation = max(treshold - height + 21 + Constants.navbarHeight, treshold - offset)
             movieHeaderViewTopConstraint?.constant = translation - 1
         }
-        
+
         let maxOffset = Constants.movieHeaderViewHeight - Constants.navbarHeight - 20
         let percent = min(offset / maxOffset, 1)
         navBar.backgroundColor = UIColor.white.withAlphaComponent(percent)

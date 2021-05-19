@@ -107,7 +107,6 @@ final class MainTextField: HideableTextField {
                 result.append(ch)
             }
         }
-        print("/// res", result)
         return result
     }
 

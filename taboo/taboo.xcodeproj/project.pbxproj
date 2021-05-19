@@ -110,6 +110,16 @@
 		8885F73626541B1E00125CC3 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F73026541B1E00125CC3 /* ScanQRViewController.swift */; };
 		8885F73726541B1E00125CC3 /* ScanQRComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F73126541B1E00125CC3 /* ScanQRComponent.swift */; };
 		8885F73826541B1E00125CC3 /* ScanQRInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F73226541B1E00125CC3 /* ScanQRInteractor.swift */; };
+		8885F7482654352B00125CC3 /* MovieTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F7472654352B00125CC3 /* MovieTicketView.swift */; };
+		8885F76C2654E28100125CC3 /* WeatherContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F7662654E28000125CC3 /* WeatherContract.swift */; };
+		8885F76D2654E28100125CC3 /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F7672654E28000125CC3 /* WeatherPresenter.swift */; };
+		8885F76E2654E28100125CC3 /* WeatherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F7682654E28000125CC3 /* WeatherRouter.swift */; };
+		8885F76F2654E28100125CC3 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F7692654E28000125CC3 /* WeatherViewController.swift */; };
+		8885F7702654E28100125CC3 /* WeatherComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F76A2654E28000125CC3 /* WeatherComponent.swift */; };
+		8885F7712654E28100125CC3 /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F76B2654E28000125CC3 /* WeatherInteractor.swift */; };
+		8885F7762654E29D00125CC3 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F7752654E29D00125CC3 /* WeatherManager.swift */; };
+		8885F77A2654E2BE00125CC3 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F7792654E2BE00125CC3 /* WeatherData.swift */; };
+		8885F77E2654E2DE00125CC3 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F77D2654E2DE00125CC3 /* WeatherModel.swift */; };
 		88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */; };
 		88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */; };
 		88976D892616E9C900F6FD0F /* Colors+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D882616E9C900F6FD0F /* Colors+Generated.swift */; };
@@ -296,6 +306,16 @@
 		8885F73026541B1E00125CC3 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		8885F73126541B1E00125CC3 /* ScanQRComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRComponent.swift; sourceTree = "<group>"; };
 		8885F73226541B1E00125CC3 /* ScanQRInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRInteractor.swift; sourceTree = "<group>"; };
+		8885F7472654352B00125CC3 /* MovieTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTicketView.swift; sourceTree = "<group>"; };
+		8885F7662654E28000125CC3 /* WeatherContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContract.swift; sourceTree = "<group>"; };
+		8885F7672654E28000125CC3 /* WeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresenter.swift; sourceTree = "<group>"; };
+		8885F7682654E28000125CC3 /* WeatherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRouter.swift; sourceTree = "<group>"; };
+		8885F7692654E28000125CC3 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		8885F76A2654E28000125CC3 /* WeatherComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherComponent.swift; sourceTree = "<group>"; };
+		8885F76B2654E28000125CC3 /* WeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
+		8885F7752654E29D00125CC3 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		8885F7792654E2BE00125CC3 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		8885F77D2654E2DE00125CC3 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		88976D882616E9C900F6FD0F /* Colors+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Generated.swift"; sourceTree = "<group>"; };
@@ -498,6 +518,7 @@
 				88D78FAB2652CD490050A504 /* Movies */,
 				88D78FD12652E00E0050A504 /* MovieCard */,
 				88BFE0B02647ED14005134D1 /* Genres */,
+				8885F7652654E26600125CC3 /* Weather */,
 				88BFE037264687D0005134D1 /* Profile */,
 			);
 			path = Modules;
@@ -1155,6 +1176,30 @@
 			path = ScanQR;
 			sourceTree = "<group>";
 		};
+		8885F7652654E26600125CC3 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				8885F7742654E28F00125CC3 /* Model */,
+				8885F7662654E28000125CC3 /* WeatherContract.swift */,
+				8885F7672654E28000125CC3 /* WeatherPresenter.swift */,
+				8885F7682654E28000125CC3 /* WeatherRouter.swift */,
+				8885F7692654E28000125CC3 /* WeatherViewController.swift */,
+				8885F76A2654E28000125CC3 /* WeatherComponent.swift */,
+				8885F76B2654E28000125CC3 /* WeatherInteractor.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		8885F7742654E28F00125CC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8885F7752654E29D00125CC3 /* WeatherManager.swift */,
+				8885F7792654E2BE00125CC3 /* WeatherData.swift */,
+				8885F77D2654E2DE00125CC3 /* WeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		88976D832616DD8C00F6FD0F /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
@@ -1758,6 +1803,7 @@
 			isa = PBXGroup;
 			children = (
 				88D78FF52652E2D50050A504 /* MovieCardNavBarView.swift */,
+				8885F7472654352B00125CC3 /* MovieTicketView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -1939,6 +1985,7 @@
 				88BFE078264689BC005134D1 /* ProfileResetPasswordContract.swift in Sources */,
 				882262C12608BC60001A6EBE /* BaseViewController.swift in Sources */,
 				88BFE07C264689BC005134D1 /* ProfileResetPasswordComponent.swift in Sources */,
+				8885F77E2654E2DE00125CC3 /* WeatherModel.swift in Sources */,
 				88BFE0B82647ED27005134D1 /* GenresPresenter.swift in Sources */,
 				88774337264C2F6F005946B1 /* MovieInnerCollectionViewCell.swift in Sources */,
 				88BFE06926468957005134D1 /* ProfileSettingsInteractor.swift in Sources */,
@@ -1954,11 +2001,13 @@
 				88BFE079264689BC005134D1 /* ProfileResetPasswordPresenter.swift in Sources */,
 				8822628E2608B18D001A6EBE /* AnyTarget.swift in Sources */,
 				88A0D0C526281D7E007DFFFC /* SignUpContainer.swift in Sources */,
+				8885F7712654E28100125CC3 /* WeatherInteractor.swift in Sources */,
 				88BFE02026467E55005134D1 /* HomeComponent.swift in Sources */,
 				8839ECD8262ADD76000710D2 /* SKMultilineLabelNode.swift in Sources */,
 				887743A0264FF926005946B1 /* SignUpDetailContract.swift in Sources */,
 				8822638C260B2170001A6EBE /* SignUpComponent.swift in Sources */,
 				882262B82608B98E001A6EBE /* SDPageControlDotView.swift in Sources */,
+				8885F76C2654E28100125CC3 /* WeatherContract.swift in Sources */,
 				88BFE052264688E7005134D1 /* ProfileMainComponent.swift in Sources */,
 				88BFE0BB2647ED27005134D1 /* GenresComponent.swift in Sources */,
 				88226434260C84E5001A6EBE /* OnboardingInfoViewController.swift in Sources */,
@@ -1971,6 +2020,7 @@
 				882262642608A80B001A6EBE /* ResultHandlingView.swift in Sources */,
 				882262CB2608BD40001A6EBE /* MainButton.swift in Sources */,
 				8839ECD5262ADD76000710D2 /* SKAction+Color.swift in Sources */,
+				8885F77A2654E2BE00125CC3 /* WeatherData.swift in Sources */,
 				882262752608AA79001A6EBE /* RootComponent.swift in Sources */,
 				882263AE260B234D001A6EBE /* TableViewIndicatorView.swift in Sources */,
 				882262912608B2E7001A6EBE /* Result.swift in Sources */,
@@ -1992,6 +2042,7 @@
 				88BFE07D264689BC005134D1 /* ProfileResetPasswordInteractor.swift in Sources */,
 				88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */,
 				88A0D07C2627FD6A007DFFFC /* ResultView.swift in Sources */,
+				8885F7482654352B00125CC3 /* MovieTicketView.swift in Sources */,
 				8885F73426541B1E00125CC3 /* ScanQRPresenter.swift in Sources */,
 				882263AB260B2337001A6EBE /* SpinnerView.swift in Sources */,
 				88BFE0BC2647ED27005134D1 /* GenresInteractor.swift in Sources */,
@@ -2021,6 +2072,7 @@
 				882262132608699C001A6EBE /* StringExtension.swift in Sources */,
 				88D78FE12652E0480050A504 /* MovieCardInteractor.swift in Sources */,
 				8822627F2608AD6D001A6EBE /* StorageProtocol.swift in Sources */,
+				8885F7702654E28100125CC3 /* WeatherComponent.swift in Sources */,
 				8839ECD3262ADD76000710D2 /* Magnetic.swift in Sources */,
 				882262702608A9A8001A6EBE /* EmptyHandlingView.swift in Sources */,
 				8885F728265419E900125CC3 /* GenerateQRComponent.swift in Sources */,
@@ -2043,11 +2095,13 @@
 				8839EC7126299A68000710D2 /* GenrePickerComponent.swift in Sources */,
 				88D78FB32652CD680050A504 /* MoviesPresenter.swift in Sources */,
 				882263A4260B22EB001A6EBE /* ActivityView.swift in Sources */,
+				8885F76D2654E28100125CC3 /* WeatherPresenter.swift in Sources */,
 				8885F725265419E800125CC3 /* GenerateQRPresenter.swift in Sources */,
 				88226397260B224C001A6EBE /* IndicatableView+UIView.swift in Sources */,
 				88BFE0942646934C005134D1 /* ProfileHeaderView.swift in Sources */,
 				88BFE042264687E6005134D1 /* ProfileComponent.swift in Sources */,
 				88976D932616EC7B00F6FD0F /* Strings+Generated.swift in Sources */,
+				8885F76F2654E28100125CC3 /* WeatherViewController.swift in Sources */,
 				8822636F260B1E8F001A6EBE /* UIView+Identifier.swift in Sources */,
 				882262AD2608B7E0001A6EBE /* InteractorOutputProtocol.swift in Sources */,
 				88226358260B153A001A6EBE /* MainTextFieldStyle.swift in Sources */,
@@ -2059,6 +2113,7 @@
 				8822625F2608A4AF001A6EBE /* AppConstants.swift in Sources */,
 				88BFE0BA2647ED27005134D1 /* GenresViewController.swift in Sources */,
 				8822633B260A050F001A6EBE /* LoginContract.swift in Sources */,
+				8885F7762654E29D00125CC3 /* WeatherManager.swift in Sources */,
 				887743A2264FF926005946B1 /* SignUpDetailRouter.swift in Sources */,
 				88976D8C2616E9D900F6FD0F /* Fonts+Generated.swift in Sources */,
 				882262A72608B699001A6EBE /* OnboardingComponent.swift in Sources */,
@@ -2071,6 +2126,7 @@
 				8822633E260A050F001A6EBE /* LoginViewController.swift in Sources */,
 				8822621626086A1C001A6EBE /* ConvertExtensions.swift in Sources */,
 				882262572608A385001A6EBE /* SessionTracker.swift in Sources */,
+				8885F76E2654E28100125CC3 /* WeatherRouter.swift in Sources */,
 				882262A32608B699001A6EBE /* OnboardingContract.swift in Sources */,
 				88BFE06526468957005134D1 /* ProfileSettingsPresenter.swift in Sources */,
 				88BFE04E264688E7005134D1 /* ProfileMainContract.swift in Sources */,

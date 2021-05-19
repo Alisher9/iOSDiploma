@@ -37,6 +37,10 @@ final class RootComponent: BootstrapComponent {
         return MoviesComponent(parent: self)
     }
     
+    private var weatherComponent: WeatherComponent {
+        return WeatherComponent(parent: self)
+    }
+    
     // MARK: - Properties
     
     var webService: WebServiceType {
@@ -71,8 +75,8 @@ final class RootComponent: BootstrapComponent {
         vc2.tabBarItem.image = Asset.tabbarGenre.image
         let vc2NavVc = UINavigationController(rootViewController: vc2)
         
-        let vc3 = UIViewController()
-        vc3.view.backgroundColor = .yellow
+        let vc3 = weatherComponent.viewController
+//        vc3.view.backgroundColor = .yellow
         vc3.tabBarItem.title = L10n.Common.favorite
         vc3.tabBarItem.image = Asset.tabbarFavorite.image
         
