@@ -10,6 +10,7 @@ protocol ScanQRView: ResultHandlingView {
 }
 
 protocol ScanQRPresentation: class {
+    func didTapReset()
 }
 
 protocol ScanQRUseCase: class {
@@ -19,4 +20,5 @@ protocol ScanQRInteractorOutput: InteractorOutputProtocol {
 }
 
 protocol ScanQRWireframe: class {
+    func popToRoot()
 }

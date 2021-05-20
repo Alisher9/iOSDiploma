@@ -78,7 +78,7 @@ final class WeatherViewController: BaseViewController {
         
         
         locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
+//        locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
         
         weatherManager.delegate = self
@@ -208,7 +208,6 @@ extension WeatherViewController: WeatherManagerDelegate {
     }
     
     func didFailWithError(error: Error) {
-        print(error)
     }
 }
 

@@ -16,6 +16,12 @@ final class ScanQRPresenter {
 }
 
 extension ScanQRPresenter: ScanQRPresentation {
+    func didTapReset() {
+        view?.showSuccess(message: "Вы успешно отсканировали QR код") { [weak self] in
+            self?.router?.popToRoot()
+        }
+    }
+    
 }
 
 extension ScanQRPresenter: ScanQRInteractorOutput {

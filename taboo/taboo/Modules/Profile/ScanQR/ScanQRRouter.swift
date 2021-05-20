@@ -16,4 +16,8 @@ final class ScanQRRouter {
 }
 
 extension ScanQRRouter: ScanQRWireframe {
+    func popToRoot() {
+        view?.navigationController?.popToRootViewController(animated: true)
+    }
+    
 }

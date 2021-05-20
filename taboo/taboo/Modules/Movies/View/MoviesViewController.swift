@@ -139,13 +139,16 @@ extension MoviesViewController: MoviesView {
 
 extension MoviesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+//        return models.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as MovieCell
-        cell.viewModel = models[indexPath.row]
+//        cell.viewModel = models[indexPath.row]
         cell.selectionStyle = .none
+        cell.title = "Alish"
+        cell.backgroundColor = .white
         return cell
     }
     
@@ -158,7 +161,13 @@ extension MoviesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        presenter?.didSelect(film: movies[indexPath.row])
+        let vc = MovieCardViewController()
+        navigationController?.pushViewController(vc, animated: true)
+//        presenter?.didSelect(film: movies[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
     }
 }
 

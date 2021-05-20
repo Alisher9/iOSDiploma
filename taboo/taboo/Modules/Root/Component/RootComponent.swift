@@ -71,9 +71,12 @@ final class RootComponent: BootstrapComponent {
         let vcNavVc = UINavigationController(rootViewController: vc1)
         
         let vc2 = genresComponent.viewController
+//        vc2.title = "Genres"
         vc2.tabBarItem.title = L10n.Common.genre
         vc2.tabBarItem.image = Asset.tabbarGenre.image
         let vc2NavVc = UINavigationController(rootViewController: vc2)
+//        vc2NavVc.navigationBar.prefersLargeTitles = true
+//        vc2NavVc.navigationBar.sizeToFit()
         
         let vc3 = weatherComponent.viewController
 //        vc3.view.backgroundColor = .yellow

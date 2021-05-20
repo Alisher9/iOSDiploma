@@ -66,8 +66,9 @@ extension ScanQRViewController: QRScannerViewDelegate {
     }
 
     func qrScannerView(_ qrScannerView: QRScannerView, didSuccess code: String) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            self.navigationController?.popViewController(animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            self.navigationController?.popViewController(animated: true)
+            self.presenter?.didTapReset()
         }
     }
 }

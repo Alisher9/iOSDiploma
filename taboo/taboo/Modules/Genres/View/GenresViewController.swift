@@ -37,38 +37,55 @@ final class GenresViewController: BaseViewController {
         return vc
     }()
     
-    private let collectionView: UICollectionView = UICollectionView(
+    private lazy var collectionView: UICollectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout: UICollectionViewCompositionalLayout(sectionProvider: { _, _ -> NSCollectionLayoutSection? in
-            let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),     heightDimension: .fractionalHeight(1)))
-            
+            let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                                                                heightDimension: .fractionalHeight(1)))
+
             item.contentInsets = NSDirectionalEdgeInsets(top: 2,
                                                          leading: 7,
                                                          bottom: 2,
                                                          trailing: 7)
-            
+
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(150)),
                                                            subitem: item,
                                                            count: 2)
-            
+
             group.contentInsets = NSDirectionalEdgeInsets(top: 10,
                                                           leading: 0,
                                                           bottom: 10,
                                                           trailing: 0)
-            
+
             return NSCollectionLayoutSection(group: group)
         })
     )
     
     // MARK: - Lifecycle
     
+    override func viewWillAppear(_ animated: Bool) {
+//        DispatchQueue.main.async { [weak self] in
+//            self?.navigationController?.navigationBar.sizeToFit()
+//        }
+    }
+
+//    override func viewDidAppear(_ animated: Bool) {
+//        navigationItem.largeTitleDisplayMode = .always
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Search"
+        self.navigationItem.title = "Mura"
+//        navigationController?.navigationBar.backgroundColor = .red
+        
+//        self.navigationItem.largeTitleDisplayMode = .never
+//        self.navigationItem.largeTitleDisplayMode = .always
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.largeTitleDisplayMode = .always
-        view.backgroundColor = .systemBackground
+        if #available(iOS 11.0, *) {
+                self.navigationItem.largeTitleDisplayMode = .never
+                self.navigationItem.largeTitleDisplayMode = .always
+            }
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
         view.addSubview(collectionView)
@@ -77,7 +94,7 @@ final class GenresViewController: BaseViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = .systemBackground
-        setupView()
+//        setupView()
     }
     
     override func viewDidLayoutSubviews() {
@@ -93,11 +110,13 @@ final class GenresViewController: BaseViewController {
     }
     
     private func configureSubviews() {
-        
+        view.addSubview(collectionView)
     }
     
     private func configureConstraints() {
-        
+        collectionView.snp.makeConstraints {
+            $0.top.bottom.left.right.equalTo(view.safeAreaLayoutGuide)
+        }
     }
     
     // MARK: - Public actions
@@ -113,13 +132,12 @@ extension GenresViewController: GenresView {
 
 extension GenresViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let query = searchController.searchBar.text,
+        guard let resultsController = searchController.searchResultsController as? SearchResultsViewController,
+              let query = searchController.searchBar.text,
               !query.trimmingCharacters(in: .whitespaces).isEmpty else {
             return
         }
     }
-    
-        
 }
 
 extension GenresViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -139,6 +157,12 @@ extension GenresViewController: UICollectionViewDelegate, UICollectionViewDataSo
         cell.configure(with: genresArray[indexPath.row])
 //        cell.backgroundColor = .systemGreen
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let vc = GenreDetailViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

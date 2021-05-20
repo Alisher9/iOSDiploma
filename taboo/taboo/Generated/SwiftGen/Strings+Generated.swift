@@ -45,14 +45,22 @@ internal enum L10n {
   internal enum GenrePicker {
     /// Adventure
     internal static let adventure = L10n.tr("Localizable", "GenrePicker.Adventure")
+    /// Biography
+    internal static let biography = L10n.tr("Localizable", "GenrePicker.Biography")
     /// Next
     internal static let button = L10n.tr("Localizable", "GenrePicker.Button")
+    /// Cartoon
+    internal static let cartoon = L10n.tr("Localizable", "GenrePicker.Cartoon")
     /// Comedy
     internal static let comedy = L10n.tr("Localizable", "GenrePicker.Comedy")
+    /// Criminal
+    internal static let criminal = L10n.tr("Localizable", "GenrePicker.Criminal")
     /// Tap on genres you like. Hold to remove the genres you don't like
     internal static let description = L10n.tr("Localizable", "GenrePicker.Description")
     /// Detective
     internal static let detective = L10n.tr("Localizable", "GenrePicker.Detective")
+    /// Documental
+    internal static let documental = L10n.tr("Localizable", "GenrePicker.Documental")
     /// Drama
     internal static let drama = L10n.tr("Localizable", "GenrePicker.Drama")
     /// Family
@@ -61,30 +69,22 @@ internal enum L10n {
     internal static let fiction = L10n.tr("Localizable", "GenrePicker.Fiction")
     /// Fighters
     internal static let fighters = L10n.tr("Localizable", "GenrePicker.Fighters")
-    /// Gothic
-    internal static let gothic = L10n.tr("Localizable", "GenrePicker.Gothic")
     /// History
     internal static let history = L10n.tr("Localizable", "GenrePicker.History")
-    /// Kids
-    internal static let kids = L10n.tr("Localizable", "GenrePicker.Kids")
+    /// Horror
+    internal static let horror = L10n.tr("Localizable", "GenrePicker.Horror")
     /// Melodrama
     internal static let melodrama = L10n.tr("Localizable", "GenrePicker.Melodrama")
     /// Military
     internal static let military = L10n.tr("Localizable", "GenrePicker.Military")
     /// Musical
     internal static let musical = L10n.tr("Localizable", "GenrePicker.Musical")
-    /// Mystic
-    internal static let mystic = L10n.tr("Localizable", "GenrePicker.Mystic")
-    /// Romantic
-    internal static let romantic = L10n.tr("Localizable", "GenrePicker.Romantic")
-    /// Sci-Fi
-    internal static let sciFi = L10n.tr("Localizable", "GenrePicker.SciFi")
+    /// Sport
+    internal static let sport = L10n.tr("Localizable", "GenrePicker.Sport")
     /// Thriller
     internal static let thriller = L10n.tr("Localizable", "GenrePicker.Thriller")
     /// Discover new genres
     internal static let title = L10n.tr("Localizable", "GenrePicker.Title")
-    /// Western
-    internal static let western = L10n.tr("Localizable", "GenrePicker.Western")
   }
 
   internal enum Login {

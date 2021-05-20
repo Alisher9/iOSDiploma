@@ -10,6 +10,9 @@
 		73281EA1612C5D52BAC3D36D /* Pods_taboo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F5EBB087D5EBCB122EC2F0 /* Pods_taboo.framework */; };
 		8801D3F1261DC00E00F0C670 /* TableViewButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801D3F0261DC00E00F0C670 /* TableViewButtonCell.swift */; };
 		8801D3F4261DC03B00F0C670 /* TableViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801D3F3261DC03B00F0C670 /* TableViewCellType.swift */; };
+		88172C862656ABD2001C053E /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88172C852656ABD2001C053E /* SearchResultsViewController.swift */; };
+		88172C8A2656D4A4001C053E /* GenreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88172C892656D4A4001C053E /* GenreDetailViewController.swift */; };
+		88172C8D2656D795001C053E /* GenreDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88172C8C2656D795001C053E /* GenreDetailCollectionViewCell.swift */; };
 		882261F726085F8C001A6EBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882261F626085F8C001A6EBE /* AppDelegate.swift */; };
 		8822620026085F8F001A6EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882261FF26085F8F001A6EBE /* Assets.xcassets */; };
 		8822620326085F8F001A6EBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8822620126085F8F001A6EBE /* LaunchScreen.storyboard */; };
@@ -120,6 +123,7 @@
 		8885F7762654E29D00125CC3 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F7752654E29D00125CC3 /* WeatherManager.swift */; };
 		8885F77A2654E2BE00125CC3 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F7792654E2BE00125CC3 /* WeatherData.swift */; };
 		8885F77E2654E2DE00125CC3 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F77D2654E2DE00125CC3 /* WeatherModel.swift */; };
+		8885F782265551FB00125CC3 /* MovieFrameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885F781265551FB00125CC3 /* MovieFrameCell.swift */; };
 		88976D782616DB7C00F6FD0F /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */; };
 		88976D862616E9B500F6FD0F /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */; };
 		88976D892616E9C900F6FD0F /* Colors+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88976D882616E9C900F6FD0F /* Colors+Generated.swift */; };
@@ -201,6 +205,9 @@
 		7A3B7C2499B56F0B6F282D22 /* Pods-taboo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taboo.release.xcconfig"; path = "Target Support Files/Pods-taboo/Pods-taboo.release.xcconfig"; sourceTree = "<group>"; };
 		8801D3F0261DC00E00F0C670 /* TableViewButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewButtonCell.swift; sourceTree = "<group>"; };
 		8801D3F3261DC03B00F0C670 /* TableViewCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellType.swift; sourceTree = "<group>"; };
+		88172C852656ABD2001C053E /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		88172C892656D4A4001C053E /* GenreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreDetailViewController.swift; sourceTree = "<group>"; };
+		88172C8C2656D795001C053E /* GenreDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		882261F326085F8C001A6EBE /* taboo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taboo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882261F626085F8C001A6EBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882261FF26085F8F001A6EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -316,6 +323,7 @@
 		8885F7752654E29D00125CC3 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		8885F7792654E2BE00125CC3 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		8885F77D2654E2DE00125CC3 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		8885F781265551FB00125CC3 /* MovieFrameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFrameCell.swift; sourceTree = "<group>"; };
 		88976D772616DB7C00F6FD0F /* NeedleGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		88976D852616E9B500F6FD0F /* XCAssets+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		88976D882616E9C900F6FD0F /* Colors+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Generated.swift"; sourceTree = "<group>"; };
@@ -430,6 +438,22 @@
 				8801D3F0261DC00E00F0C670 /* TableViewButtonCell.swift */,
 			);
 			path = TableViewButtonCell;
+			sourceTree = "<group>";
+		};
+		88172C842656ABBC001C053E /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				88172C852656ABD2001C053E /* SearchResultsViewController.swift */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		88172C882656D48E001C053E /* DetailController */ = {
+			isa = PBXGroup;
+			children = (
+				88172C892656D4A4001C053E /* GenreDetailViewController.swift */,
+			);
+			path = DetailController;
 			sourceTree = "<group>";
 		};
 		882261EA26085F8B001A6EBE = {
@@ -1200,6 +1224,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		8885F780265551E400125CC3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8885F781265551FB00125CC3 /* MovieFrameCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		88976D832616DD8C00F6FD0F /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
@@ -1617,6 +1649,8 @@
 		88BFE0C52647ED61005134D1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88172C882656D48E001C053E /* DetailController */,
+				88172C842656ABBC001C053E /* SearchResult */,
 				88BFE0B42647ED26005134D1 /* GenresViewController.swift */,
 			);
 			path = View;
@@ -1644,6 +1678,7 @@
 				88BFE0D62648F036005134D1 /* GenreCollectionViewCell.swift */,
 				88774329264C162F005946B1 /* HomeMovieCollectionViewCell.swift */,
 				88774336264C2F6F005946B1 /* MovieInnerCollectionViewCell.swift */,
+				88172C8C2656D795001C053E /* GenreDetailCollectionViewCell.swift */,
 			);
 			path = UICollectionViewCells;
 			sourceTree = "<group>";
@@ -1802,6 +1837,7 @@
 		88D78FF42652E2C40050A504 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				8885F780265551E400125CC3 /* Cell */,
 				88D78FF52652E2D50050A504 /* MovieCardNavBarView.swift */,
 				8885F7472654352B00125CC3 /* MovieTicketView.swift */,
 			);
@@ -1994,6 +2030,7 @@
 				882262BC2608B9B2001A6EBE /* SDPageControlView.swift in Sources */,
 				88BFE07B264689BC005134D1 /* ProfileResetPasswordViewController.swift in Sources */,
 				8839EC7026299A68000710D2 /* GenrePickerViewController.swift in Sources */,
+				8885F782265551FB00125CC3 /* MovieFrameCell.swift in Sources */,
 				88D78FEF2652E21A0050A504 /* MultipleImagesCollectionViewCell.swift in Sources */,
 				8822627A2608ABF3001A6EBE /* AuthenticationStore.swift in Sources */,
 				88BFE04F264688E7005134D1 /* ProfileMainPresenter.swift in Sources */,
@@ -2019,9 +2056,11 @@
 				882262A82608B699001A6EBE /* OnboardingInteractor.swift in Sources */,
 				882262642608A80B001A6EBE /* ResultHandlingView.swift in Sources */,
 				882262CB2608BD40001A6EBE /* MainButton.swift in Sources */,
+				88172C8D2656D795001C053E /* GenreDetailCollectionViewCell.swift in Sources */,
 				8839ECD5262ADD76000710D2 /* SKAction+Color.swift in Sources */,
 				8885F77A2654E2BE00125CC3 /* WeatherData.swift in Sources */,
 				882262752608AA79001A6EBE /* RootComponent.swift in Sources */,
+				88172C8A2656D4A4001C053E /* GenreDetailViewController.swift in Sources */,
 				882263AE260B234D001A6EBE /* TableViewIndicatorView.swift in Sources */,
 				882262912608B2E7001A6EBE /* Result.swift in Sources */,
 				88A0D0752627FC80007DFFFC /* UIImageView+Kingfisher.swift in Sources */,
@@ -2141,6 +2180,7 @@
 				8822626C2608A8E3001A6EBE /* ResultHandlingView+UIViewController.swift in Sources */,
 				88A0D0BF26281A93007DFFFC /* TableViewLabelCell.swift in Sources */,
 				8885F729265419E900125CC3 /* GenerateQRInteractor.swift in Sources */,
+				88172C862656ABD2001C053E /* SearchResultsViewController.swift in Sources */,
 				88BFE01D26467E55005134D1 /* HomePresenter.swift in Sources */,
 				8839EC7226299A68000710D2 /* GenrePickerInteractor.swift in Sources */,
 				88BFE0D72648F037005134D1 /* GenreCollectionViewCell.swift in Sources */,

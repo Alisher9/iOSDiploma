@@ -58,6 +58,7 @@ final class MovieCardViewController: BaseViewController {
                                          right: 0)
         view.showsVerticalScrollIndicator = false
         view.contentSize = self.contentView.bounds.size
+        view.alwaysBounceVertical = true
         view.delegate = self
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -138,7 +139,7 @@ final class MovieCardViewController: BaseViewController {
     private func configureSubviews() {
         scrollView.addSubview(contentView)
         
-        contentView.addSubviews(titleLabel, movieTicketView)
+        contentView.addSubviews(titleLabel, descriptionLabel, movieTicketView)
         
         view.addSubviews(scrollView, movieHeaderView, navBar, backButton)
         
@@ -162,6 +163,7 @@ final class MovieCardViewController: BaseViewController {
         
         contentView.snp.makeConstraints {
             $0.top.bottom.width.centerX.equalToSuperview()
+            $0.height.equalTo(800)
         }
         scrollView.snp.makeConstraints {
             $0.leading.bottom.trailing.equalTo(view.safeAreaLayoutGuide)
@@ -171,14 +173,15 @@ final class MovieCardViewController: BaseViewController {
             $0.leading.trailing.equalToSuperview().inset(30)
             $0.top.equalToSuperview().offset(22)
         }
-//        descriptionLabel.snp.makeConstraints {
-//            $0.leading.trailing.equalToSuperview().inset(30)
-//            $0.top.equalTo(titleLabel.snp.bottom).offset(14)
-//        }
+        descriptionLabel.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview().inset(30)
+            $0.top.equalTo(titleLabel.snp.bottom).offset(14)
+        }
         
         movieTicketView.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview()
-            $0.top.equalTo(titleLabel.snp.bottom)
+//            $0.height.equalTo(350)
+            $0.top.equalTo(descriptionLabel.snp.bottom)
         }
         
         navBar.snp.makeConstraints {

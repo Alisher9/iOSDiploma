@@ -63,17 +63,17 @@
 "GenrePicker.Thriller" = "Триллер";
 "GenrePicker.History" = "История";
 "GenrePicker.Comedy" = "Комедия";
-"GenrePicker.Western" = "Вестерн";
+"GenrePicker.Horror" = "Ужасы";
 "GenrePicker.Detective" = "Детектив";
 "GenrePicker.Military" = "Военный";
-"GenrePicker.Romantic" = "Романтика";
+"GenrePicker.Documental" = "Документальный";
 "GenrePicker.Musical" = "Мюзикл";
-"GenrePicker.Gothic" = "Готика";
+"GenrePicker.Criminal" = "Криминал";
 "GenrePicker.Fiction" = "Фантастика";
-"GenrePicker.Adventure" = "Приключение";
-"GenrePicker.Kids" = "Детский";
-"GenrePicker.Mystic" = "Мистика";
-"GenrePicker.SciFi" = "Научный";
+"GenrePicker.Adventure" = "Приключения";
+"GenrePicker.Biography" = "Биография";
+"GenrePicker.Cartoon" = "Мультфильм";
+"GenrePicker.Sport" = "Спорт";
 "GenrePicker.Button" = "Далее";
 
 // Profile

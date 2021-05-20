@@ -63,17 +63,17 @@
 "GenrePicker.Thriller" = "Thriller";
 "GenrePicker.History" = "History";
 "GenrePicker.Comedy" = "Comedy";
-"GenrePicker.Western" = "Western";
+"GenrePicker.Horror" = "Horror";
 "GenrePicker.Detective" = "Detective";
 "GenrePicker.Military" = "Military";
-"GenrePicker.Romantic" = "Romantic";
+"GenrePicker.Documental" = "Documental";
 "GenrePicker.Musical" = "Musical";
-"GenrePicker.Gothic" = "Gothic";
+"GenrePicker.Criminal" = "Criminal";
 "GenrePicker.Fiction" = "Fiction";
 "GenrePicker.Adventure" = "Adventure";
-"GenrePicker.Kids" = "Kids";
-"GenrePicker.Mystic" = "Mystic";
-"GenrePicker.SciFi" = "Sci-Fi";
+"GenrePicker.Biography" = "Biography";
+"GenrePicker.Cartoon" = "Cartoon";
+"GenrePicker.Sport" = "Sport";
 "GenrePicker.Button" = "Next";
 
 // Profile

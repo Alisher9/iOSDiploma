@@ -36,6 +36,7 @@ final class MovieCell: UITableViewCell {
         let label = UILabel()
         label.textColor = ColorName.textBlack.color
         label.numberOfLines = 1
+        label.text = "name"
         label.font = FontFamily.SFProDisplay.bold.font(size: 16)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -47,6 +48,7 @@ final class MovieCell: UITableViewCell {
         view.backgroundColor = ColorName.lightGray.color
         view.layer.cornerRadius = 5.0
         view.layer.masksToBounds = true
+        view.image = Asset.failure.image
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -54,6 +56,7 @@ final class MovieCell: UITableViewCell {
     private lazy var categoryLabel: UILabel = {
         let label = UILabel()
         label.textColor = ColorName.mainPurple.color
+        label.text = "category"
         label.numberOfLines = 0
         label.font = FontFamily.SFProDisplay.regular.font(size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -64,6 +67,7 @@ final class MovieCell: UITableViewCell {
         let label = UILabel()
         label.textColor = ColorName.textBlack.color
         label.numberOfLines = 1
+        label.text = "Rating:"
         label.font = FontFamily.SFProDisplay.regular.font(size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -73,6 +77,7 @@ final class MovieCell: UITableViewCell {
         let label = UILabel()
         label.textColor = ColorName.textBlack.color
         label.numberOfLines = 1
+        label.text = "9/10"
         label.font = FontFamily.SFProDisplay.regular.font(size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

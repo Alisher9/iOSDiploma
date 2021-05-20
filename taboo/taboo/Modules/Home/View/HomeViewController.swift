@@ -23,6 +23,7 @@ final class HomeViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         
 //        MovieCategory.featuredMovies { (appCategories) -> () in
 //
