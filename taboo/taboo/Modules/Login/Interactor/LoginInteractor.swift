@@ -29,10 +29,11 @@ extension LoginInteractor: LoginUseCase {
                 print("/// json", json)
                 print("/// token", json["token"])
                 print("/// expiry", json["expiry"])
-                guard let token = json["token"] as? String else {
-                        self?.output?.handleError(.incorrectJSON)
-                        return
+                guard let token = json["token"] as? String, let id = json["id"] else {
+                    self?.output?.handleError(.incorrectJSON)
+                    return
                 }
+                SessionTrackerImpl.id = id as! String
                 self?.output?.didLogin(token: token)
             case .error(let error):
                 switch error {

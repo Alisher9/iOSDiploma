@@ -9,16 +9,18 @@ import UIKit
 
 final class GenreDetailViewController: UIViewController {
     
-    var genresArray = ["Драма",
-                       "Комедия",
-                       "Боевик",
-                       "Мелодрама",
-                       "Трейлер",
-                       "Биография",
-                       "Детектив",
-                       "Детский",
-                       "Восточные",
-                       "Хоррор", "Семейный", "Мультфильмы", "Сериал", "Аниме"]
+    var genresArray = ["Видимость",
+                       "Врата тьмы",
+                       "Душа шпиона",
+                       "Затмение",
+                       "Иррациональный человек",
+                       "Темные тайны",
+                       "Мистер Холмс",
+                       "Дочь Бога",
+                       "Подражатель",
+                       "Смертельно живой"]
+    
+    var imagesArray = ["1", "2","3","4","5","6","7","8","9", "10"]
     
     private lazy var collectionView: UICollectionView = UICollectionView(
         frame: .zero,
@@ -31,7 +33,7 @@ final class GenreDetailViewController: UIViewController {
                                                          bottom: 5,
                                                          trailing: 5)
 
-            let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(140)),
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(300)),
                                                            subitem: item,
                                                            count: 2)
 
@@ -46,15 +48,17 @@ final class GenreDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "Detail"
+        title = "Фильмы"
         view.addSubview(collectionView)
         collectionView.backgroundColor = .white
-        collectionView.register(GenreDetailCollectionViewCell.self, forCellWithReuseIdentifier: GenreDetailCollectionViewCell.identifier)
+        collectionView.register(GenreDetailCollectionViewCell.self,
+                                forCellWithReuseIdentifier: GenreDetailCollectionViewCell.identifier)
         collectionView.dataSource = self
         collectionView.delegate = self
         setupView()
@@ -91,8 +95,7 @@ extension GenreDetailViewController: UICollectionViewDelegate, UICollectionViewD
             return UICollectionViewCell()
         }
         
-        cell.configure(with: genresArray[indexPath.row])
-//        cell.backgroundColor = .systemGreen
+        cell.configure(with: genresArray[indexPath.row], image: imagesArray[indexPath.row])
         return cell
     }
     

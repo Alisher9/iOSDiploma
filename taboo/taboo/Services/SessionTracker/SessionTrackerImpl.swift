@@ -13,6 +13,7 @@ final class SessionTrackerImpl {
     private let rootModuleBuilder: RootModuleBuilder
     
     static var aa = 0
+    static var id = ""
     let const = !(AuthenticationStore.shared.getAccessToken() == nil)
     
     init(storage: StorageProtocol, rootModuleBuilder: RootModuleBuilder) {

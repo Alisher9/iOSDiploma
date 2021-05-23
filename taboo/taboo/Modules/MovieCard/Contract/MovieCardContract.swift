@@ -7,7 +7,7 @@
 //
 
 protocol MovieCardView: ResultHandlingView {
-    func update(with movie: Film, movieType: FilmType)
+    func update(with movie: MovieCard, movieType: FilmType)
     func update(with user: User)
 }
 

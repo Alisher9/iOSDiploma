@@ -46,6 +46,32 @@ struct WeatherManager {
         }
     }
     
+    static func featuredMovies(completionHandler: @escaping([WeatherCellViewModel]) -> ()) {
+        
+        guard let url = URL(string: "https://c7286ae03971.ngrok.io/api/weather/") else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
+            if error != nil {
+                return
+            }
+            do {
+                guard let data = data else {
+                    return
+                }
+                let json = try JSONDecoder().decode([WeatherCellViewModel].self, from: data)
+                
+                print("json", json)
+                DispatchQueue.main.async {
+                    completionHandler(json)
+                }
+            } catch let err {
+                print(err)
+            }
+        }).resume()
+    }
+    
     func parseJSON(_ weatherData: Data) -> WeatherModel? {
         let decoder = JSONDecoder()
         do {

@@ -11,12 +11,18 @@ final class MovieInnerCollectionViewCell: UICollectionViewCell {
     
     var movie: Movie? {
         didSet {
-            if let name = movie?.name {
+            if let name = movie?.title {
                 nameLabel.text = name
             }
-            categoryLabel.text = movie?.category
-            if let imageName = movie?.imageName {
-                image.image = UIImage(named: imageName)
+            categoryLabel.text = movie?.genres?.last
+            if let imageName = movie?.image {
+                print("/// image", imageName)
+                guard let url = URL(string: imageName) else { return  }
+                let data = try? Data(contentsOf: url)
+                if let imageData = data {
+                    let i = UIImage(data: imageData)
+                    image.image = i
+                }
             }
         }
     }
@@ -41,7 +47,7 @@ final class MovieInnerCollectionViewCell: UICollectionViewCell {
     
     let nameLabel: UILabel = {
        let label = UILabel()
-        label.text = "Sherlock Holmes"
+//        label.text = "Sherlock Holmes"
         label.font = FontFamily.SFProDisplay.bold.font(size: 14)
         label.numberOfLines = 2
         return label
@@ -49,8 +55,8 @@ final class MovieInnerCollectionViewCell: UICollectionViewCell {
     
     let categoryLabel: UILabel = {
        let label = UILabel()
-        label.text = "Action"
-        label.font = FontFamily.SFProDisplay.regular.font(size: 13)
+//        label.text = "Action"
+        label.font = FontFamily.SFProDisplay.regular.font(size: 12)
         label.numberOfLines = 2
         label.textColor = ColorName.mainPurple.color
         return label
@@ -64,8 +70,8 @@ final class MovieInnerCollectionViewCell: UICollectionViewCell {
         addSubview(nameLabel)
         addSubview(categoryLabel)
         
-        image.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.width)
-        nameLabel.frame = CGRect(x: 0, y: frame.width + 2, width: frame.width, height: 40)
-        categoryLabel.frame = CGRect(x: 0, y: frame.width + 38, width: frame.width, height: 20)
+        image.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.width + 40)
+        nameLabel.frame = CGRect(x: 0, y: frame.width + 42, width: frame.width, height: 40)
+        categoryLabel.frame = CGRect(x: 0, y: frame.width + 78, width: frame.width, height: 15)
     }
 }

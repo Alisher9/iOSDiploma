@@ -40,7 +40,7 @@ final class OnboardingViewController: BaseViewController {
         view.image = onboardingImages.first
         view.clipsToBounds = false
         view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowOpacity = 1
+        view.layer.shadowOpacity = 0.2
         view.layer.shadowRadius = 10
         view.translatesAutoresizingMaskIntoConstraints = false
         return view

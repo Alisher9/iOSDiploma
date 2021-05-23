@@ -63,7 +63,6 @@ final class RootComponent: BootstrapComponent {
     // MARK: - Private actions
     
     private func setupTabBarController() -> UIViewController {
-        let vc = mainPageComponent.viewController
         let layout = UICollectionViewFlowLayout()
         let vc1 = HomeViewController(collectionViewLayout: layout)
         vc1.tabBarItem.title = L10n.Common.home
@@ -71,20 +70,15 @@ final class RootComponent: BootstrapComponent {
         let vcNavVc = UINavigationController(rootViewController: vc1)
         
         let vc2 = genresComponent.viewController
-//        vc2.title = "Genres"
         vc2.tabBarItem.title = L10n.Common.genre
         vc2.tabBarItem.image = Asset.tabbarGenre.image
         let vc2NavVc = UINavigationController(rootViewController: vc2)
-//        vc2NavVc.navigationBar.prefersLargeTitles = true
-//        vc2NavVc.navigationBar.sizeToFit()
         
         let vc3 = weatherComponent.viewController
-//        vc3.view.backgroundColor = .yellow
-        vc3.tabBarItem.title = L10n.Common.favorite
+        vc3.tabBarItem.title = L10n.Common.weather
         vc3.tabBarItem.image = Asset.tabbarFavorite.image
         
         let vc4 = profileComponent.viewController
-//        vc4.view.backgroundColor = .green
         vc4.tabBarItem.title = L10n.Common.profile
         vc4.tabBarItem.image = Asset.tabbarProfile.image
         let profileNavVC = UINavigationController(rootViewController: vc4)

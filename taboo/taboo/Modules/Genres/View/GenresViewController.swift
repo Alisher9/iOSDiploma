@@ -18,12 +18,48 @@ final class GenresViewController: BaseViewController {
                        "Комедия",
                        "Боевик",
                        "Мелодрама",
-                       "Трейлер",
+                       "Триллер",
                        "Биография",
                        "Детектив",
                        "Детский",
                        "Восточные",
-                       "Хоррор", "Семейный", "Мультфильмы", "Сериал", "Аниме"]
+                       "Ужасы",
+                       "Семейный",
+                       "Мультфильмы",
+                       "Фантастика",
+                       "Аниме"]
+    
+    private var colors: [UIColor] = [
+        .systemPurple,
+        .systemRed,
+        .systemYellow,
+        .systemBlue,
+        .systemGray,
+        .systemOrange,
+        .systemTeal,
+        .systemGreen,
+        .systemIndigo,
+        .systemGray2,
+        .brown,
+        .cyan,
+        .lightGray,
+        .pink
+    ]
+    
+    private var images = ["11",
+                          "12",
+                          "13",
+                          "14",
+                          "15",
+                          "16",
+                          "17",
+                          "18",
+                          "19",
+                          "20",
+                          "21",
+                          "22",
+                          "23",
+                          "24"]
     
     // MARK: - Private properties
     
@@ -31,7 +67,7 @@ final class GenresViewController: BaseViewController {
        let results = UIViewController()
         results.view.backgroundColor = .red
         let vc = UISearchController(searchResultsController: results)
-        vc.searchBar.placeholder = "Search movie, genres"
+        vc.searchBar.placeholder = "Поиск фильмов"
         vc.searchBar.searchBarStyle = .minimal
         vc.definesPresentationContext = true
         return vc
@@ -75,18 +111,19 @@ final class GenresViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Mura"
+        self.navigationItem.title = "Жанры"
 //        navigationController?.navigationBar.backgroundColor = .red
         
 //        self.navigationItem.largeTitleDisplayMode = .never
 //        self.navigationItem.largeTitleDisplayMode = .always
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        if #available(iOS 11.0, *) {
-                self.navigationItem.largeTitleDisplayMode = .never
-                self.navigationItem.largeTitleDisplayMode = .always
-            }
+//        if #available(iOS 11.0, *) {
+//                self.navigationItem.largeTitleDisplayMode = .never
+//                self.navigationItem.largeTitleDisplayMode = .always
+//            }
         searchController.searchResultsUpdater = self
+        navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.searchController = searchController
         view.addSubview(collectionView)
         collectionView.register(GenreCollectionViewCell.self,
@@ -94,13 +131,14 @@ final class GenresViewController: BaseViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = .systemBackground
-//        setupView()
+        
+        setupView()
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        collectionView.frame = view.bounds
-    }
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//        collectionView.frame = view.bounds
+//    }
     
     // MARK: - Setup
     
@@ -115,7 +153,8 @@ final class GenresViewController: BaseViewController {
     
     private func configureConstraints() {
         collectionView.snp.makeConstraints {
-            $0.top.bottom.left.right.equalTo(view.safeAreaLayoutGuide)
+            $0.bottom.left.right.top.equalTo(view.safeAreaLayoutGuide)
+//            $0.top.equalToSuperview()
         }
     }
     
@@ -154,8 +193,9 @@ extension GenresViewController: UICollectionViewDelegate, UICollectionViewDataSo
                                                             for: indexPath) as? GenreCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.configure(with: genresArray[indexPath.row])
-//        cell.backgroundColor = .systemGreen
+        cell.configure(with: genresArray[indexPath.row],
+                       color: colors[indexPath.row],
+                       image: images[indexPath.row])
         return cell
     }
     

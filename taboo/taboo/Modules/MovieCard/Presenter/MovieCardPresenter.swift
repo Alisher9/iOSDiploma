@@ -34,7 +34,7 @@ extension MovieCardPresenter: MovieCardPresentation {
         guard let movieType = movie.type else {
             return
         }
-        view?.update(with: movie, movieType: movieType)
+//        view?.update(with: movie, movieType: movieType)
         
         view?.showActivityIndicator()
 //        if let user = sessionTracker?.currentUser {

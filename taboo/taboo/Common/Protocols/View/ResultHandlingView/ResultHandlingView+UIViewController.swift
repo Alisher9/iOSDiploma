@@ -20,7 +20,7 @@ extension ResultHandlingView where Self: UIViewController {
     
     func showError(message: String?, completion: (() -> Void)?) {
         hideActivityIndicator()
-        showError(message: message, completion: completion)
+        showResult(success: false, message: message, completion: completion)
     }
     
     func hideNoNetwork() {

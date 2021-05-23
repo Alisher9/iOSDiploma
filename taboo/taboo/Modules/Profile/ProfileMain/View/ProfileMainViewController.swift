@@ -48,7 +48,7 @@ final class ProfileMainViewController: BaseViewController {
             return MoviesViewController()
         }
         vc.delegate = self
-        vc.tableViewContentInset = UIEdgeInsets(top: 255, left: 0, bottom: 0, right: 0)
+        vc.tableViewContentInset = UIEdgeInsets(top: 250, left: 0, bottom: 0, right: 0)
         vc.movieType = .user
         vc.view.translatesAutoresizingMaskIntoConstraints = false
         addChild(vc)

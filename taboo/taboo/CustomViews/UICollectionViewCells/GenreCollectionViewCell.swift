@@ -78,16 +78,14 @@ final class GenreCollectionViewCell: UICollectionViewCell {
                              height: contentView.bounds.height / 2)
         
         imageView.frame = CGRect(x: contentView.bounds.width / 2,
-                                 y: 0,
+                                 y: 10,
                                  width: contentView.bounds.width / 2,
                                  height: contentView.bounds.height / 2)
     }
     
-    func configure(with title: String) {
+    func configure(with title: String, color: UIColor, image: String) {
         label.text = title
-        imageView.image = UIImage(systemName: imgs.randomElement() ?? "",
-                                        withConfiguration: UIImage.SymbolConfiguration(pointSize: 50,
-                                                                                       weight: .regular))
-        contentView.backgroundColor = colors.randomElement()
+        imageView.image = UIImage(named: image)
+        contentView.backgroundColor = color
     }
 }

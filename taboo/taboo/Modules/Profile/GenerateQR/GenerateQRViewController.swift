@@ -13,7 +13,7 @@ final class GenerateQRViewController: BaseViewController {
     // MARK: - Public properties
     
     var presenter: GenerateQRPresentation?
-    private let api = "Alisher"
+    private let api = "https://8bf07bdbe9f9.ngrok.io/api/profile/2/"
     
     // MARK: - Private properties
     

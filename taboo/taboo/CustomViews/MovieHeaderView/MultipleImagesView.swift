@@ -13,7 +13,7 @@ final class MultipleImagesView: UIView {
 
     var imageURLs: [String] = [] {
         didSet {
-            pageControl.numberOfPages = imageURLs.count
+//            pageControl.numberOfPages = imageURLs.count
         }
     }
 
@@ -91,7 +91,7 @@ extension MultipleImagesView: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageURLs.count
+        return 1
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -101,7 +101,7 @@ extension MultipleImagesView: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as MultipleImagesCollectionViewCell
-        cell.imageView.setImage(fileName: imageURLs[indexPath.row])
+//        cell.imageView.setImage(fileName: imageURLs[indexPath.row])
         return cell
     }
     

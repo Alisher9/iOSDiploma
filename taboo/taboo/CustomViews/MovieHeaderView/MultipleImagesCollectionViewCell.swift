@@ -13,6 +13,7 @@ final class MultipleImagesCollectionViewCell: UICollectionViewCell {
 
     var imageView: UIImageView = {
        let image = UIImageView()
+        image.image = UIImage(named: "111")
         image.backgroundColor = ColorName.lightGray.color
         image.contentMode = .scaleAspectFill
         return image

@@ -30,6 +30,7 @@ final class GenreDetailCollectionViewCell: UICollectionViewCell {
        let image = UIImageView()
         image.contentMode = .scaleAspectFit
         image.tintColor = .white
+        image.layer.cornerRadius = 10
         return image
     }()
     
@@ -96,9 +97,9 @@ final class GenreDetailCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    func configure(with title: String) {
+    func configure(with title: String, image: String) {
         label.text = title
-        imageView.image = Asset.success.image
-        contentView.backgroundColor = colors.randomElement()
+        imageView.image = UIImage(named: image)
+//        contentView.backgroundColor = colors.randomElement()
     }
 }

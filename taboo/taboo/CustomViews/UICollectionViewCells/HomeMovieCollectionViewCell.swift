@@ -15,7 +15,7 @@ final class HomeMovieCollectionViewCell: UICollectionViewCell {
     
     var movieCategory: MovieCategory? {
         didSet {
-            if let name = movieCategory?.name {
+            if let name = movieCategory?.title {
                 nameLabel.text = name
             }
         }
@@ -97,17 +97,17 @@ extension HomeMovieCollectionViewCell: UICollectionViewDataSource,
                                        UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-//        if let count = movieCategory?.movies?.count {
-//             return count
-//        }
-        return 5
+        if let count = movieCategory?.movies?.count {
+             return count
+        }
+        return 1
     }
 
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieInnerCell",
                                                        for: indexPath) as! MovieInnerCollectionViewCell
-//        cell.movie = movieCategory?.movies?[indexPath.item]
+        cell.movie = movieCategory?.movies?[indexPath.item]
         return cell
     }
 

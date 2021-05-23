@@ -17,16 +17,41 @@ final class MovieCell: UITableViewCell {
     var imageFileName: String?
     var rating: String?
     
-    var viewModel: MovieCellViewModel? {
+    var viewModel: MovieProfileViewModel? {
         didSet {
-            nameLabel.text = viewModel?.title
-            categoryLabel.text = viewModel?.category
-            ratingLabel.text = viewModel?.rating
-            if let fileName = viewModel?.imageFileName {
-                movieImageView.setImage(fileName: fileName)
-            } else {
-                movieImageView.image = nil
-            }
+            guard let res = viewModel?.favourites else { return }
+            
+            
+//            for i in res {
+//                print("ans", i)
+            nameLabel.text = viewModel?.favourites.first?.title
+                categoryLabel.text = viewModel?.favourites.first?.category
+                ratingTextLabel.text = viewModel?.favourites.first?.rating
+                if let fileName = viewModel?.favourites.first?.image {
+    //                movieImageView.setImage(fileName: fileName)
+                    guard let url = URL(string: fileName) else { return  }
+                    let data = try? Data(contentsOf: url)
+                    if let imageData = data {
+                        let i = UIImage(data: imageData)
+                        movieImageView.image = i
+                    }
+
+                }
+//            }
+            
+//            nameLabel.text = res.map({$0.title!}).first
+//            categoryLabel.text = res.map({$0.category!}).first
+//            ratingTextLabel.text = res.map({$0.rating!}).first
+//            if let fileName = res.map({$0.image!}).first {
+//
+//                guard let url = URL(string: fileName) else { return  }
+//                let data = try? Data(contentsOf: url)
+//                if let imageData = data {
+//                    let i = UIImage(data: imageData)
+//                    movieImageView.image = i
+//                }
+//
+//            }
         }
     }
     
@@ -77,7 +102,7 @@ final class MovieCell: UITableViewCell {
         let label = UILabel()
         label.textColor = ColorName.textBlack.color
         label.numberOfLines = 1
-        label.text = "9/10"
+        label.text = "9.5"
         label.font = FontFamily.SFProDisplay.regular.font(size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

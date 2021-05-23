@@ -14,7 +14,7 @@ enum FilmType: String {
 }
 
 struct Film {
-    var id: Int?
+    var id: String?
     var name: String?
     var category: String?
     var userId: String?

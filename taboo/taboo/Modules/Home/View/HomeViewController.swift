@@ -21,15 +21,31 @@ final class HomeViewController: UICollectionViewController {
     
     // MARK: - Lifecycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        collectionView.isSkeletonable = true
+//        collectionView.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .concrete), animation: nil, transition: .crossDissolve(0.25))
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.isHidden = true
+//        navigationController?.navigationBar.isHidden = true
+        navigationItem.title = "Рекомендации"
         
-//        MovieCategory.featuredMovies { (appCategories) -> () in
-//
-//            self.movieCategories = appCategories
-//            self.collectionView?.reloadData()
-//        }
+        
+        
+        MovieCategory.featuredMovies { (appCategories) -> () in
+            print("/// movie", appCategories)
+
+            self.movieCategories = appCategories
+//            self.collectionView.stopSkeletonAnimation()
+//            self.collectionView.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.25))
+            self.collectionView?.reloadData()
+        }
+        
         
         collectionView.backgroundColor = .white
         collectionView.register(HomeMovieCollectionViewCell.self,
@@ -40,7 +56,6 @@ final class HomeViewController: UICollectionViewController {
     // MARK: - Setup
     
     private func setupView() {
-        title = "Main"
         configureSubviews()
         configureConstraints()
     }
@@ -65,16 +80,19 @@ extension HomeViewController: HomeView {
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-//        if let count = movieCategories?.count {
-//            return count
-//        }
-        return 5
+        if let count = movieCategories?.count {
+            return count
+        }
+        return 0
     }
+    
+    
 
     override func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeMovieCollectionViewCell.identifier, for: indexPath) as! HomeMovieCollectionViewCell
         cell.movieCategory = movieCategories?[indexPath.item]
+//        cell.isSkeletonable = true
         cell.viewController = self
         return cell
     }
@@ -82,7 +100,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 200)
+        return CGSize(width: view.frame.width, height: 230)
     }
     
     func showMovieDetail(movie: Movie) {

@@ -10,7 +10,8 @@ import Moya
 enum UserTarget {
     case login(phoneNumber: String, password: String)
     case createUser(name: String, surname: String, phone: String, password: String, passwordConfirm: String)
-    case genrePicker(genres: [String])
+    case genrePicker(genres: [String], id: String)
+    case home
 }
 
 extension UserTarget: BaseProviderType, AnyTargetConvertible {
@@ -23,6 +24,8 @@ extension UserTarget: BaseProviderType, AnyTargetConvertible {
             return AppConstants.API.User.createUser
         case .genrePicker:
             return AppConstants.API.User.genrePicker
+        case .home:
+            return AppConstants.API.User.home
         }
     }
     
@@ -30,6 +33,8 @@ extension UserTarget: BaseProviderType, AnyTargetConvertible {
         switch self {
         case .login, .createUser, .genrePicker:
             return .post
+        case .home:
+            return .get
         }
     }
     
@@ -55,6 +60,8 @@ extension UserTarget: BaseProviderType, AnyTargetConvertible {
                 JSONRequestParameter.Genres.genres: genres
             ]
             return .requestParameters(parameters: jsonParameters, encoding: URLEncoding.queryString)
+        case .home:
+            return .requestParameters(parameters: [:], encoding: URLEncoding.queryString)
         }
     }
 }

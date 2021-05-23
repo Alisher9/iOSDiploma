@@ -13,6 +13,26 @@ final class MovieTicketView: UIView,
                              UICollectionViewDelegate,
                              UICollectionViewDelegateFlowLayout {
     
+    var model: MovieCard? {
+        didSet {
+//            if let image = model?.image {
+//                guard let url = URL(string: image) else { return  }
+//                let data = try? Data(contentsOf: url)
+//                if let imageData = data {
+//                    let i = UIImage(data: imageData)
+//                    ticketImage.image = i
+//                }
+//            }
+            movieReleaseLabel.text = model?.year ?? ""
+            movieCountryLabel.text = model?.country ?? ""
+            movieGenreLabel.text = model?.genres.first ?? ""
+            movieDirectorLabel.text = model?.directors.first ?? ""
+            movieDurationLabel.text = model?.duration ?? ""
+            movieActorsLabel.text = model?.actors.first ?? ""
+            
+        }
+    }
+    
     private lazy var ticketImage: UIImageView = {
        let image = UIImageView()
         image.image = Asset.ticket.image
@@ -22,7 +42,7 @@ final class MovieTicketView: UIView,
     
     private lazy var movieDetailsLabel: UILabel = {
        let label = UILabel()
-        label.text = "Movie Details"
+        label.text = "Детали фильма"
         label.textColor = Color.white
         label.font = FontFamily.SFProDisplay.bold.font(size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -31,7 +51,7 @@ final class MovieTicketView: UIView,
     
     private lazy var releaseLabel: UILabel = {
        let label = UILabel()
-        label.text = "Year of release"
+        label.text = "Год выпуска"
         label.font = FontFamily.SFProDisplay.regular.font(size: 12)
         label.textColor = Color.white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -69,7 +89,7 @@ final class MovieTicketView: UIView,
     
     private lazy var countryLabel: UILabel = {
        let label = UILabel()
-        label.text = "Country"
+        label.text = "Страна"
         label.font = FontFamily.SFProDisplay.regular.font(size: 12)
         label.textColor = Color.white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -107,7 +127,7 @@ final class MovieTicketView: UIView,
     
     private lazy var genreLabel: UILabel = {
        let label = UILabel()
-        label.text = "Genre"
+        label.text = "Жанр"
         label.font = FontFamily.SFProDisplay.regular.font(size: 12)
         label.textColor = Color.white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -145,7 +165,7 @@ final class MovieTicketView: UIView,
     
     private lazy var directorLabel: UILabel = {
        let label = UILabel()
-        label.text = "Director"
+        label.text = "Режиссер"
         label.font = FontFamily.SFProDisplay.regular.font(size: 12)
         label.textColor = Color.white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -154,7 +174,7 @@ final class MovieTicketView: UIView,
     
     private lazy var directorConnectorLabel: UILabel = {
        let label = UILabel()
-        label.text = "............................................................"
+        label.text = "........................................."
         label.numberOfLines = 1
         label.textColor = Color.white
         label.font = FontFamily.SFProDisplay.bold.font(size: 12)
@@ -183,7 +203,7 @@ final class MovieTicketView: UIView,
     
     private lazy var durationLabel: UILabel = {
        let label = UILabel()
-        label.text = "Duration"
+        label.text = "Длительность"
         label.font = FontFamily.SFProDisplay.regular.font(size: 12)
         label.textColor = Color.white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -222,11 +242,50 @@ final class MovieTicketView: UIView,
     private lazy var frameLabel: UILabel = {
        let label = UILabel()
         label.numberOfLines = 1
-        label.text = "Frames"
+        label.text = "Кадры"
         label.font = FontFamily.SFProDisplay.bold.font(size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
         return label
+    }()
+    
+    private lazy var actorsLabel: UILabel = {
+       let label = UILabel()
+        label.numberOfLines = 1
+        label.text = "Актеры"
+        label.font = FontFamily.SFProDisplay.bold.font(size: 14)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        return label
+    }()
+    
+    private lazy var actorsConnectorLabel: UILabel = {
+       let label = UILabel()
+        label.text = ".................................................."
+        label.numberOfLines = 1
+        label.textColor = Color.white
+        label.font = FontFamily.SFProDisplay.bold.font(size: 12)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private lazy var movieActorsLabel: UILabel = {
+       let label = UILabel()
+        label.numberOfLines = 1
+        label.text = "Alisher"
+        label.textColor = Color.white
+        label.font = FontFamily.SFProDisplay.bold.font(size: 14)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private lazy var actorsStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.alignment = .fill
+        stack.distribution = .equalSpacing
+        stack.spacing = 5
+        return stack
     }()
     
     private lazy var collectionView: UICollectionView = {
@@ -240,6 +299,9 @@ final class MovieTicketView: UIView,
 //        layout.estimatedItemSize = CGSize(width: cellWidth, height: cellHeight)
         layout.estimatedItemSize = CGSize.zero
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.alwaysBounceHorizontal = true
+        cv.showsHorizontalScrollIndicator = true
+        cv.isScrollEnabled = true
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.register(MovieFrameCell.self, forCellWithReuseIdentifier: "frameCell")
         cv.clipsToBounds = true
@@ -288,11 +350,16 @@ final class MovieTicketView: UIView,
         durationStackView.addArrangedSubview(durationConnectorLabel)
         durationStackView.addArrangedSubview(movieDurationLabel)
         
+        actorsStackView.addArrangedSubview(actorsLabel)
+        actorsStackView.addArrangedSubview(actorsConnectorLabel)
+        actorsStackView.addArrangedSubview(movieActorsLabel)
+        
         ticketImage.addSubviews(releaseStackView,
                                 countryStackView,
                                 genreStackView,
                                 directorStackView,
-                                durationStackView)
+                                durationStackView,
+                                actorsStackView)
         
         ticketImage.addSubviews(frameLabel)
         
@@ -350,8 +417,15 @@ final class MovieTicketView: UIView,
             $0.top.equalTo(frameLabel.snp.bottom).offset(2)
             $0.left.equalToSuperview().offset(26)
             $0.right.equalToSuperview().offset(-26)
-            $0.height.equalTo(50)
+            $0.height.equalTo(60)
         }
+        
+        actorsStackView.snp.makeConstraints {
+            $0.top.equalTo(collectionView.snp.bottom).offset(4)
+            $0.left.equalToSuperview().offset(26)
+            $0.right.equalToSuperview().offset(-26)
+        }
+         
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -364,7 +438,14 @@ final class MovieTicketView: UIView,
         return cell
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: frame.width, height: 50)
+        return CGSize(width: 120, height: collectionView.frame.height - 10)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 2, left: 8, bottom: 2, right: 8)
+    }
+    
+    
 }

@@ -18,6 +18,8 @@ final class MovieFrameCell: UICollectionViewCell {
         return cv
     }()
     
+    var arr = ["112", "113", "111"]
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -60,16 +62,18 @@ extension UIView {
 
 extension MovieFrameCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! MovieFrameImageCell
+        cell.configure(with: arr[indexPath.row])
+        cell.imageView.image = UIImage(named: arr[indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: frame.height-10)
+        return CGSize(width: 100, height: collectionView.frame.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -79,20 +83,42 @@ extension MovieFrameCell: UICollectionViewDataSource, UICollectionViewDelegate, 
 }
 
 
-private class MovieFrameImageCell: UICollectionViewCell {
+class MovieFrameImageCell: UICollectionViewCell {
+    
+    var imageView: UIImageView = {
+       let image = UIImageView()
+//        image.image = UIImage(named: "111")
+        image.layer.cornerRadius = 5
+        image.backgroundColor = ColorName.lightGray.color
+        image.contentMode = .scaleAspectFill
+        return image
+    }()
+
+    // MARK: - Lifecycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupViews()
+        
+        setupCell()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupViews() {
-        backgroundColor = .blue
-//        addContraintsWithFormat("H:|[v0]|", views: collectionView)
-//        addContraintsWithFormat("V:|[v0]|", views: collectionView)
+    // MARK: - Setup
+    
+    private func setupCell() {
+        addSubview(imageView)
+        
+        imageView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
+    
+    func configure(with model: String) {
+        imageView.image = UIImage(named: model)
+    }
+    
+    
 }

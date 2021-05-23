@@ -16,14 +16,22 @@ final class MovieCardViewController: BaseViewController {
     
     // MARK: - Private properties
     
-    private var movie: Film? {
+    private var movie: MovieCard? {
         didSet {
-            if let imageURLs = movie?.imageURLs {
-                movieHeaderView.imageURLs = imageURLs
+            if let imageURLs = movie?.image {
+                movieHeaderView.imageURLs = [imageURLs]
             }
-            titleLabel.text = movie?.name
-            descriptionLabel.text = movie?.category
-            
+            titleLabel.text = movie?.title
+            descriptionLabel.text = movie?.description ?? """
+        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+        """
+            movieTicketView.model = movie
         }
     }
     
@@ -121,25 +129,71 @@ final class MovieCardViewController: BaseViewController {
         return view
     }()
     
+    private lazy var favoriteButton: MainButton = {
+        let button = MainButton()
+        button.isActive = true
+        button.setTitle("Добавить в избранные", for: .normal)
+        button.addTarget(self, action: #selector(didTapFavorite), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         presenter?.viewDidLoad()
+        featuredMovies { (response) in
+            print("oops")
+            self.movie = response
+            self.scrollView.reloadInputViews()
+        }
     }
+    
+    override func viewDidLayoutSubviews() {
+        self.scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: self.view.frame.size.height)
+    }
+    
+    func featuredMovies(completionHandler: @escaping(MovieCard) -> ()) {
+
+            guard let url = URL(string: "https://c7286ae03971.ngrok.io/api/movie/1533/") else { return }
+
+            URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
+                if error != nil {
+                    return
+                }
+                do {
+                    guard let data = data else {
+                        return
+                    }
+
+                    let json = try JSONDecoder().decode(MovieCard.self, from: data)
+
+                    print("movieCard", json)
+                    DispatchQueue.main.async {
+                        completionHandler(json)
+                    }
+                } catch let err {
+                    print(err)
+                }
+
+            }) .resume()
+        }
+    
     
     // MARK: - Setup
     
     private func setupView() {
         configureSubviews()
         configureConstraints()
+        extra()
     }
     
     private func configureSubviews() {
         scrollView.addSubview(contentView)
         
-        contentView.addSubviews(titleLabel, descriptionLabel, movieTicketView)
+        contentView.addSubviews(titleLabel, descriptionLabel, movieTicketView, favoriteButton)
         
         view.addSubviews(scrollView, movieHeaderView, navBar, backButton)
         
@@ -163,7 +217,7 @@ final class MovieCardViewController: BaseViewController {
         
         contentView.snp.makeConstraints {
             $0.top.bottom.width.centerX.equalToSuperview()
-            $0.height.equalTo(800)
+            $0.bottom.equalTo(movieTicketView.snp.bottom).offset(75)
         }
         scrollView.snp.makeConstraints {
             $0.leading.bottom.trailing.equalTo(view.safeAreaLayoutGuide)
@@ -180,8 +234,15 @@ final class MovieCardViewController: BaseViewController {
         
         movieTicketView.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview()
-//            $0.height.equalTo(350)
+            $0.height.equalTo(400)
             $0.top.equalTo(descriptionLabel.snp.bottom)
+        }
+        
+        favoriteButton.snp.makeConstraints {
+            $0.top.equalTo(movieTicketView.snp.bottom)
+            $0.leading.equalToSuperview().offset(25)
+            $0.trailing.equalToSuperview().offset(-25)
+            $0.height.equalTo(50)
         }
         
         navBar.snp.makeConstraints {
@@ -195,6 +256,14 @@ final class MovieCardViewController: BaseViewController {
         }
     }
     
+    private func extra(){
+        
+    }
+    @objc private func didTapFavorite() {
+        showSuccess(message: "Успешно добавлено в избранные", completion: {
+            self.navigationController?.popViewController(animated: true)
+        })
+    }
     // MARK: - Public actions
     
     // MARK: - Private actions
@@ -204,7 +273,7 @@ final class MovieCardViewController: BaseViewController {
 // MARK: - Extensions
 
 extension MovieCardViewController: MovieCardView {
-    func update(with movie: Film, movieType: FilmType) {
+    func update(with movie: MovieCard, movieType: FilmType) {
         self.movie = movie
         self.movieType = movieType
     }

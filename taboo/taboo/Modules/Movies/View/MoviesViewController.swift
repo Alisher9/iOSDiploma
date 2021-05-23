@@ -17,6 +17,7 @@ final class MoviesViewController: BaseViewController {
     // MARK: - Public properties
     
     var presenter: MoviesPresentation?
+    static var const = 1
     
     weak var delegate: MovieViewDelegate?
     
@@ -40,18 +41,7 @@ final class MoviesViewController: BaseViewController {
     
     // MARK: - Private properties
     
-    private var movies: [Film] = [] {
-        didSet {
-            models = movies.map {
-                MovieCellViewModel(title: $0.name,
-                                   category: $0.category,
-                                   imageFileName: $0.imageURLs.first,
-                                   rating: $0.rating)
-            }
-        }
-    }
-    
-    private var models: [MovieCellViewModel] = [] {
+    var models: [MovieProfileViewModel] = [] {
         didSet {
             tableView.reloadDataAnimated()
         }
@@ -63,7 +53,7 @@ final class MoviesViewController: BaseViewController {
         view.delegate = self
         view.register(MovieCell.self)
         view.separatorStyle = .none
-        view.backgroundColor = ColorName.lightGray.color
+        view.backgroundColor = UIColor.lightGray
         view.showsVerticalScrollIndicator = false
         view.showsVerticalScrollIndicator = true
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -77,10 +67,77 @@ final class MoviesViewController: BaseViewController {
     }()
     // MARK: - Lifecycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        if MoviesViewController.const == 1 {
+            featuredMovie { (res) in
+                self.models = [res]
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        featuredMovies { (response) in
+            self.models = [response]
+            self.tableView.reloadData()
+        }
+        MoviesViewController.const = 0
     }
+    func featuredMovie(completionHandler: @escaping(MovieProfileViewModel) -> ()) {
+            
+            guard let url = URL(string: "https://c7286ae03971.ngrok.io/api/profile/2/") else { return }
+            
+            URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
+                if error != nil {
+                    return
+                }
+                do {
+                    guard let data = data else {
+                        return
+                    }
+                    
+                    let json = try JSONDecoder().decode(MovieProfileViewModel.self, from: data)
+                    
+                    print("json", json)
+                    DispatchQueue.main.async {
+                        completionHandler(json)
+                    }
+                } catch let err {
+                    print(err)
+                }
+                
+            }) .resume()
+        }
+    
+    
+    func featuredMovies(completionHandler: @escaping(MovieProfileViewModel) -> ()) {
+            
+            guard let url = URL(string: "https://c7286ae03971.ngrok.io/api/profile/1/") else { return }
+            
+            URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
+                if error != nil {
+                    return
+                }
+                do {
+                    guard let data = data else {
+                        return
+                    }
+                    
+                    let json = try JSONDecoder().decode(MovieProfileViewModel.self, from: data)
+                    
+                    print("json", json)
+                    DispatchQueue.main.async {
+                        completionHandler(json)
+                    }
+                } catch let err {
+                    print(err)
+                }
+                
+            }) .resume()
+        }
     
     // MARK: - Setup
     
@@ -139,13 +196,13 @@ extension MoviesViewController: MoviesView {
 
 extension MoviesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return models.count
-        return 5
+        return models.count
+//        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as MovieCell
-//        cell.viewModel = models[indexPath.row]
+        cell.viewModel = models[indexPath.row]
         cell.selectionStyle = .none
         cell.title = "Alish"
         cell.backgroundColor = .white
