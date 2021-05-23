@@ -11,6 +11,7 @@ extension ResultHandlingView where Self: UIViewController {
     
     func showSuccess(message: String?, completion: (() -> Void)?) {
         hideActivityIndicator()
+        showResult(success: true, message: message, completion: completion)
     }
     
     func showNetworkError() {
@@ -19,6 +20,7 @@ extension ResultHandlingView where Self: UIViewController {
     
     func showError(message: String?, completion: (() -> Void)?) {
         hideActivityIndicator()
+        showResult(success: false, message: message, completion: completion)
     }
     
     func hideNoNetwork() {

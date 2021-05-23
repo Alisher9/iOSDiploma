@@ -26,7 +26,7 @@ extension OnboardingComponent: OnboardingModuleBuilder {
         
         viewController.presenter = presenter
         
-        presenter.view = viewController as! OnboardingView
+        presenter.view = viewController
         presenter.router = router
         presenter.interactor = interactor
         

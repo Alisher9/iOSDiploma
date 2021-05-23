@@ -22,17 +22,17 @@ final class OnboardingInfoViewController: BaseViewController {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-//        label.textColor = ColorName.textBlack.color
+        label.textColor = ColorName.textBlack.color
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 24.0, weight: .regular)
+        label.font = .systemFont(ofSize: 24.0, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
-//        label.textColor = ColorName.darkGray.color
+        label.textColor = ColorName.darkGray.color
         label.numberOfLines = 0
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 16, weight: .regular)

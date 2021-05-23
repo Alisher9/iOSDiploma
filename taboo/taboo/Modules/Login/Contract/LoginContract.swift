@@ -24,4 +24,5 @@ protocol LoginInteractorOutput: InteractorOutputProtocol {
 
 protocol LoginWireframe: class {
     func goToSignUp()
+    func goToGenrePicker()
 }

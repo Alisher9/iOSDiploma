@@ -22,6 +22,7 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
     private lazy var logoTitle: UILabel = {
        let label = UILabel()
         label.text = L10n.Common.app
+        label.textColor = ColorName.mainPurple.color
         label.font = FontFamily.SFProDisplay.bold.font(size: 44)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -43,6 +44,7 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
     
     private lazy var passwordTextField: MainTextField = {
         let textField = MainTextField(style: .password)
+        textField.placeholder = L10n.Login.enterPassword
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -51,7 +53,7 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
        let label = UILabel()
         label.text = L10n.Login.forgetPassword
         label.font = FontFamily.SFProDisplay.regular.font(size: 14)
-        label.textColor = ColorName.darkGray.color
+        label.textColor = ColorName.mainPurple.color
         return label
     }()
     
@@ -119,12 +121,12 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
         
         logoTitle.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalToSuperview().offset(154)
+            $0.bottom.equalTo(enterTitleLabel.snp.top).offset(-8)
         }
         
         enterTitleLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(logoTitle.snp.bottom).offset(8)
+            $0.bottom.equalTo(phoneNumberTextField.snp.top).offset(-53)
         }
         
         phoneNumberTextField.snp.makeConstraints {
@@ -136,14 +138,14 @@ final class LoginViewController: BaseViewController, UITextFieldDelegate {
         
         passwordTextField.snp.makeConstraints {
             $0.centerX.equalToSuperview()
+            $0.centerY.equalToSuperview()
             $0.width.equalToSuperview().multipliedBy(0.84)
             $0.height.equalTo(50)
-            $0.bottom.equalTo(forgetPasswordLabel.snp.top).offset(-20)
         }
         
         forgetPasswordLabel.snp.makeConstraints {
-            $0.centerY.equalToSuperview().inset(20)
-            $0.leading.equalTo(phoneNumberTextField.snp.leading)
+            $0.top.equalTo(passwordTextField.snp.bottom).offset(9)
+            $0.leading.equalToSuperview().offset(54)
         }
 
         loginButton.snp.makeConstraints {

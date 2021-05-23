@@ -14,18 +14,77 @@ internal enum L10n {
   internal enum Common {
     /// taboo
     internal static let app = L10n.tr("Localizable", "Common.App")
+    /// Cancel
+    internal static let cancel = L10n.tr("Localizable", "Common.Cancel")
     /// Continue
     internal static let `continue` = L10n.tr("Localizable", "Common.Continue")
+    /// Delete
+    internal static let delete = L10n.tr("Localizable", "Common.Delete")
     /// Done
     internal static let done = L10n.tr("Localizable", "Common.Done")
+    /// Edit
+    internal static let edit = L10n.tr("Localizable", "Common.Edit")
     /// Error!
     internal static let error = L10n.tr("Localizable", "Common.Error")
     /// Failure!
     internal static let failure = L10n.tr("Localizable", "Common.Failure")
+    /// Genres
+    internal static let genre = L10n.tr("Localizable", "Common.Genre")
+    /// Home
+    internal static let home = L10n.tr("Localizable", "Common.Home")
+    /// Profile
+    internal static let profile = L10n.tr("Localizable", "Common.Profile")
     /// Success!
     internal static let success = L10n.tr("Localizable", "Common.Success")
     /// Unauthorized
     internal static let unauthorized = L10n.tr("Localizable", "Common.Unauthorized")
+    /// Weather
+    internal static let weather = L10n.tr("Localizable", "Common.Weather")
+  }
+
+  internal enum GenrePicker {
+    /// Adventure
+    internal static let adventure = L10n.tr("Localizable", "GenrePicker.Adventure")
+    /// Biography
+    internal static let biography = L10n.tr("Localizable", "GenrePicker.Biography")
+    /// Next
+    internal static let button = L10n.tr("Localizable", "GenrePicker.Button")
+    /// Cartoon
+    internal static let cartoon = L10n.tr("Localizable", "GenrePicker.Cartoon")
+    /// Comedy
+    internal static let comedy = L10n.tr("Localizable", "GenrePicker.Comedy")
+    /// Criminal
+    internal static let criminal = L10n.tr("Localizable", "GenrePicker.Criminal")
+    /// Tap on genres you like. Hold to remove the genres you don't like
+    internal static let description = L10n.tr("Localizable", "GenrePicker.Description")
+    /// Detective
+    internal static let detective = L10n.tr("Localizable", "GenrePicker.Detective")
+    /// Documental
+    internal static let documental = L10n.tr("Localizable", "GenrePicker.Documental")
+    /// Drama
+    internal static let drama = L10n.tr("Localizable", "GenrePicker.Drama")
+    /// Family
+    internal static let family = L10n.tr("Localizable", "GenrePicker.Family")
+    /// Fiction
+    internal static let fiction = L10n.tr("Localizable", "GenrePicker.Fiction")
+    /// Fighters
+    internal static let fighters = L10n.tr("Localizable", "GenrePicker.Fighters")
+    /// History
+    internal static let history = L10n.tr("Localizable", "GenrePicker.History")
+    /// Horror
+    internal static let horror = L10n.tr("Localizable", "GenrePicker.Horror")
+    /// Melodrama
+    internal static let melodrama = L10n.tr("Localizable", "GenrePicker.Melodrama")
+    /// Military
+    internal static let military = L10n.tr("Localizable", "GenrePicker.Military")
+    /// Musical
+    internal static let musical = L10n.tr("Localizable", "GenrePicker.Musical")
+    /// Sport
+    internal static let sport = L10n.tr("Localizable", "GenrePicker.Sport")
+    /// Thriller
+    internal static let thriller = L10n.tr("Localizable", "GenrePicker.Thriller")
+    /// Discover new genres
+    internal static let title = L10n.tr("Localizable", "GenrePicker.Title")
   }
 
   internal enum Login {
@@ -64,23 +123,46 @@ internal enum L10n {
     internal static let title3 = L10n.tr("Localizable", "Onboarding.Title3")
   }
 
+  internal enum Profile {
+    /// Change password
+    internal static let changePassword = L10n.tr("Localizable", "Profile.ChangePassword")
+    /// Confirm password
+    internal static let confirmPassword = L10n.tr("Localizable", "Profile.ConfirmPassword")
+    /// Current password
+    internal static let currentPassword = L10n.tr("Localizable", "Profile.CurrentPassword")
+    /// Logout
+    internal static let logout = L10n.tr("Localizable", "Profile.Logout")
+    /// New password
+    internal static let newPassword = L10n.tr("Localizable", "Profile.NewPassword")
+    /// Password
+    internal static let password = L10n.tr("Localizable", "Profile.Password")
+    /// Reset password
+    internal static let resetPassword = L10n.tr("Localizable", "Profile.ResetPassword")
+    /// Settings
+    internal static let settings = L10n.tr("Localizable", "Profile.Settings")
+  }
+
   internal enum SignUp {
+    /// Enter name
+    internal static let enterName = L10n.tr("Localizable", "SignUp.EnterName")
+    /// Enter password
+    internal static let enterPassword = L10n.tr("Localizable", "SignUp.EnterPassword")
+    /// Repeat password
+    internal static let enterPasswordAgain = L10n.tr("Localizable", "SignUp.EnterPasswordAgain")
     /// Enter phone number
     internal static let enterPhoneNumber = L10n.tr("Localizable", "SignUp.EnterPhoneNumber")
-    /// Find city
-    internal static let findCity = L10n.tr("Localizable", "SignUp.FindCity")
-    /// Find housing complex
-    internal static let findComplex = L10n.tr("Localizable", "SignUp.FindComplex")
-    /// You will be able to communicate with your neighbors and quickly pay for com services
-    internal static let info = L10n.tr("Localizable", "SignUp.Info")
-    /// Where are you?
-    internal static let locationScreenTitle = L10n.tr("Localizable", "SignUp.LocationScreenTitle")
+    /// Enter surname
+    internal static let enterSurname = L10n.tr("Localizable", "SignUp.EnterSurname")
+    /// Enter credentials
+    internal static let infoTitle = L10n.tr("Localizable", "SignUp.InfoTitle")
     /// Passwords does not match.
     internal static let passwordsDoesNotMatch = L10n.tr("Localizable", "SignUp.PasswordsDoesNotMatch")
     /// Phone number
     internal static let phoneNumber = L10n.tr("Localizable", "SignUp.PhoneNumber")
-    /// Select a city to find the desired housing complex
-    internal static let selectCityInfo = L10n.tr("Localizable", "SignUp.SelectCityInfo")
+    /// Register
+    internal static let register = L10n.tr("Localizable", "SignUp.Register")
+    /// Registration
+    internal static let registration = L10n.tr("Localizable", "SignUp.Registration")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

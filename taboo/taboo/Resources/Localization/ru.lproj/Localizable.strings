@@ -12,10 +12,17 @@
 "Common.Failure" = "Провал!";
 "Common.Done" = "Готово";
 "Common.Continue" = "Продолжить";
+"Common.Home" = "Главная";
+"Common.Genre" = "Жанры";
+"Common.Weather" = "Погода";
+"Common.Profile" = "Аккаунт";
+"Common.Edit" = "Редактировать";
+"Common.Delete" = "Удалить";
+"Common.Cancel" = "Отмена";
 
 // Onboarding
 "Onboarding.Title1" = "Экономим время поиска";
-"Onboarding.Description1" = "Дольще ищете фильм, чем смотрите?";
+"Onboarding.Description1" = "Дольше ищете фильм, чем смотрите?";
 "Onboarding.Title2" = "Учитываем ваши интересы";
 "Onboarding.Description2" = "Рекомендуем фильмы ваших любимых жанров";
 "Onboarding.Title3" = "Создай свой список любимых фильмов";
@@ -34,12 +41,47 @@
 "Login.WrongCredentials" = "Проверьте корректность введенных данных.";
 
 // SignUp
+"SignUp.Registration" = "Регистрация";
 "SignUp.PhoneNumber" = "Номер телефона";
 "SignUp.EnterPhoneNumber" = "Укажите телефон";
-"SignUp.Info" = "Сможете общаться со своими соседями и быстро оплачивать ком услуги";
-"SignUp.LocationScreenTitle" = "Где вы?";
-"SignUp.SelectCityInfo" = "Выберите город, чтобы найти нужный ЖК";
-"SignUp.FindCity" = "Найти город";
-"SignUp.FindComplex" = "Найти ЖК";
 "SignUp.PasswordsDoesNotMatch" = "Пароли не совпадают.";
+"SignUp.InfoTitle" = "Введите данные для регистрации в приложении";
+"SignUp.EnterName" = "Введите ваше имя";
+"SignUp.EnterSurname" = "Введите вашу фамилию";
+"SignUp.EnterPhoneNumber" = "Введите номер телефона";
+"SignUp.EnterPassword" = "Введите пароль";
+"SignUp.EnterPasswordAgain" = "Повторите пароль";
+"SignUp.Register" = "Зарегистрироваться";
 
+// GenrePicker
+"GenrePicker.Title" = "Выберите любимые жанры";
+"GenrePicker.Description" = "Нажмите на понравившиеся жанры. Удерживайте, чтобы удалить жанры, которые вам не нравятся";
+"GenrePicker.Melodrama" = "Мелодрама";
+"GenrePicker.Drama" = "Драма";
+"GenrePicker.Fighters" = "Боевик";
+"GenrePicker.Family" = "Семейный";
+"GenrePicker.Thriller" = "Триллер";
+"GenrePicker.History" = "История";
+"GenrePicker.Comedy" = "Комедия";
+"GenrePicker.Horror" = "Ужасы";
+"GenrePicker.Detective" = "Детектив";
+"GenrePicker.Military" = "Военный";
+"GenrePicker.Documental" = "Документальный";
+"GenrePicker.Musical" = "Мюзикл";
+"GenrePicker.Criminal" = "Криминал";
+"GenrePicker.Fiction" = "Фантастика";
+"GenrePicker.Adventure" = "Приключения";
+"GenrePicker.Biography" = "Биография";
+"GenrePicker.Cartoon" = "Мультфильм";
+"GenrePicker.Sport" = "Спорт";
+"GenrePicker.Button" = "Далее";
+
+// Profile
+"Profile.Settings" = "Настройки";
+"Profile.ChangePassword" = "Сменить пароль";
+"Profile.Logout" = "Выйти из аккаунта";
+"Profile.Password" = "Пароль";
+"Profile.CurrentPassword" = "Текущий пароль";
+"Profile.NewPassword" = "Новый пароль";
+"Profile.ConfirmPassword" = "Подтвердите пароль";
+"Profile.ResetPassword" = "Обновить пароль";
