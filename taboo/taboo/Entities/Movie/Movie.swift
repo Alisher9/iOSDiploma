@@ -27,7 +27,6 @@ struct MovieCategory: Codable {
                     
                     let json = try JSONDecoder().decode([MovieCategory].self, from: data)
                     
-                    print("json", json)
                     DispatchQueue.main.async {
                         completionHandler(json)
                     }

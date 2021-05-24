@@ -33,10 +33,6 @@ final class MovieFrameCell: UICollectionViewCell {
         addSubview(collectionView)
         collectionView.dataSource = self
         collectionView.delegate = self
-        
-        
-//        addContraintsWithFormat("H:|[v0]|", views: collectionView)
-//        addContraintsWithFormat("V:|[v0]|", views: collectionView)
         collectionView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }

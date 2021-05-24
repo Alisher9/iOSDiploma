@@ -62,7 +62,6 @@ struct WeatherManager {
                 }
                 let json = try JSONDecoder().decode([WeatherCellViewModel].self, from: data)
                 
-                print("json", json)
                 DispatchQueue.main.async {
                     completionHandler(json)
                 }

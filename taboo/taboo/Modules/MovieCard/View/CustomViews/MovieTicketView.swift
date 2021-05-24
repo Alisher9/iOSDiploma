@@ -15,14 +15,6 @@ final class MovieTicketView: UIView,
     
     var model: MovieCard? {
         didSet {
-//            if let image = model?.image {
-//                guard let url = URL(string: image) else { return  }
-//                let data = try? Data(contentsOf: url)
-//                if let imageData = data {
-//                    let i = UIImage(data: imageData)
-//                    ticketImage.image = i
-//                }
-//            }
             movieReleaseLabel.text = model?.year ?? ""
             movieCountryLabel.text = model?.country ?? ""
             movieGenreLabel.text = model?.genres.first ?? ""
@@ -291,12 +283,6 @@ final class MovieTicketView: UIView,
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-//        let cellWidth = bounds.width
-//        let cellHeight = UIScreen.main.bounds.height
-//        layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
-//
-//        //You can also provide estimated Height and Width
-//        layout.estimatedItemSize = CGSize(width: cellWidth, height: cellHeight)
         layout.estimatedItemSize = CGSize.zero
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.alwaysBounceHorizontal = true
@@ -434,7 +420,6 @@ final class MovieTicketView: UIView,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "frameCell", for: indexPath) as! MovieFrameCell
-//        cell.backgroundColor = .yellow
         return cell
     }
     
