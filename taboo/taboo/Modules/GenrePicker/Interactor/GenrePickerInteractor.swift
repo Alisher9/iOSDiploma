@@ -45,17 +45,17 @@ final class GenrePickerInteractor {
             }
         }
     }
-    
 }
 
 extension GenrePickerInteractor: GenrePickerUseCase {
     func genrePicker(genres: [String]) {
-//        let target = UserTarget.genrePicker(genres: genres)
+//        let target = UserTarget.genrePicker(genres: genres, id: SessionTrackerImpl.id)
+//
+//
 //        load(target: target) { [weak self] (result) in
 //            switch result {
 //            case .success(let json):
-//                guard let success = json["success"] as? JSONStandard,
-//                let token = success["token"] as? String else {
+//                guard let success = json["success"] as? JSONStandard else {
 //                    self?.output?.handleError(.incorrectJSON)
 //                    return
 //                }

@@ -17,6 +17,8 @@ final class ProfileSettingsViewController: BaseViewController {
     // MARK: - Private properties
     
     private var rows: [TableViewCellType] = [
+        .label(title: "Мой QR код", style: .hasDetails),
+        .label(title: "Сканировать QR код", style: .hasDetails),
         .label(title: L10n.Profile.changePassword, style: .hasDetails),
         .label(title: L10n.Profile.logout, style: .regular)
     ]
@@ -90,8 +92,13 @@ extension ProfileSettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.row == 0 {
+            presenter?.didSelectGenerateQR()
+        } else if indexPath.row == 1 {
+            presenter?.didSelectScanQR()
+        } else if indexPath.row == 2 {
             presenter?.didSelectResetPassword()
-        } else {
+        }
+         else {
             presenter?.didSelectLogOut()
         }
     }

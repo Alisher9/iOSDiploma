@@ -88,7 +88,9 @@ extension UIColor {
                                     .tealBlue,
                                     .blue,
                                     .purple,
-                                    .pink
+                                    .pink,
+                                    .gray,
+                                    .brown
     ]
     
 }
@@ -102,17 +104,17 @@ extension UIImage {
                                   L10n.GenrePicker.thriller,
                                   L10n.GenrePicker.history,
                                   L10n.GenrePicker.comedy,
-                                  L10n.GenrePicker.western,
+                                  L10n.GenrePicker.horror,
                                   L10n.GenrePicker.detective,
                                   L10n.GenrePicker.military,
-                                  L10n.GenrePicker.romantic,
+                                  L10n.GenrePicker.documental,
                                   L10n.GenrePicker.musical,
-                                  L10n.GenrePicker.gothic,
+                                  L10n.GenrePicker.criminal,
                                   L10n.GenrePicker.fiction,
                                   L10n.GenrePicker.adventure,
-                                  L10n.GenrePicker.kids,
-                                  L10n.GenrePicker.mystic,
-                                  L10n.GenrePicker.sciFi
+                                  L10n.GenrePicker.biography,
+                                  L10n.GenrePicker.cartoon,
+                                  L10n.GenrePicker.sport
                                   
     ]
 }

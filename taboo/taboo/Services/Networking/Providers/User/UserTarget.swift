@@ -9,8 +9,9 @@ import Moya
 
 enum UserTarget {
     case login(phoneNumber: String, password: String)
-    case createUser(user: User)
-    case genrePicker(genres: [String])
+    case createUser(name: String, surname: String, phone: String, password: String, passwordConfirm: String)
+    case genrePicker(genres: [String], id: String)
+    case home
 }
 
 extension UserTarget: BaseProviderType, AnyTargetConvertible {
@@ -23,6 +24,8 @@ extension UserTarget: BaseProviderType, AnyTargetConvertible {
             return AppConstants.API.User.createUser
         case .genrePicker:
             return AppConstants.API.User.genrePicker
+        case .home:
+            return AppConstants.API.User.home
         }
     }
     
@@ -30,6 +33,8 @@ extension UserTarget: BaseProviderType, AnyTargetConvertible {
         switch self {
         case .login, .createUser, .genrePicker:
             return .post
+        case .home:
+            return .get
         }
     }
     
@@ -40,21 +45,23 @@ extension UserTarget: BaseProviderType, AnyTargetConvertible {
                 JSONRequestParameter.User.phoneNumber: phoneNumber,
                 JSONRequestParameter.User.password: password
             ]
-            return .requestParameters(parameters: jsonParameters, encoding: URLEncoding.queryString)
-        case .createUser(let user):
+            return .requestParameters(parameters: jsonParameters, encoding: JSONEncoding.default)
+        case .createUser(let name, let surname, let phoneNumber, let password, let confirmPassword):
             let jsonParameters: [String: Any] = [
-                JSONRequestParameter.User.phoneNumber: user.phoneNumber ?? "",
-                JSONRequestParameter.User.password: user.password ?? "",
-                JSONRequestParameter.User.passwordConfirmation: user.passwordConfirmation ?? "",
-                JSONRequestParameter.User.name: user.name ?? "",
-                JSONRequestParameter.User.surname: user.surname ?? ""
+                JSONRequestParameter.User.phoneNumber: phoneNumber,
+                JSONRequestParameter.User.password: password,
+                JSONRequestParameter.User.passwordConfirmation: confirmPassword,
+                JSONRequestParameter.User.name: name,
+                JSONRequestParameter.User.surname: surname
             ]
-            return .requestParameters(parameters: jsonParameters, encoding: URLEncoding.queryString)
+            return .requestParameters(parameters: jsonParameters, encoding: JSONEncoding.default)
         case .genrePicker(let genres):
             let jsonParameters: [String: Any] = [
                 JSONRequestParameter.Genres.genres: genres
             ]
             return .requestParameters(parameters: jsonParameters, encoding: URLEncoding.queryString)
+        case .home:
+            return .requestParameters(parameters: [:], encoding: URLEncoding.queryString)
         }
     }
 }

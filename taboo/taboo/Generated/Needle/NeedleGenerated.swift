@@ -16,8 +16,14 @@ public func registerProviderFactories() {
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->GenresComponent") { component in
         return GenresDependency4e91ec0bf45d43f94ad8Provider(component: component)
     }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent->SignUpComponent->SignUpDetailComponent") { component in
+        return SignUpDetailDependency219701779fe548da484cProvider(component: component)
+    }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent->SignUpComponent") { component in
         return SignUpDependency472b53508e2bb1a5835aProvider(component: component)
+    }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->MoviesComponent->MovieCardComponent") { component in
+        return MovieCardDependency0fb95835ad1df208bce5Provider(component: component)
     }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent->GenrePickerComponent") { component in
         return GenrePickerDependency9d9dfcc60b6638486709Provider(component: component)
@@ -34,8 +40,20 @@ public func registerProviderFactories() {
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->ProfileComponent->ProfileSettingsComponent") { component in
         return ProfileSettingsDependencybdd38f4a81e26bd2a4c0Provider(component: component)
     }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->ProfileComponent->ScanQRComponent") { component in
+        return ScanQRDependency65ce91435bc32dae68b3Provider(component: component)
+    }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->ProfileComponent->GenerateQRComponent") { component in
+        return GenerateQRDependency9daa2148e7cc3dee52edProvider(component: component)
+    }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->MoviesComponent") { component in
+        return MoviesDependency4b24739a13b3ceeb0a92Provider(component: component)
+    }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent") { component in
         return EmptyDependencyProvider(component: component)
+    }
+    __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->WeatherComponent") { component in
+        return WeatherDependencycb93fc78d7cc2ccc8ba5Provider(component: component)
     }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent") { component in
         return LoginDependency006c7d880fec28863ecaProvider(component: component)
@@ -78,6 +96,26 @@ private class GenresDependency4e91ec0bf45d43f94ad8Provider: GenresDependency4e91
         super.init(rootComponent: component.parent as! RootComponent)
     }
 }
+private class SignUpDetailDependency219701779fe548da484cBaseProvider: SignUpDetailDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    var userContainer: UserContainer {
+        return signUpComponent.userContainer
+    }
+    private let rootComponent: RootComponent
+    private let signUpComponent: SignUpComponent
+    init(rootComponent: RootComponent, signUpComponent: SignUpComponent) {
+        self.rootComponent = rootComponent
+        self.signUpComponent = signUpComponent
+    }
+}
+/// ^->RootComponent->LoginComponent->SignUpComponent->SignUpDetailComponent
+private class SignUpDetailDependency219701779fe548da484cProvider: SignUpDetailDependency219701779fe548da484cBaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent.parent.parent as! RootComponent, signUpComponent: component.parent as! SignUpComponent)
+    }
+}
 private class SignUpDependency472b53508e2bb1a5835aBaseProvider: SignUpDependency {
     var webService: WebServiceType {
         return rootComponent.webService
@@ -91,6 +129,29 @@ private class SignUpDependency472b53508e2bb1a5835aBaseProvider: SignUpDependency
 private class SignUpDependency472b53508e2bb1a5835aProvider: SignUpDependency472b53508e2bb1a5835aBaseProvider {
     init(component: NeedleFoundation.Scope) {
         super.init(rootComponent: component.parent.parent as! RootComponent)
+    }
+}
+private class MovieCardDependency0fb95835ad1df208bce5BaseProvider: MovieCardDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    var movieContainer: MovieContainer {
+        return moviesComponent.movieContainer
+    }
+    var sessionTracker: SessionTracker {
+        return rootComponent.sessionTracker
+    }
+    private let moviesComponent: MoviesComponent
+    private let rootComponent: RootComponent
+    init(moviesComponent: MoviesComponent, rootComponent: RootComponent) {
+        self.moviesComponent = moviesComponent
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->MoviesComponent->MovieCardComponent
+private class MovieCardDependency0fb95835ad1df208bce5Provider: MovieCardDependency0fb95835ad1df208bce5BaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(moviesComponent: component.parent as! MoviesComponent, rootComponent: component.parent.parent as! RootComponent)
     }
 }
 private class GenrePickerDependency9d9dfcc60b6638486709BaseProvider: GenrePickerDependency {
@@ -133,6 +194,9 @@ private class ProfileMainDependency662ca9c7119e8e0d3443BaseProvider: ProfileMain
     var sessionTracker: SessionTracker {
         return rootComponent.sessionTracker
     }
+    var moviesModuleBuilder: MoviesModuleBuilder {
+        return rootComponent.moviesModuleBuilder
+    }
     private let profileComponent: ProfileComponent
     private let rootComponent: RootComponent
     init(profileComponent: ProfileComponent, rootComponent: RootComponent) {
@@ -168,6 +232,12 @@ private class ProfileSettingsDependencybdd38f4a81e26bd2a4c0BaseProvider: Profile
     var profileResetPasswordModuleBuilder: ProfileResetPasswordModuleBuilder {
         return profileComponent.profileResetPasswordModuleBuilder
     }
+    var generateQRModuleBuilder: GenerateQRModuleBuilder {
+        return profileComponent.generateQRModuleBuilder
+    }
+    var scanQRModuleBuilder: ScanQRModuleBuilder {
+        return profileComponent.scanQRModuleBuilder
+    }
     var sessionTracker: SessionTracker {
         return rootComponent.sessionTracker
     }
@@ -182,6 +252,66 @@ private class ProfileSettingsDependencybdd38f4a81e26bd2a4c0BaseProvider: Profile
 private class ProfileSettingsDependencybdd38f4a81e26bd2a4c0Provider: ProfileSettingsDependencybdd38f4a81e26bd2a4c0BaseProvider {
     init(component: NeedleFoundation.Scope) {
         super.init(profileComponent: component.parent as! ProfileComponent, rootComponent: component.parent.parent as! RootComponent)
+    }
+}
+private class ScanQRDependency65ce91435bc32dae68b3BaseProvider: ScanQRDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->ProfileComponent->ScanQRComponent
+private class ScanQRDependency65ce91435bc32dae68b3Provider: ScanQRDependency65ce91435bc32dae68b3BaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent.parent as! RootComponent)
+    }
+}
+private class GenerateQRDependency9daa2148e7cc3dee52edBaseProvider: GenerateQRDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->ProfileComponent->GenerateQRComponent
+private class GenerateQRDependency9daa2148e7cc3dee52edProvider: GenerateQRDependency9daa2148e7cc3dee52edBaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent.parent as! RootComponent)
+    }
+}
+private class MoviesDependency4b24739a13b3ceeb0a92BaseProvider: MoviesDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->MoviesComponent
+private class MoviesDependency4b24739a13b3ceeb0a92Provider: MoviesDependency4b24739a13b3ceeb0a92BaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent as! RootComponent)
+    }
+}
+private class WeatherDependencycb93fc78d7cc2ccc8ba5BaseProvider: WeatherDependency {
+    var webService: WebServiceType {
+        return rootComponent.webService
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->WeatherComponent
+private class WeatherDependencycb93fc78d7cc2ccc8ba5Provider: WeatherDependencycb93fc78d7cc2ccc8ba5BaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent as! RootComponent)
     }
 }
 private class LoginDependency006c7d880fec28863ecaBaseProvider: LoginDependency {

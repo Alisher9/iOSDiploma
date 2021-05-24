@@ -74,6 +74,14 @@ final class ProfileHeaderView: UIView {
         return label
     }()
     
+    private lazy var favoriteLabel: UILabel = {
+       let label = UILabel()
+        label.font = FontFamily.SFProDisplay.bold.font(size: 17)
+        label.text = "Внизу отображаются Ваши избранные фильмы"
+        label.textColor = ColorName.mainPurple.color
+        return label
+    }()
+    
     private lazy var settingsIcon: UIImageView = {
         var image = UIImageView()
         image.image = Asset.settingsIcon.image
@@ -109,6 +117,7 @@ final class ProfileHeaderView: UIView {
                     nameLabel,
                     addressLabel,
                     phoneLabel,
+                    favoriteLabel,
                     settingsIcon)
     }
     
@@ -133,8 +142,14 @@ final class ProfileHeaderView: UIView {
         phoneLabel.snp.makeConstraints {
             $0.top.equalTo(addressLabel.snp.bottom).offset(5)
             $0.centerX.equalToSuperview()
-            $0.bottom.equalToSuperview().inset(41)
         }
+        
+        favoriteLabel.snp.makeConstraints {
+            $0.top.equalTo(phoneLabel.snp.bottom).offset(15)
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(21)
+        }
+        
         
         settingsIcon.snp.makeConstraints {
             $0.top.equalToSuperview().inset(15)

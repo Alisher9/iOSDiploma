@@ -14,7 +14,7 @@
 "Common.Continue" = "Продолжить";
 "Common.Home" = "Главная";
 "Common.Genre" = "Жанры";
-"Common.Favorite" = "Избранное";
+"Common.Weather" = "Погода";
 "Common.Profile" = "Аккаунт";
 "Common.Edit" = "Редактировать";
 "Common.Delete" = "Удалить";
@@ -22,7 +22,7 @@
 
 // Onboarding
 "Onboarding.Title1" = "Экономим время поиска";
-"Onboarding.Description1" = "Дольще ищете фильм, чем смотрите?";
+"Onboarding.Description1" = "Дольше ищете фильм, чем смотрите?";
 "Onboarding.Title2" = "Учитываем ваши интересы";
 "Onboarding.Description2" = "Рекомендуем фильмы ваших любимых жанров";
 "Onboarding.Title3" = "Создай свой список любимых фильмов";
@@ -63,17 +63,17 @@
 "GenrePicker.Thriller" = "Триллер";
 "GenrePicker.History" = "История";
 "GenrePicker.Comedy" = "Комедия";
-"GenrePicker.Western" = "Вестерн";
+"GenrePicker.Horror" = "Ужасы";
 "GenrePicker.Detective" = "Детектив";
 "GenrePicker.Military" = "Военный";
-"GenrePicker.Romantic" = "Романтика";
+"GenrePicker.Documental" = "Документальный";
 "GenrePicker.Musical" = "Мюзикл";
-"GenrePicker.Gothic" = "Готика";
+"GenrePicker.Criminal" = "Криминал";
 "GenrePicker.Fiction" = "Фантастика";
-"GenrePicker.Adventure" = "Приключение";
-"GenrePicker.Kids" = "Детский";
-"GenrePicker.Mystic" = "Мистика";
-"GenrePicker.SciFi" = "Научный";
+"GenrePicker.Adventure" = "Приключения";
+"GenrePicker.Biography" = "Биография";
+"GenrePicker.Cartoon" = "Мультфильм";
+"GenrePicker.Sport" = "Спорт";
 "GenrePicker.Button" = "Далее";
 
 // Profile

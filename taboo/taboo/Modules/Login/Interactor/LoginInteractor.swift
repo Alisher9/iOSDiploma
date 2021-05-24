@@ -26,11 +26,14 @@ extension LoginInteractor: LoginUseCase {
         webService.load(target: target) { [weak self] (result) in
             switch result {
             case .success(let json):
-                guard let success = json["success"] as? JSONStandard,
-                    let token = success["token"] as? String else {
-                        self?.output?.handleError(.incorrectJSON)
-                        return
+                print("/// json", json)
+                print("/// token", json["token"])
+                print("/// expiry", json["expiry"])
+                guard let token = json["token"] as? String, let id = json["id"] else {
+                    self?.output?.handleError(.incorrectJSON)
+                    return
                 }
+                SessionTrackerImpl.id = id as! String
                 self?.output?.didLogin(token: token)
             case .error(let error):
                 switch error {

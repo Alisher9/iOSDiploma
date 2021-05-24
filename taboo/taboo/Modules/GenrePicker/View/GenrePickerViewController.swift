@@ -9,8 +9,9 @@
 import UIKit
 import Magnetic
 import SpriteKit
+import iProgressHUD
 
-final class GenrePickerViewController: BaseViewController {
+final class GenrePickerViewController: BaseViewController, iProgressHUDDelegete {
     
     // MARK: - Public properties
     
@@ -42,7 +43,35 @@ final class GenrePickerViewController: BaseViewController {
     }
     @IBAction func nextTapped(_ sender: Any) {
         title = L10n.GenrePicker.button
-        presenter?.didTapGenres(genres: genresList)
+        let iprogress: iProgressHUD = iProgressHUD()
+        iprogress.indicatorStyle = .ballClipRotateMultiple
+        // Set the delegete
+        iprogress.delegete = self
+        
+        // Attach iProgressHUD to views
+        iprogress.attachProgress(toViews: view)
+        
+        iProgressHUD.sharedInstance().attachProgress(toView: self.view)
+        // Show iProgressHUD directly from view
+        self.view.showProgress()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            self.view.dismissProgress()
+            self.presenter?.didTapGenres(genres: self.genresList)
+        }
+        
+    }
+    
+    func onShow(view: UIView) {
+        print("onShow")
+        
+    }
+    
+    func onDismiss(view: UIView) {
+        print("onStop")
+    }
+    
+    func onTouch(view: UIView) {
+        print("onTouch")
     }
     
     private func magneticNodes() {
@@ -78,15 +107,16 @@ extension GenrePickerViewController: MagneticDelegate {
     
     func magnetic(_ magnetic: Magnetic,
                   didSelect node: Node) {
-        print("didSelect -> \(node)")
-        genresList.append(node.description)
+        print("didSelect -> \(node.text)")
+        genresList.append(node.label.text ?? "")
         print("/// list", genresList)
         
     }
     
     func magnetic(_ magnetic: Magnetic,
                   didDeselect node: Node) {
-        print("didDeselect -> \(node)")
+        print("didDeselect -> \(node.label.text ?? "")")
+        print("/// after deleting", genresList)
     }
     
     func magnetic(_ magnetic: Magnetic,

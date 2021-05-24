@@ -13,6 +13,7 @@ protocol HomePresentation: class {
 }
 
 protocol HomeUseCase: class {
+    func getAdvertisements(of type: FilmType?)
 }
 
 protocol HomeInteractorOutput: InteractorOutputProtocol {

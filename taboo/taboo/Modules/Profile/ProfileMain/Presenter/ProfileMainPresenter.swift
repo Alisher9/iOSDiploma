@@ -23,6 +23,9 @@ final class ProfileMainPresenter {
 }
 
 extension ProfileMainPresenter: ProfileMainPresentation {
+    func viewDidLoad() {
+    }
+    
     func didTapSettings() {
         router?.showProfileSettings()
     }

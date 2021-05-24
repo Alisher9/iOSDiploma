@@ -14,26 +14,19 @@ protocol SignUpDependency: Dependency {
 }
 
 final class SignUpComponent: Component<SignUpDependency> {
+    
+    private var signUpDetailComponent: SignUpDetailComponent {
+        return SignUpDetailComponent(parent: self)
+    }
+    
+    var userContainer: UserContainer {
+        return shared { SignUpContainer() }
+    }
 }
 
 extension SignUpComponent: SignUpModuleBuilder {
     var viewController: UIViewController {
-        let viewController = SignUpViewController()
-        let presenter = SignUpPresenter()
-        let router = SignUpRouter()
-        let interactor = SignUpInteractor(webService: dependency.webService)
-        
-        viewController.presenter = presenter
-        
-        presenter.view = viewController
-        presenter.router = router
-        presenter.interactor = interactor
-        
-        router.view = viewController
-        
-        interactor.output = presenter
-        
-        return viewController
+        return signUpDetailComponent.viewController
     }
 }
 

@@ -33,6 +33,14 @@ final class RootComponent: BootstrapComponent {
         return ProfileComponent(parent: self)
     }
     
+    private var moviesComponent: MoviesComponent {
+        return MoviesComponent(parent: self)
+    }
+    
+    private var weatherComponent: WeatherComponent {
+        return WeatherComponent(parent: self)
+    }
+    
     // MARK: - Properties
     
     var webService: WebServiceType {
@@ -48,32 +56,35 @@ final class RootComponent: BootstrapComponent {
         return self
     }
     
+    var moviesModuleBuilder: MoviesModuleBuilder {
+        return moviesComponent
+    }
+    
     // MARK: - Private actions
     
     private func setupTabBarController() -> UIViewController {
-        let vc = mainPageComponent.viewController
-        vc.tabBarItem.title = L10n.Common.home
-        vc.tabBarItem.image = Asset.tabbarHome.image
-//        let vcNavVc = UINavigationController(rootViewController: vc)
+        let layout = UICollectionViewFlowLayout()
+        let vc1 = HomeViewController(collectionViewLayout: layout)
+        vc1.tabBarItem.title = L10n.Common.home
+        vc1.tabBarItem.image = Asset.tabbarHome.image
+        let vcNavVc = UINavigationController(rootViewController: vc1)
         
         let vc2 = genresComponent.viewController
         vc2.tabBarItem.title = L10n.Common.genre
         vc2.tabBarItem.image = Asset.tabbarGenre.image
         let vc2NavVc = UINavigationController(rootViewController: vc2)
         
-        let vc3 = UIViewController()
-        vc3.view.backgroundColor = .yellow
-        vc3.tabBarItem.title = L10n.Common.favorite
+        let vc3 = weatherComponent.viewController
+        vc3.tabBarItem.title = L10n.Common.weather
         vc3.tabBarItem.image = Asset.tabbarFavorite.image
         
         let vc4 = profileComponent.viewController
-//        vc4.view.backgroundColor = .green
         vc4.tabBarItem.title = L10n.Common.profile
         vc4.tabBarItem.image = Asset.tabbarProfile.image
         let profileNavVC = UINavigationController(rootViewController: vc4)
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [vc, vc2NavVc, vc3, profileNavVC]
+        tabBarController.viewControllers = [vcNavVc, vc2NavVc, vc3, profileNavVC]
         tabBarController.tabBar.tintColor = ColorName.mainPurple.color
         
         return tabBarController

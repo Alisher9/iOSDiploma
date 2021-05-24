@@ -29,6 +29,14 @@ final class ProfileComponent: Component<ProfileDependency> {
         return ProfileResetPasswordComponent(parent: self)
     }
     
+    private var generateQRComponent: GenerateQRComponent {
+        return GenerateQRComponent(parent: self)
+    }
+    
+    private var scanQRComponent: ScanQRComponent {
+        return ScanQRComponent(parent: self)
+    }
+    
     // MARK: - Properties
     
     var profileSettingsModuleBuilder: ProfileSettingsModuleBuilder {
@@ -37,6 +45,14 @@ final class ProfileComponent: Component<ProfileDependency> {
     
     var profileResetPasswordModuleBuilder: ProfileResetPasswordModuleBuilder {
         return profileResetPasswordComponent
+    }
+    
+    var generateQRModuleBuilder: GenerateQRModuleBuilder {
+        return generateQRComponent
+    }
+    
+    var scanQRModuleBuilder: ScanQRModuleBuilder {
+        return scanQRComponent
     }
 }
 
